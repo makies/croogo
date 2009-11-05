@@ -107,3 +107,19 @@ msgstr ""
 msgid "Recaptcha Private Key"
 msgstr ""
 
+msgid "Site"
+msgstr ""
+
+msgid "Meta"
+msgstr ""
+
+msgid "Reading"
+msgstr ""
+
+msgid "Writing"
+msgstr ""
+
+msgid "Service"
+msgstr ""
+
+
