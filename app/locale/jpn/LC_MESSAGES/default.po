@@ -766,7 +766,7 @@ msgstr "地域"
 
 #: /controllers/users_controller.php:135
 msgid "You have successfully registered an account. An email has been sent with further instructions."
-msgstr ""
+msgstr "アカウントを作成しました。その後の説明をメールで送りました。"
 
 #: /controllers/users_controller.php:158
 msgid "Account activated successfully."
@@ -786,7 +786,7 @@ msgstr "パスワードリセット"
 
 #: /controllers/users_controller.php:190
 msgid "An email has been sent with instructions for resetting your password."
-msgstr ""
+msgstr "あなたのパスワードをリセットするための指示をメールで送りました。"
 
 #: /controllers/users_controller.php:194;229
 msgid "An error occurred. Please try again."
@@ -841,37 +841,37 @@ msgstr "用語を削除しました。"
 #: /plugins/acl/controllers/acl_acos_controller.php:19
 #: /plugins/acl/views/acl_acos/admin_index.ctp:2
 msgid "Acos"
-msgstr ""
+msgstr "アクセス制御オブジェクト"
 
 #: /plugins/acl/controllers/acl_acos_controller.php:26
 #: /plugins/acl/views/acl_acos/admin_add.ctp:2
 #: /plugins/acl/views/acl_acos/admin_edit.ctp:2
 msgid "Add Aco"
-msgstr ""
+msgstr "アクセス制御オブジェクト新規作成"
 
 #: /plugins/acl/controllers/acl_acos_controller.php:31;48
 msgid "The Aco has been saved"
-msgstr ""
+msgstr "アクセス制御オブジェクトを保存しました。"
 
 #: /plugins/acl/controllers/acl_acos_controller.php:34;51
 msgid "The Aco could not be saved. Please, try again."
-msgstr ""
+msgstr "アクセス制御オブジェクトを保存できませんでした。もう一度実行してください。"
 
 #: /plugins/acl/controllers/acl_acos_controller.php:40
 msgid "Edit Aco"
-msgstr ""
+msgstr "アクセス制御オブジェクト編集"
 
 #: /plugins/acl/controllers/acl_acos_controller.php:43
 msgid "Invalid Aco"
-msgstr ""
+msgstr "不正なアクセス制御オブジェクトです。"
 
 #: /plugins/acl/controllers/acl_acos_controller.php:61
 msgid "Invalid id for Aco"
-msgstr ""
+msgstr "不正なアクセス制御オブジェクトIDです。"
 
 #: /plugins/acl/controllers/acl_acos_controller.php:65
 msgid "Aco deleted"
-msgstr ""
+msgstr "アクセス制御オブジェクト削除"
 
 #: /plugins/acl/controllers/acl_actions_controller.php:20
 #: /plugins/acl/views/acl_acos/admin_index.ctp:18
@@ -936,37 +936,37 @@ msgstr "アクションを下へ移動"
 #: /plugins/acl/controllers/acl_aros_controller.php:19
 #: /plugins/acl/views/acl_aros/admin_index.ctp:2
 msgid "Aros"
-msgstr ""
+msgstr "Aro"
 
 #: /plugins/acl/controllers/acl_aros_controller.php:26
 #: /plugins/acl/views/acl_aros/admin_add.ctp:2
 #: /plugins/acl/views/acl_aros/admin_edit.ctp:2
 msgid "Add Aro"
-msgstr ""
+msgstr "Aro新規作成"
 
 #: /plugins/acl/controllers/acl_aros_controller.php:31;48
 msgid "The Aro has been saved"
-msgstr ""
+msgstr "Aroを保存しました。"
 
 #: /plugins/acl/controllers/acl_aros_controller.php:34;51
 msgid "The Aro could not be saved. Please, try again."
-msgstr ""
+msgstr "Aroを保存できませんでした。"
 
 #: /plugins/acl/controllers/acl_aros_controller.php:40
 msgid "Edit Aro"
-msgstr ""
+msgstr "Aro編集"
 
 #: /plugins/acl/controllers/acl_aros_controller.php:43
 msgid "Invalid Aro"
-msgstr ""
+msgstr "不正なAroです。"
 
 #: /plugins/acl/controllers/acl_aros_controller.php:61
 msgid "Invalid id for Aro"
-msgstr ""
+msgstr "不正なEdit Aro ID です"
 
 #: /plugins/acl/controllers/acl_aros_controller.php:65
 msgid "Aro deleted"
-msgstr ""
+msgstr "Aroを削除しました。"
 
 #: /plugins/acl/controllers/acl_permissions_controller.php:19
 #: /views/elements/admin/navigation.ctp:46
@@ -975,7 +975,7 @@ msgstr "権限"
 
 #: /plugins/acl/views/acl_acos/admin_index.ctp:6
 msgid "New Aco"
-msgstr ""
+msgstr "Aro新規作成"
 
 #: /plugins/acl/views/acl_acos/admin_index.ctp:24
 #: /plugins/acl/views/acl_actions/admin_index.ctp:41
@@ -1120,7 +1120,7 @@ msgstr "エラー"
 
 #: /plugins/install/controllers/install_controller.php:56
 msgid "Installation: Welcome"
-msgstr ""
+msgstr "インストール: ようこそ いらっしゃい"
 
 #: /plugins/install/controllers/install_controller.php:64
 msgid "Step 1: Database"
@@ -1245,7 +1245,7 @@ msgstr "透明度"
 #: /views/blocks/admin_add.ctp:16
 #: /views/blocks/admin_edit.ctp:17
 msgid "unique name for your block"
-msgstr ""
+msgstr "ブロックは唯一の名前"
 
 #: /views/blocks/admin_add.ctp:17
 #: /views/blocks/admin_edit.ctp:18
@@ -1255,7 +1255,7 @@ msgstr ""
 #: /views/blocks/admin_add.ctp:35
 #: /views/blocks/admin_edit.ctp:36
 msgid "Enter one URL per line. Leave blank if you want this Block to appear in all pages."
-msgstr ""
+msgstr "１行ごとにURLを入力してください。全ページでブロックを表示したい場合は、空白を取り除いてください。"
 
 #: /views/blocks/admin_index.ctp:6
 msgid "New Block"
