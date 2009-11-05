@@ -1,0 +1,1841 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: croogo 1.1\n"
+"POT-Creation-Date: 2009-11-04 22:07+0900\n"
+"PO-Revision-Date: \n"
+"Last-Translator: maki koiwa <makies@gmail.com>\n"
+"Language-Team: makies <makies@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Japanese\n"
+"X-Poedit-Country: JAPAN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: /app_controller.php:54
+msgid "Site down for maintenance"
+msgstr "只今メンテナンス中です"
+
+#: /controllers/attachments_controller.php:70
+#: /views/elements/admin/navigation.ctp:30
+msgid "Attachments"
+msgstr "ファイル"
+
+#: /controllers/attachments_controller.php:78
+msgid "Add Attachment"
+msgstr "ファイル追加"
+
+#: /controllers/attachments_controller.php:116;138
+msgid "The Attachment has been saved"
+msgstr "ファイルを追加しました。"
+
+#: /controllers/attachments_controller.php:124;141
+msgid "The Attachment could not be saved. Please, try again."
+msgstr "ファイルは保存できませんでした。もう一度実行してください。"
+
+#: /controllers/attachments_controller.php:130
+msgid "Edit Attachment"
+msgstr "ファイル編集"
+
+#: /controllers/attachments_controller.php:133
+msgid "Invalid Attachment"
+msgstr "不正ファイルです。"
+
+#: /controllers/attachments_controller.php:151;166
+msgid "Invalid id for Attachment"
+msgstr "不正IDです。"
+
+#: /controllers/attachments_controller.php:162
+msgid "Attachment deleted"
+msgstr "ファイルが削除されました。"
+
+#: /controllers/blocks_controller.php:31
+#: /views/elements/admin/navigation.ctp:21;23
+msgid "Blocks"
+msgstr "ブロック"
+
+#: /controllers/blocks_controller.php:39
+#: /views/blocks/admin_add.ctp:2
+msgid "Add Block"
+msgstr "ブロック追加"
+
+#: /controllers/blocks_controller.php:46;68
+msgid "The Block has been saved"
+msgstr "ブロックが追加されました。"
+
+#: /controllers/blocks_controller.php:49;71
+msgid "The Block could not be saved. Please, try again."
+msgstr "ブロックは保存できませんでした。もう一度実行してください。"
+
+#: /controllers/blocks_controller.php:58
+#: /views/blocks/admin_edit.ctp:2
+msgid "Edit Block"
+msgstr "ブロック編集"
+
+#: /controllers/blocks_controller.php:61
+msgid "Invalid Block"
+msgstr "不正ブロックです。"
+
+#: /controllers/blocks_controller.php:89
+msgid "Invalid id for Block"
+msgstr "不正なブロックIDです。"
+
+#: /controllers/blocks_controller.php:93
+msgid "Block deleted"
+msgstr "ブロックを保存しました。"
+
+#: /controllers/blocks_controller.php:100
+#: /controllers/links_controller.php:142
+#: /controllers/settings_controller.php:131
+#: /controllers/terms_controller.php:112
+msgid "Moved up succuessfully"
+msgstr "上に移動しました。"
+
+#: /controllers/blocks_controller.php:102
+#: /controllers/links_controller.php:144
+#: /controllers/settings_controller.php:133
+#: /controllers/terms_controller.php:114
+msgid "Could not move up"
+msgstr "上に移動できませんでした。"
+
+#: /controllers/blocks_controller.php:110
+#: /controllers/links_controller.php:152
+#: /controllers/settings_controller.php:141
+#: /controllers/terms_controller.php:122
+msgid "Moved down succuessfully"
+msgstr "下に移動しました。"
+
+#: /controllers/blocks_controller.php:112
+#: /controllers/links_controller.php:154
+#: /controllers/settings_controller.php:143
+#: /controllers/terms_controller.php:124
+msgid "Could not move down"
+msgstr "下に移動できませんでした。"
+
+#: /controllers/blocks_controller.php:128
+#: /controllers/comments_controller.php:100
+#: /controllers/links_controller.php:170
+#: /controllers/messages_controller.php:100
+#: /controllers/nodes_controller.php:245
+#: /controllers/terms_controller.php:140
+msgid "No items selected."
+msgstr "アイテムが選択されていません。"
+
+#: /controllers/blocks_controller.php:135
+msgid "Blocks deleted."
+msgstr "ブロックを保存しました。"
+
+#: /controllers/blocks_controller.php:138
+msgid "Blocks published"
+msgstr "ブロックを公開済にしました。"
+
+#: /controllers/blocks_controller.php:141
+msgid "Blocks unpublished"
+msgstr "ブロックを非公開にしました。"
+
+#: /controllers/blocks_controller.php:143
+#: /controllers/comments_controller.php:115
+#: /controllers/links_controller.php:185
+#: /controllers/messages_controller.php:115
+#: /controllers/nodes_controller.php:266
+#: /controllers/terms_controller.php:155
+#: /controllers/users_controller.php:160;203;215
+msgid "An error occurred."
+msgstr "エラーが発生しました。"
+
+#: /controllers/comments_controller.php:31;123
+#: /views/elements/comments.ctp:7
+#: /views/elements/node_more_info.ctp:33
+#: /views/elements/admin/navigation.ctp:10
+#: /views/nodes/admin_add.ctp:16
+#: /views/nodes/admin_edit.ctp:16
+#: /views/types/admin_add.ctp:10
+#: /views/types/admin_edit.ctp:11
+msgid "Comments"
+msgstr "コメント"
+
+#: /controllers/comments_controller.php:50
+#: /views/comments/admin_edit.ctp:17
+#: /views/comments/admin_index.ctp:14
+#: /views/elements/admin/nodes_filter.ctp:24
+#: /views/nodes/admin_add.ctp:73
+#: /views/nodes/admin_edit.ctp:72
+msgid "Published"
+msgstr "公開済"
+
+#: /controllers/comments_controller.php:52
+#: /views/comments/admin_index.ctp:15
+msgid "Approval"
+msgstr "承認"
+
+#: /controllers/comments_controller.php:60
+msgid "Edit Comment"
+msgstr "コメント編集"
+
+#: /controllers/comments_controller.php:63
+msgid "Invalid Comment"
+msgstr "不正なコメントです。"
+
+#: /controllers/comments_controller.php:68
+msgid "The Comment has been saved"
+msgstr "コメントを保存しました。"
+
+#: /controllers/comments_controller.php:71
+msgid "The Comment could not be saved. Please, try again."
+msgstr "コメントを保存できませんでした。もう一度実行してください。"
+
+#: /controllers/comments_controller.php:81
+msgid "Invalid id for Comment"
+msgstr "不正なコメントです。"
+
+#: /controllers/comments_controller.php:85
+msgid "Comment deleted"
+msgstr "コメントを削除しました。"
+
+#: /controllers/comments_controller.php:107
+msgid "Comments deleted."
+msgstr "コメントを削除しました。"
+
+#: /controllers/comments_controller.php:110
+msgid "Comments published"
+msgstr "コメントを公開済みにしました。"
+
+#: /controllers/comments_controller.php:113
+msgid "Comments unpublished"
+msgstr "コメントを非公開にしました。"
+
+#: /controllers/comments_controller.php:142;154
+msgid "Invalid Node"
+msgstr "不正なノードです。"
+
+#: /controllers/comments_controller.php:162
+msgid "Maximum level reached. You cannot reply to that comment."
+msgstr "最高レベルに達しました。あなたはコメントに返信することができません。"
+
+#: /controllers/comments_controller.php:211
+msgid "Your comment has been added successfully."
+msgstr "コメントを追加しました。"
+
+#: /controllers/comments_controller.php:213
+msgid "Your comment will appear after moderation."
+msgstr "コメントは承認後に表示されます。"
+
+#: /controllers/comments_controller.php:219
+#, fuzzy
+msgid "New comment posted under"
+msgstr "コメントは"
+
+#: /controllers/comments_controller.php:242
+msgid "Sorry, the comment appears to be spam."
+msgstr "申し訳ありません。コメントはスパムと判定されました。"
+
+#: /controllers/comments_controller.php:255
+#: /controllers/contacts_controller.php:159
+msgid "Invalid captcha entry"
+msgstr "不正なcaptcha入力です"
+
+#: /controllers/contacts_controller.php:31
+#: /views/elements/admin/navigation.ctp:35;37
+msgid "Contacts"
+msgstr "コンタクト"
+
+#: /controllers/contacts_controller.php:39
+msgid "Add Contact"
+msgstr "コンタクト追加"
+
+#: /controllers/contacts_controller.php:44;61
+msgid "The Contact has been saved"
+msgstr "コンタクトを追加しました。"
+
+#: /controllers/contacts_controller.php:47;64
+msgid "The Contact could not be saved. Please, try again."
+msgstr "コンタクトを追加でき万でした。もう一度実行してください。"
+
+#: /controllers/contacts_controller.php:53
+msgid "Edit Contact"
+msgstr "コンタクト編集"
+
+#: /controllers/contacts_controller.php:56
+msgid "Invalid Contact"
+msgstr "不正なコンタクトです。"
+
+#: /controllers/contacts_controller.php:74
+msgid "Invalid id for Contact"
+msgstr "不正なコンタクトIDです。"
+
+#: /controllers/contacts_controller.php:78
+msgid "Contact deleted"
+msgstr "コンタクトを削除しました。"
+
+#: /controllers/contacts_controller.php:115
+msgid "Your message has been received..."
+msgstr "メッセージは受信されました。"
+
+#: /controllers/contacts_controller.php:146
+msgid "Sorry, the message appears to be spam."
+msgstr "申し訳ありません。メッセージはスパムと判定されました。"
+
+#: /controllers/filemanager_controller.php:86
+msgid "File saved successfully"
+msgstr "ファイルを保存しました。"
+
+#: /controllers/filemanager_controller.php:96
+#: /views/attachments/admin_add.ctp:12
+msgid "Upload"
+msgstr "アップロード"
+
+#: /controllers/filemanager_controller.php:110
+msgid "File uploaded successfully."
+msgstr "ファイルをアップロードしました。"
+
+#: /controllers/filemanager_controller.php:126
+msgid "File deleted"
+msgstr "ファイル削除"
+
+#: /controllers/filemanager_controller.php:128;151;199;224
+msgid "An error occured"
+msgstr "エラーが発生しました。"
+
+#: /controllers/filemanager_controller.php:149
+msgid "Directory deleted"
+msgstr "ディレクトリ削除"
+
+#: /controllers/filemanager_controller.php:183
+msgid "New Directory"
+msgstr "ディレクトリ追加"
+
+#: /controllers/filemanager_controller.php:195
+msgid "Directory created successfully."
+msgstr "ディレクトリを追加しました。"
+
+#: /controllers/filemanager_controller.php:207
+msgid "New File"
+msgstr "新規ファイル"
+
+#: /controllers/filemanager_controller.php:220
+msgid "File created successfully."
+msgstr "ファイルを作成しました。"
+
+#: /controllers/links_controller.php:54
+msgid "Links"
+msgstr "リンク"
+
+#: /controllers/links_controller.php:76
+msgid "Add Link"
+msgstr "リンク追加"
+
+#: /controllers/links_controller.php:82;108
+msgid "The Link has been saved"
+msgstr "リンクを保存しました。"
+
+#: /controllers/links_controller.php:85;111
+msgid "The Link could not be saved. Please, try again."
+msgstr "リンクを保存できませんでした。もう一度実行してください。"
+
+#: /controllers/links_controller.php:99
+msgid "Edit Link"
+msgstr "リンク編集"
+
+#: /controllers/links_controller.php:102
+msgid "Invalid Link"
+msgstr "不正なリンクです。"
+
+#: /controllers/links_controller.php:131
+msgid "Invalid id for Link"
+msgstr "不正なリンクIDです。"
+
+#: /controllers/links_controller.php:135
+msgid "Link deleted"
+msgstr "リンク削除"
+
+#: /controllers/links_controller.php:177
+msgid "Links deleted."
+msgstr "リンクを削除しました。"
+
+#: /controllers/links_controller.php:180
+msgid "Links published"
+msgstr "リンクを公開済にしました。"
+
+#: /controllers/links_controller.php:183
+msgid "Links unpublished"
+msgstr "リンクを非公開にしました。"
+
+#: /controllers/menus_controller.php:31
+#: /views/elements/admin/navigation.ctp:14;16
+msgid "Menus"
+msgstr "メニュー"
+
+#: /controllers/menus_controller.php:39
+#: /views/elements/admin/navigation.ctp:17
+msgid "Add Menu"
+msgstr "メニュー追加"
+
+#: /controllers/menus_controller.php:44;61
+msgid "The Menu has been saved"
+msgstr "メニューを保存しました。"
+
+#: /controllers/menus_controller.php:47;64
+msgid "The Menu could not be saved. Please, try again."
+msgstr "メニューを保存することができませんでした。"
+
+#: /controllers/menus_controller.php:53
+msgid "Edit Menu"
+msgstr "メニュー編集"
+
+#: /controllers/menus_controller.php:56
+msgid "Invalid Menu"
+msgstr "不正なメニューです。"
+
+#: /controllers/menus_controller.php:74
+msgid "Invalid id for Menu"
+msgstr "不正なメニューIDです。"
+
+#: /controllers/menus_controller.php:78
+msgid "Menu deleted"
+msgstr "メニューを削除しました。"
+
+#: /controllers/messages_controller.php:31
+#: /views/elements/admin/navigation.ctp:38
+msgid "Messages"
+msgstr "メッセージ"
+
+#: /controllers/messages_controller.php:50
+#: /views/messages/admin_index.ctp:7
+msgid "Read"
+msgstr "読み"
+
+#: /controllers/messages_controller.php:52
+#: /views/messages/admin_index.ctp:6
+msgid "Unread"
+msgstr "未読"
+
+#: /controllers/messages_controller.php:60
+msgid "Edit Message"
+msgstr "メッセージ編集"
+
+#: /controllers/messages_controller.php:63
+msgid "Invalid Message"
+msgstr "不正メッセージです。"
+
+#: /controllers/messages_controller.php:68
+msgid "The Message has been saved"
+msgstr "メッセージを保存しました。"
+
+#: /controllers/messages_controller.php:71
+msgid "The Message could not be saved. Please, try again."
+msgstr "メッセージを保存できませんでした。もう一度実行してください。"
+
+#: /controllers/messages_controller.php:81
+msgid "Invalid id for Message"
+msgstr "不正メッセージです。"
+
+#: /controllers/messages_controller.php:85
+msgid "Message deleted"
+msgstr "メッセージ削除"
+
+#: /controllers/messages_controller.php:107
+msgid "Messages deleted."
+msgstr "メッセージを削除しました。"
+
+#: /controllers/messages_controller.php:110
+msgid "Messages marked as read"
+msgstr "メッセージを既読にしました。"
+
+#: /controllers/messages_controller.php:113
+msgid "Messages marked as unread"
+msgstr "メッセージを未読にしました。"
+
+#: /controllers/nodes_controller.php:42
+#: /views/elements/admin/navigation.ctp:4
+msgid "Content"
+msgstr "コンテンツ"
+
+#: /controllers/nodes_controller.php:73
+#: /views/elements/admin/navigation.ctp:7
+#: /views/nodes/admin_index.ctp:9
+msgid "Create content"
+msgstr "コンテンツ作成"
+
+#: /controllers/nodes_controller.php:86;134
+msgid "Content type does not exist."
+msgstr "コンテンツタイプが存在しません。"
+
+#: /controllers/nodes_controller.php:91
+msgid "Create content: "
+msgstr "コンテント新規作成"
+
+#: /controllers/nodes_controller.php:125;371;384
+msgid "Invalid content"
+msgstr "不正なコンテントです。"
+
+#: /controllers/nodes_controller.php:139
+msgid "Edit content: "
+msgstr "コンテント編集"
+
+#: /controllers/nodes_controller.php:206
+msgid "Paths updated."
+msgstr "パスが更新されました。"
+
+#: /controllers/nodes_controller.php:213
+msgid "Invalid id for Node"
+msgstr "不正なノードIDです"
+
+#: /controllers/nodes_controller.php:217
+msgid "Node deleted"
+msgstr "ノード削除"
+
+#: /controllers/nodes_controller.php:252
+msgid "Nodes deleted."
+msgstr "ノードを削除しました。"
+
+#: /controllers/nodes_controller.php:255
+msgid "Nodes published"
+msgstr "ノードを公開済みにしました。"
+
+#: /controllers/nodes_controller.php:258
+msgid "Nodes unpublished"
+msgstr "ノードを非公開にしました。"
+
+#: /controllers/nodes_controller.php:261
+msgid "Nodes promoted"
+msgstr ""
+
+#: /controllers/nodes_controller.php:264
+msgid "Nodes unpromoted"
+msgstr ""
+
+#: /controllers/nodes_controller.php:286;319;345
+msgid "Invalid content type."
+msgstr "不正なコンテンツタイプです"
+
+#: /controllers/nodes_controller.php:302
+msgid "Invalid Term."
+msgstr "不正な期間です"
+
+#: /controllers/nodes_controller.php:333
+msgid "Nodes"
+msgstr "ノード"
+
+#: /controllers/regions_controller.php:31
+msgid "Region"
+msgstr "領域"
+
+#: /controllers/regions_controller.php:39
+msgid "Add Region"
+msgstr "領域新規登録"
+
+#: /controllers/regions_controller.php:44;61
+msgid "The Region has been saved"
+msgstr "領域を保存しました。"
+
+#: /controllers/regions_controller.php:47;64
+msgid "The Region could not be saved. Please, try again."
+msgstr "領域を保存することができませんでした。もう一度実行してください。"
+
+#: /controllers/regions_controller.php:53
+msgid "Edit Region"
+msgstr "領域編集"
+
+#: /controllers/regions_controller.php:56
+msgid "Invalid Region"
+msgstr "不正な領域です。"
+
+#: /controllers/regions_controller.php:74
+msgid "Invalid id for Region"
+msgstr "不正な領域IDです。"
+
+#: /controllers/regions_controller.php:78
+msgid "Region deleted"
+msgstr "地域を領域しました。"
+
+#: /controllers/roles_controller.php:31
+#: /views/elements/admin/navigation.ctp:45
+msgid "Roles"
+msgstr "ロール"
+
+#: /controllers/roles_controller.php:39
+msgid "Add Role"
+msgstr "ロール追加"
+
+#: /controllers/roles_controller.php:44;61
+msgid "The Role has been saved"
+msgstr "ロールを追加しました。"
+
+#: /controllers/roles_controller.php:47;64
+msgid "The Role could not be saved. Please, try again."
+msgstr "ロールを登録できませんでした。もう一度実行してください。"
+
+#: /controllers/roles_controller.php:53
+msgid "Edit Role"
+msgstr "ロール編集"
+
+#: /controllers/roles_controller.php:56
+msgid "Invalid Role"
+msgstr "不正なロールです"
+
+#: /controllers/roles_controller.php:74
+msgid "Invalid id for Role"
+msgstr "不正なロールIDです"
+
+#: /controllers/roles_controller.php:78
+msgid "Role deleted"
+msgstr "ロールを削除しました。"
+
+#: /controllers/settings_controller.php:38
+msgid "Dashboard"
+msgstr "ダッシュボード"
+
+#: /controllers/settings_controller.php:54
+msgid "Invalid Setting."
+msgstr "不正な設定です。"
+
+#: /controllers/settings_controller.php:66;83
+msgid "The Setting has been saved"
+msgstr "設定は保存しました。"
+
+#: /controllers/settings_controller.php:69;86
+msgid "The Setting could not be saved. Please, try again."
+msgstr "設定を保存することができませんでした。もう一度実行してください。"
+
+#: /controllers/settings_controller.php:78
+msgid "Invalid Setting"
+msgstr "不正な設定です。"
+
+#: /controllers/settings_controller.php:96
+msgid "Invalid id for Setting"
+msgstr "不正な設定IDです。"
+
+#: /controllers/settings_controller.php:100
+msgid "Setting deleted"
+msgstr "設定を削除しました。"
+
+#: /controllers/settings_controller.php:106
+#: /views/elements/admin/navigation.ctp:57
+#: /views/settings/admin_add.ctp:7
+#: /views/settings/admin_edit.ctp:7
+msgid "Settings"
+msgstr "設定"
+
+#: /controllers/settings_controller.php:109
+msgid "Settings updated successfully"
+msgstr "設定を更新しました。"
+
+#: /controllers/settings_controller.php:123
+msgid "Invalid Setting key"
+msgstr "不正な設定Keyです。"
+
+#: /controllers/terms_controller.php:40
+#: /views/nodes/admin_add.ctp:15
+#: /views/nodes/admin_edit.ctp:15
+msgid "Terms"
+msgstr "期間"
+
+#: /controllers/terms_controller.php:56
+msgid "Add Term"
+msgstr "期間新規登録"
+
+#: /controllers/terms_controller.php:61;85
+msgid "The Term has been saved"
+msgstr "期間を保存しました。"
+
+#: /controllers/terms_controller.php:64;88
+msgid "The Term could not be saved. Please, try again."
+msgstr "期間を保存することができませんでした。もう一度実行してください。"
+
+#: /controllers/terms_controller.php:77
+msgid "Edit Term"
+msgstr "期間編集"
+
+#: /controllers/terms_controller.php:80
+msgid "Invalid Term"
+msgstr "不正な期間です。"
+
+#: /controllers/terms_controller.php:101
+msgid "Invalid id for Term"
+msgstr "不正な期間IDです。"
+
+#: /controllers/terms_controller.php:105
+msgid "Term deleted"
+msgstr "期間を削除しました。"
+
+#: /controllers/terms_controller.php:147
+msgid "Terms deleted."
+msgstr "期間を削除しました。"
+
+#: /controllers/terms_controller.php:150
+msgid "Terms published"
+msgstr "期間を公開済みにしました。"
+
+#: /controllers/terms_controller.php:153
+msgid "Terms unpublished"
+msgstr "期間を未公開にしました。"
+
+#: /controllers/themes_controller.php:37
+#: /views/elements/admin/navigation.ctp:50;52
+msgid "Themes"
+msgstr "テーマ"
+
+#: /controllers/themes_controller.php:58
+msgid "Theme activated."
+msgstr "テーマを有効しました。"
+
+#: /controllers/themes_controller.php:64
+#: /views/elements/admin/navigation.ctp:53
+msgid "Add a new theme"
+msgstr "テーマ新規登録"
+
+#: /controllers/types_controller.php:31
+#: /views/types/admin_add.ctp:7
+#: /views/types/admin_edit.ctp:8
+msgid "Type"
+msgstr "タイプ"
+
+#: /controllers/types_controller.php:39
+msgid "Add Type"
+msgstr "タイプ新規登録"
+
+#: /controllers/types_controller.php:44;64
+msgid "The Type has been saved"
+msgstr "タイプを登録しました。"
+
+#: /controllers/types_controller.php:47;67
+msgid "The Type could not be saved. Please, try again."
+msgstr "タイプを登録することができませんでした。もう一度実行してください。"
+
+#: /controllers/types_controller.php:56
+msgid "Edit Type"
+msgstr "タイプ編集"
+
+#: /controllers/types_controller.php:59
+msgid "Invalid Type"
+msgstr "不正なタイプです。"
+
+#: /controllers/types_controller.php:80
+msgid "Invalid id for Type"
+msgstr "不正なタイプIDです。"
+
+#: /controllers/types_controller.php:84
+msgid "Tyoe deleted"
+msgstr "タイプを削除しました。"
+
+#: /controllers/users_controller.php:35;116
+#: /views/elements/admin/navigation.ctp:42;44
+#: /views/users/admin_index.ctp:2
+msgid "Users"
+msgstr "ユーザ"
+
+#: /controllers/users_controller.php:45;62
+msgid "The User has been saved"
+msgstr "ユーザを保存しました。"
+
+#: /controllers/users_controller.php:48;65;138
+msgid "The User could not be saved. Please, try again."
+msgstr "ユーザを保存する子ができませんでした。もう一度実行してください。"
+
+#: /controllers/users_controller.php:57;77
+msgid "Invalid User"
+msgstr "不正なユーザです。"
+
+#: /controllers/users_controller.php:82
+msgid "Password has been reset."
+msgstr "パスワードをリセットしました。"
+
+#: /controllers/users_controller.php:85
+msgid "Password could not be reset. Please, try again."
+msgstr "パスワードをリセットすることができませんでした。もう一度実行してください。"
+
+#: /controllers/users_controller.php:95
+msgid "Invalid id for User"
+msgstr "不正なユーザです。"
+
+#: /controllers/users_controller.php:99
+msgid "User deleted"
+msgstr "ユーザを削除しました。"
+
+#: /controllers/users_controller.php:105
+msgid "Admin Login"
+msgstr "管理者ログイン"
+
+#: /controllers/users_controller.php:110;241
+msgid "Log out successful."
+msgstr "ログアウトしました。"
+
+#: /controllers/users_controller.php:120
+msgid "Register"
+msgstr "地域"
+
+#: /controllers/users_controller.php:135
+msgid "You have successfully registered an account. An email has been sent with further instructions."
+msgstr ""
+
+#: /controllers/users_controller.php:158
+msgid "Account activated successfully."
+msgstr "アカウントを有効にしました"
+
+#: /controllers/users_controller.php:170
+msgid "Forgot Password"
+msgstr "パスワード紛失"
+
+#: /controllers/users_controller.php:175
+msgid "Invalid username."
+msgstr "不正なユーザです。"
+
+#: /controllers/users_controller.php:187;200
+msgid "Reset Password"
+msgstr "パスワードリセット"
+
+#: /controllers/users_controller.php:190
+msgid "An email has been sent with instructions for resetting your password."
+msgstr ""
+
+#: /controllers/users_controller.php:194;229
+msgid "An error occurred. Please try again."
+msgstr "エラーが発生しました。もう一度実行してください。"
+
+#: /controllers/users_controller.php:225
+msgid "Your password has been reset successfully."
+msgstr "パスワードリセット完了しました。"
+
+#: /controllers/users_controller.php:237
+msgid "Log in"
+msgstr "ログイン"
+
+#: /controllers/users_controller.php:249
+msgid "Invalid User."
+msgstr "不正なユーザです。"
+
+#: /controllers/vocabularies_controller.php:31
+#: /views/vocabularies/admin_add.ctp:7
+#: /views/vocabularies/admin_edit.ctp:8
+msgid "Vocabulary"
+msgstr "用語"
+
+#: /controllers/vocabularies_controller.php:39
+msgid "Add Vocabulary"
+msgstr "用語新規登録"
+
+#: /controllers/vocabularies_controller.php:44;64
+msgid "The Vocabulary has been saved"
+msgstr "用語を保存しました。"
+
+#: /controllers/vocabularies_controller.php:47;67
+msgid "The Vocabulary could not be saved. Please, try again."
+msgstr "用語を保存することができませんでした。もう一度実行してください。"
+
+#: /controllers/vocabularies_controller.php:56
+msgid "Edit Vocabulary"
+msgstr "用語編集"
+
+#: /controllers/vocabularies_controller.php:59
+msgid "Invalid Vocabulary"
+msgstr "不正な用語です。"
+
+#: /controllers/vocabularies_controller.php:80
+msgid "Invalid id for Vocabulary"
+msgstr "不正な用語IDです。"
+
+#: /controllers/vocabularies_controller.php:84
+msgid "Vocabulary deleted"
+msgstr "用語を削除しました。"
+
+#: /plugins/acl/controllers/acl_acos_controller.php:19
+#: /plugins/acl/views/acl_acos/admin_index.ctp:2
+msgid "Acos"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_acos_controller.php:26
+#: /plugins/acl/views/acl_acos/admin_add.ctp:2
+#: /plugins/acl/views/acl_acos/admin_edit.ctp:2
+msgid "Add Aco"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_acos_controller.php:31;48
+msgid "The Aco has been saved"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_acos_controller.php:34;51
+msgid "The Aco could not be saved. Please, try again."
+msgstr ""
+
+#: /plugins/acl/controllers/acl_acos_controller.php:40
+msgid "Edit Aco"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_acos_controller.php:43
+msgid "Invalid Aco"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_acos_controller.php:61
+msgid "Invalid id for Aco"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_acos_controller.php:65
+msgid "Aco deleted"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_actions_controller.php:20
+#: /plugins/acl/views/acl_acos/admin_index.ctp:18
+#: /plugins/acl/views/acl_actions/admin_index.ctp:20
+#: /plugins/acl/views/acl_aros/admin_index.ctp:18
+#: /views/attachments/admin_browse.ctp:19
+#: /views/attachments/admin_index.ctp:17
+#: /views/blocks/admin_index.ctp:20
+#: /views/comments/admin_index.ctp:31
+#: /views/contacts/admin_index.ctp:17
+#: /views/filemanager/admin_browse.ctp:30
+#: /views/links/admin_index.ctp:26
+#: /views/menus/admin_index.ctp:17
+#: /views/messages/admin_index.ctp:30
+#: /views/nodes/admin_index.ctp:36
+#: /views/regions/admin_index.ctp:16
+#: /views/roles/admin_index.ctp:16
+#: /views/settings/admin_index.ctp:17
+#: /views/terms/admin_index.ctp:25
+#: /views/types/admin_index.ctp:17
+#: /views/users/admin_index.ctp:18
+#: /views/vocabularies/admin_index.ctp:16
+msgid "Actions"
+msgstr "アクション"
+
+#: /plugins/acl/controllers/acl_actions_controller.php:32
+msgid "Add Action"
+msgstr "アクション新規登録"
+
+#: /plugins/acl/controllers/acl_actions_controller.php:72
+msgid "Edit Action"
+msgstr "アクション編集"
+
+#: /plugins/acl/controllers/acl_actions_controller.php:75
+msgid "Invalid Action"
+msgstr "不正なアクションです。"
+
+#: /plugins/acl/controllers/acl_actions_controller.php:80
+msgid "The Action has been saved"
+msgstr "アクションを保存しました。"
+
+#: /plugins/acl/controllers/acl_actions_controller.php:83
+msgid "The Action could not be saved. Please, try again."
+msgstr "アクションを保存することができませんでした。もう一度実行してください。"
+
+#: /plugins/acl/controllers/acl_actions_controller.php:110;121
+msgid "Invalid id for Action"
+msgstr "不正なアクションIDです。"
+
+#: /plugins/acl/controllers/acl_actions_controller.php:114
+msgid "Action deleted"
+msgstr "アクションを削除しました。"
+
+#: /plugins/acl/controllers/acl_actions_controller.php:126
+msgid "Action moved up"
+msgstr "アクションを上へ移動"
+
+#: /plugins/acl/controllers/acl_actions_controller.php:131
+msgid "Action moved down"
+msgstr "アクションを下へ移動"
+
+#: /plugins/acl/controllers/acl_aros_controller.php:19
+#: /plugins/acl/views/acl_aros/admin_index.ctp:2
+msgid "Aros"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_aros_controller.php:26
+#: /plugins/acl/views/acl_aros/admin_add.ctp:2
+#: /plugins/acl/views/acl_aros/admin_edit.ctp:2
+msgid "Add Aro"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_aros_controller.php:31;48
+msgid "The Aro has been saved"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_aros_controller.php:34;51
+msgid "The Aro could not be saved. Please, try again."
+msgstr ""
+
+#: /plugins/acl/controllers/acl_aros_controller.php:40
+msgid "Edit Aro"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_aros_controller.php:43
+msgid "Invalid Aro"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_aros_controller.php:61
+msgid "Invalid id for Aro"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_aros_controller.php:65
+msgid "Aro deleted"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_permissions_controller.php:19
+#: /views/elements/admin/navigation.ctp:46
+msgid "Permissions"
+msgstr "権限"
+
+#: /plugins/acl/views/acl_acos/admin_index.ctp:6
+msgid "New Aco"
+msgstr ""
+
+#: /plugins/acl/views/acl_acos/admin_index.ctp:24
+#: /plugins/acl/views/acl_actions/admin_index.ctp:41
+#: /plugins/acl/views/acl_aros/admin_index.ctp:24
+#: /views/attachments/admin_browse.ctp:25
+#: /views/attachments/admin_index.ctp:23
+#: /views/blocks/admin_index.ctp:28
+#: /views/comments/admin_index.ctp:37
+#: /views/contacts/admin_index.ctp:25
+#: /views/links/admin_index.ctp:34
+#: /views/menus/admin_index.ctp:24
+#: /views/messages/admin_index.ctp:36
+#: /views/nodes/admin_index.ctp:42
+#: /views/regions/admin_index.ctp:22
+#: /views/roles/admin_index.ctp:22
+#: /views/settings/admin_index.ctp:25
+#: /views/terms/admin_index.ctp:33
+#: /views/types/admin_index.ctp:23
+#: /views/users/admin_index.ctp:24
+#: /views/vocabularies/admin_index.ctp:23
+msgid "Edit"
+msgstr "編集"
+
+#: /plugins/acl/views/acl_acos/admin_index.ctp:25
+#: /plugins/acl/views/acl_actions/admin_index.ctp:42
+#: /plugins/acl/views/acl_aros/admin_index.ctp:25
+#: /views/attachments/admin_browse.ctp:26
+#: /views/attachments/admin_index.ctp:24
+#: /views/blocks/admin_index.ctp:29;53
+#: /views/comments/admin_index.ctp:38;70
+#: /views/contacts/admin_index.ctp:26
+#: /views/filemanager/admin_browse.ctp:37;51
+#: /views/links/admin_index.ctp:35;57
+#: /views/menus/admin_index.ctp:25
+#: /views/messages/admin_index.ctp:37;62
+#: /views/nodes/admin_index.ctp:43;78
+#: /views/regions/admin_index.ctp:23
+#: /views/roles/admin_index.ctp:23
+#: /views/settings/admin_index.ctp:26
+#: /views/terms/admin_index.ctp:34;55
+#: /views/types/admin_index.ctp:24
+#: /views/users/admin_index.ctp:25
+#: /views/vocabularies/admin_index.ctp:24
+msgid "Delete"
+msgstr "削除"
+
+#: /plugins/acl/views/acl_acos/admin_index.ctp:25
+#: /plugins/acl/views/acl_actions/admin_index.ctp:42
+#: /plugins/acl/views/acl_aros/admin_index.ctp:25
+#: /views/attachments/admin_browse.ctp:26
+#: /views/attachments/admin_index.ctp:24
+#: /views/blocks/admin_index.ctp:29
+#: /views/comments/admin_index.ctp:38
+#: /views/contacts/admin_index.ctp:26
+#: /views/links/admin_index.ctp:35
+#: /views/menus/admin_index.ctp:25
+#: /views/messages/admin_index.ctp:37
+#: /views/nodes/admin_index.ctp:43
+#: /views/regions/admin_index.ctp:23
+#: /views/roles/admin_index.ctp:23
+#: /views/settings/admin_index.ctp:26
+#: /views/terms/admin_index.ctp:34
+#: /views/types/admin_index.ctp:24
+#: /views/users/admin_index.ctp:25
+#: /views/vocabularies/admin_index.ctp:24
+msgid "Are you sure?"
+msgstr "本当に？"
+
+#: /plugins/acl/views/acl_acos/admin_index.ctp:44
+#: /plugins/acl/views/acl_aros/admin_index.ctp:44
+#: /views/attachments/admin_browse.ctp:56
+#: /views/attachments/admin_index.ctp:50
+#: /views/blocks/admin_index.ctp:63
+#: /views/comments/admin_index.ctp:80
+#: /views/contacts/admin_index.ctp:49
+#: /views/menus/admin_index.ctp:43
+#: /views/messages/admin_index.ctp:72
+#: /views/nodes/admin_index.ctp:88
+#: /views/regions/admin_index.ctp:40
+#: /views/roles/admin_index.ctp:40
+#: /views/settings/admin_index.ctp:53
+#: /views/types/admin_index.ctp:42
+#: /views/users/admin_index.ctp:44
+#: /views/vocabularies/admin_index.ctp:41
+msgid "Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%"
+msgstr ""
+
+#: /plugins/acl/views/acl_actions/admin_add.ctp:9
+#: /plugins/acl/views/acl_actions/admin_edit.ctp:11
+msgid "Choose none if the Aco is a controller."
+msgstr ""
+
+#: /plugins/acl/views/acl_actions/admin_index.ctp:10
+msgid "New Action"
+msgstr "アクション新規作成"
+
+#: /plugins/acl/views/acl_actions/admin_index.ctp:11
+#: /plugins/acl/views/acl_permissions/admin_index.ctp:9
+msgid "Generate Actions"
+msgstr "アクションを生成する"
+
+#: /plugins/acl/views/acl_actions/admin_index.ctp:18
+#: /plugins/acl/views/acl_permissions/admin_index.ctp:20
+#: /views/links/admin_index.ctp:23
+#: /views/settings/admin_view.ctp:4
+#: /views/terms/admin_index.ctp:23
+msgid "Id"
+msgstr "ID"
+
+#: /plugins/acl/views/acl_actions/admin_index.ctp:19
+#: /plugins/acl/views/acl_permissions/admin_index.ctp:21
+msgid "Alias"
+msgstr "別名"
+
+#: /plugins/acl/views/acl_actions/admin_index.ctp:43
+#: /views/blocks/admin_index.ctp:26
+#: /views/links/admin_index.ctp:32
+#: /views/settings/admin_index.ctp:23
+#: /views/terms/admin_index.ctp:31
+msgid "Move up"
+msgstr "上へ移動"
+
+#: /plugins/acl/views/acl_actions/admin_index.ctp:44
+#: /views/blocks/admin_index.ctp:27
+#: /views/links/admin_index.ctp:33
+#: /views/settings/admin_index.ctp:24
+#: /views/terms/admin_index.ctp:32
+msgid "Move down"
+msgstr "下へ移動"
+
+#: /plugins/acl/views/acl_aros/admin_index.ctp:6
+msgid "New Aro"
+msgstr ""
+
+#: /plugins/acl/views/acl_permissions/admin_index.ctp:10
+msgid "Edit Actions"
+msgstr "アクション編集"
+
+#: /plugins/acl/views/acl_permissions/admin_toggle.ctp:9
+msgid "error"
+msgstr "エラー"
+
+#: /plugins/install/controllers/install_controller.php:56
+msgid "Installation: Welcome"
+msgstr ""
+
+#: /plugins/install/controllers/install_controller.php:64
+msgid "Step 1: Database"
+msgstr "ステップ１：データベース"
+
+#: /plugins/install/controllers/install_controller.php:85
+msgid "Could not write database.php file."
+msgstr "deatabase.php ファイルを書き込みできませんでした。"
+
+#: /plugins/install/controllers/install_controller.php:88;108
+msgid "Could not connect to database."
+msgstr "データベースに接続できませんでした。"
+
+#: /plugins/install/controllers/install_controller.php:98
+msgid "Step 2: Run SQL"
+msgstr "ステップ２：SQL 実行"
+
+#: /plugins/install/controllers/install_controller.php:126
+msgid "Installation completed successfully"
+msgstr "インストールを完了しました。"
+
+#: /plugins/install/controllers/install_controller.php:132
+msgid "Installataion files deleted successfully."
+msgstr "インストールファイルを削除しました。"
+
+#: /plugins/install/controllers/install_controller.php:136
+msgid "Could not delete installation files."
+msgstr "インストールファイルを削除することができませんでした。"
+
+#: /plugins/install/views/install/data.ctp:5
+msgid "Click here to build your database"
+msgstr "データベースを構築するために、ココをクリックしてください。"
+
+#: /plugins/install/views/install/database.ctp:9
+#: /views/blocks/admin_index.ctp:57
+#: /views/comments/admin_index.ctp:74
+#: /views/links/admin_index.ctp:61
+#: /views/messages/admin_index.ctp:66
+#: /views/nodes/admin_index.ctp:82
+#: /views/terms/admin_index.ctp:59
+msgid "Submit"
+msgstr "送信"
+
+#: /plugins/install/views/install/finish.ctp:5
+msgid "Admin panel:"
+msgstr "管理者パネル"
+
+#: /plugins/install/views/install/finish.ctp:15
+msgid "Delete the installation directory <strong>/app/plugins/install</strong>."
+msgstr ""
+
+#: /plugins/install/views/install/finish.ctp:23
+msgid "Click here to delete installation files"
+msgstr "インストールファイルを削除するために、ここをクリックしてください。"
+
+#: /plugins/install/views/install/index.ctp:3
+msgid "Click here to begin installation"
+msgstr "インストールを開始するには、ここをクリックしてください。"
+
+#: /plugins/install/views/layouts/install.ctp:5
+#: /views/layouts/admin.ctp:5
+#: /views/layouts/admin_full.ctp:5
+#: /views/layouts/admin_login.ctp:5
+msgid "Croogo"
+msgstr "Croogo"
+
+#: /plugins/install/views/layouts/install.ctp:21
+msgid "Install Croogo"
+msgstr "Croogo Install"
+
+#: /views/attachments/admin_browse.ctp:7
+#: /views/attachments/admin_index.ctp:6
+msgid "New Attachment"
+msgstr "新規添付ファイル"
+
+#: /views/attachments/admin_browse.ctp:18
+#: /views/attachments/admin_index.ctp:16
+msgid "URL"
+msgstr "URL"
+
+#: /views/attachments/admin_browse.ctp:37
+msgid "Insert"
+msgstr "挿入"
+
+#: /views/attachments/admin_edit.ctp:9
+msgid "Attachment"
+msgstr "添付ファイル"
+
+#: /views/attachments/admin_edit.ctp:10
+msgid "Info"
+msgstr "情報"
+
+#: /views/attachments/admin_edit.ctp:29
+msgid "Caption"
+msgstr "概要"
+
+#: /views/attachments/admin_edit.ctp:36
+msgid "File URL"
+msgstr "ファイルURL"
+
+#: /views/attachments/admin_edit.ctp:37
+msgid "Mime Type"
+msgstr "MIMEタイプ"
+
+#: /views/blocks/admin_add.ctp:7
+#: /views/blocks/admin_edit.ctp:7
+msgid "Block"
+msgstr "ブロック"
+
+#: /views/blocks/admin_add.ctp:8
+#: /views/blocks/admin_edit.ctp:8
+#: /views/links/admin_add.ctp:8
+#: /views/links/admin_edit.ctp:8
+msgid "Access"
+msgstr "アクセス"
+
+#: /views/blocks/admin_add.ctp:9
+#: /views/blocks/admin_edit.ctp:9
+msgid "Visibilities"
+msgstr "透明度"
+
+#: /views/blocks/admin_add.ctp:16
+#: /views/blocks/admin_edit.ctp:17
+msgid "unique name for your block"
+msgstr ""
+
+#: /views/blocks/admin_add.ctp:17
+#: /views/blocks/admin_edit.ctp:18
+msgid "if you are not sure, choose 'none'"
+msgstr ""
+
+#: /views/blocks/admin_add.ctp:35
+#: /views/blocks/admin_edit.ctp:36
+msgid "Enter one URL per line. Leave blank if you want this Block to appear in all pages."
+msgstr ""
+
+#: /views/blocks/admin_index.ctp:6
+msgid "New Block"
+msgstr "ブロック新規登録"
+
+#: /views/blocks/admin_index.ctp:51
+#: /views/comments/admin_index.ctp:68
+#: /views/links/admin_index.ctp:55
+#: /views/nodes/admin_index.ctp:74
+msgid "Publish"
+msgstr "公開"
+
+#: /views/blocks/admin_index.ctp:52
+#: /views/comments/admin_index.ctp:69
+#: /views/links/admin_index.ctp:56
+#: /views/nodes/admin_index.ctp:75
+msgid "Unpublish"
+msgstr "非公開"
+
+#: /views/comments/admin_edit.ctp:8
+#: /views/elements/comments.ctp:5
+#: /views/elements/node_more_info.ctp:31
+msgid "Comment"
+msgstr "コメント"
+
+#: /views/comments/admin_edit.ctp:9
+msgid "Contact Info"
+msgstr "連絡先"
+
+#: /views/comments/rss/index.ctp:16
+#, fuzzy
+msgid "Comment on"
+msgstr "コメント"
+
+#: /views/comments/rss/index.ctp:16
+#: /views/elements/node_info.ctp:9
+#: /views/themes/admin_index.ctp:15;33
+msgid "by"
+msgstr ""
+
+#: /views/contacts/admin_add.ctp:7
+#: /views/contacts/admin_edit.ctp:7
+msgid "Contact"
+msgstr "連絡"
+
+#: /views/contacts/admin_add.ctp:8
+#: /views/contacts/admin_edit.ctp:8
+msgid "Details"
+msgstr "詳細"
+
+#: /views/contacts/admin_add.ctp:9
+#: /views/contacts/admin_edit.ctp:9
+#: /views/contacts/view.ctp:20
+msgid "Message"
+msgstr "メッセージ"
+
+#: /views/contacts/admin_add.ctp:39
+#: /views/contacts/admin_edit.ctp:40
+msgid "Let users leave a message"
+msgstr ""
+
+#: /views/contacts/admin_add.ctp:42
+#: /views/contacts/admin_edit.ctp:43
+msgid "Save messages in database"
+msgstr "DBにメッセージを保存しました。"
+
+#: /views/contacts/admin_add.ctp:45
+#: /views/contacts/admin_edit.ctp:46
+msgid "Notify by email instantly"
+msgstr "すぐにメールで通知する"
+
+#: /views/contacts/admin_add.ctp:48
+#: /views/contacts/admin_edit.ctp:49
+#: /views/types/admin_add.ctp:56
+msgid "Spam protection (requires Akismet API key)"
+msgstr "スパム保護（Akismet API Key が必要です）"
+
+#: /views/contacts/admin_add.ctp:51
+#: /views/contacts/admin_edit.ctp:52
+#: /views/types/admin_add.ctp:59
+msgid "Use captcha? (requires Recaptcha API key)"
+msgstr "captcha認証を使用しますか？（Recaptcha API key が必要です）"
+
+#: /views/contacts/admin_add.ctp:56
+#: /views/contacts/admin_edit.ctp:57
+#: /views/types/admin_add.ctp:65
+#: /views/types/admin_edit.ctp:66
+msgid "You can manage your API keys here."
+msgstr ""
+
+#: /views/contacts/admin_index.ctp:6
+msgid "New Contact"
+msgstr "新規連絡先"
+
+#: /views/contacts/view.ctp:17
+msgid "Your name"
+msgstr "あなたの名前"
+
+#: /views/contacts/view.ctp:18
+msgid "Your email"
+msgstr "あなたのメールアドレス"
+
+#: /views/contacts/view.ctp:19
+msgid "Subject"
+msgstr "題名"
+
+#: /views/contacts/view.ctp:24
+msgid "Send"
+msgstr "送信済み"
+
+#: /views/elements/comment.ctp:13
+msgid "said on"
+msgstr ""
+
+#: /views/elements/comment.ctp:19
+msgid "Reply"
+msgstr "返信"
+
+#: /views/elements/comments_form.ctp:2
+msgid "Add new comment"
+msgstr "コメントを新規登録"
+
+#: /views/elements/comments_form.ctp:7
+msgid "Go back to original post"
+msgstr ""
+
+#: /views/elements/comments_form.ctp:23;39
+msgid "Name"
+msgstr "名前"
+
+#: /views/elements/comments_form.ctp:28;40
+msgid "Email"
+msgstr "メール"
+
+#: /views/elements/comments_form.ctp:33;41
+msgid "Website"
+msgstr "webサイト"
+
+#: /views/elements/comments_form.ctp:48
+msgid "Post comment"
+msgstr ""
+
+#: /views/elements/node_info.ctp:6
+msgid "Posted"
+msgstr ""
+
+#: /views/elements/node_info.ctp:20
+msgid "on"
+msgstr ""
+
+#: /views/elements/node_more_info.ctp:17
+msgid "Posted in"
+msgstr ""
+
+#: /views/elements/node_more_info.ctp:29
+msgid "Leave a comment"
+msgstr "コメントを取り除く"
+
+#: /views/elements/admin/logo.ctp:2
+msgid "Admin Panel"
+msgstr "管理者パネル"
+
+#: /views/elements/admin/logo.ctp:4
+msgid "Visit website"
+msgstr "Webサイトを見る"
+
+#: /views/elements/admin/navigation.ctp:6
+msgid "List"
+msgstr "リスト"
+
+#: /views/elements/admin/navigation.ctp:8
+msgid "Content types"
+msgstr "Content type"
+
+#: /views/elements/admin/navigation.ctp:9
+#: /views/types/admin_add.ctp:8
+#: /views/types/admin_edit.ctp:9
+msgid "Taxonomy"
+msgstr "分類"
+
+#: /views/elements/admin/navigation.ctp:24
+msgid "Regions"
+msgstr "地域"
+
+#: /views/elements/admin/navigation.ctp:28
+msgid "Media"
+msgstr "メディア"
+
+#: /views/elements/admin/navigation.ctp:31
+msgid "File Manager"
+msgstr "ファイルマネージャー"
+
+#: /views/elements/admin/nodes_filter.ctp:25
+msgid "Unpublished"
+msgstr "非公開"
+
+#: /views/elements/admin/nodes_filter.ctp:35
+msgid "Promoted"
+msgstr "推奨"
+
+#: /views/elements/admin/nodes_filter.ctp:37
+msgid "Yes"
+msgstr "はい"
+
+#: /views/elements/admin/nodes_filter.ctp:38
+msgid "No"
+msgstr "いいえ"
+
+#: /views/elements/admin/nodes_filter.ctp:43
+#: /views/nodes/admin_index.ctp:10
+msgid "Filter"
+msgstr "フィルター"
+
+#: /views/elements/admin/quick.ctp:4
+msgid "You are logged in as "
+msgstr "としてログイン"
+
+#: /views/elements/admin/quick.ctp:5
+msgid "Log Out"
+msgstr "ログアウト"
+
+#: /views/elements/email/text/comment.ctp:1
+msgid "A new comment has been posted under: "
+msgstr ""
+
+#: /views/elements/email/text/forgot_password.ctp:1
+#: /views/elements/email/text/register.ctp:1
+msgid "Hello"
+msgstr "こんにちは"
+
+#: /views/elements/email/text/forgot_password.ctp:4
+msgid "Please visit this link to reset your password"
+msgstr "パスワードをリセットするには、このリンクにアクセスしてください。"
+
+#: /views/elements/email/text/forgot_password.ctp:14
+msgid "If you did not request a password reset, then please ignore this email."
+msgstr "あなたがパスワードリセットを行っていない場合、このメールを破棄してください。"
+
+#: /views/elements/email/text/register.ctp:4
+msgid "Please visit this link to activate your account"
+msgstr "アカウントを有効にするためには、このリンクにアクセスしてください"
+
+#: /views/errors/missing_action.ctp:1
+#: /views/errors/missing_controller.ctp:1
+msgid "Page not found"
+msgstr "ページが見つかりませんでした。"
+
+#: /views/errors/missing_action.ctp:2
+#: /views/errors/missing_controller.ctp:2
+msgid "Error"
+msgstr "エラー"
+
+#: /views/errors/missing_action.ctp:4
+#: /views/errors/missing_controller.ctp:4
+msgid "The requested address was not found on this server."
+msgstr "リンクエストされたアドレスは見つかりませんでした。"
+
+#: /views/filemanager/admin_browse.ctp:6
+msgid "Upload here"
+msgstr "ここにアップロードする"
+
+#: /views/filemanager/admin_browse.ctp:7
+msgid "Create directory"
+msgstr "ディレクトリ作成"
+
+#: /views/filemanager/admin_browse.ctp:8
+msgid "Create file"
+msgstr "ファイル作成"
+
+#: /views/filemanager/admin_browse.ctp:14
+#: /views/filemanager/admin_create_directory.ctp:6
+#: /views/filemanager/admin_create_file.ctp:6
+#: /views/filemanager/admin_editfile.ctp:6
+#: /views/filemanager/admin_upload.ctp:6
+msgid "You are here:"
+msgstr "現在地:"
+
+#: /views/filemanager/admin_browse.ctp:29
+msgid "Directory content"
+msgstr "ディレクトリ内容"
+
+#: /views/helpers/meta.php:34
+#: /views/settings/admin_view.ctp:9
+msgid "Key"
+msgstr "キー"
+
+#: /views/helpers/meta.php:38
+#: /views/settings/admin_view.ctp:14
+msgid "Value"
+msgstr "値"
+
+#: /views/helpers/meta.php:53
+msgid "Remove"
+msgstr "外す"
+
+#: /views/layouts/admin_login.ctp:21
+msgid "Back to"
+msgstr "戻る"
+
+#: /views/layouts/maintenance.ctp:13
+msgid "Site down for maintenance."
+msgstr "サイトメンテナンス中"
+
+#: /views/links/admin_add.ctp:7
+#: /views/links/admin_edit.ctp:7
+msgid "Link"
+msgstr "リンク"
+
+#: /views/links/admin_add.ctp:9
+#: /views/links/admin_edit.ctp:9
+#: /views/menus/admin_add.ctp:8
+#: /views/menus/admin_edit.ctp:8
+#: /views/settings/admin_add.ctp:8
+#: /views/settings/admin_edit.ctp:8
+msgid "Misc."
+msgstr "その他"
+
+#: /views/links/admin_add.ctp:16
+#: /views/links/admin_edit.ctp:17
+msgid "Parent"
+msgstr "親"
+
+#: /views/links/admin_add.ctp:22
+#: /views/links/admin_edit.ctp:23
+msgid "Link to a Node"
+msgstr "ノードにリンクする"
+
+#: /views/links/admin_index.ctp:6
+msgid "New Link"
+msgstr "リンク新規登録"
+
+#: /views/links/admin_index.ctp:24
+#: /views/terms/admin_index.ctp:24
+msgid "Title"
+msgstr "タイトル"
+
+#: /views/links/admin_index.ctp:25
+msgid "Status"
+msgstr "ステータス"
+
+#: /views/menus/admin_add.ctp:7
+#: /views/menus/admin_edit.ctp:7
+msgid "Menu"
+msgstr "メニュー"
+
+#: /views/menus/admin_index.ctp:6
+msgid "New Menu"
+msgstr "メニュー新規登録"
+
+#: /views/menus/admin_index.ctp:23
+msgid "View links"
+msgstr "リンクを見る"
+
+#: /views/messages/admin_index.ctp:60
+msgid "Mark as read"
+msgstr "既読に設定"
+
+#: /views/messages/admin_index.ctp:61
+msgid "Mark as unread"
+msgstr "未読に設定"
+
+#: /views/nodes/admin_add.ctp:17
+#: /views/nodes/admin_edit.ctp:17
+msgid "Custom fields"
+msgstr "カスタムフィールド"
+
+#: /views/nodes/admin_add.ctp:18
+#: /views/nodes/admin_edit.ctp:18
+msgid "Publishing"
+msgstr "公開済"
+
+#: /views/nodes/admin_add.ctp:44
+#: /views/nodes/admin_edit.ctp:45
+#: /views/types/admin_add.ctp:42
+#: /views/types/admin_edit.ctp:44
+msgid "Disabled"
+msgstr "無効"
+
+#: /views/nodes/admin_add.ctp:45
+#: /views/nodes/admin_edit.ctp:46
+#: /views/types/admin_add.ctp:43
+#: /views/types/admin_edit.ctp:45
+msgid "Read only"
+msgstr "読みのみ"
+
+#: /views/nodes/admin_add.ctp:46
+#: /views/nodes/admin_edit.ctp:47
+#: /views/types/admin_add.ctp:44
+#: /views/types/admin_edit.ctp:46
+msgid "Read/Write"
+msgstr "読み/書き"
+
+#: /views/nodes/admin_add.ctp:68
+#: /views/nodes/admin_edit.ctp:67
+msgid "Add another field"
+msgstr "別なフィールド新規作成"
+
+#: /views/nodes/admin_add.ctp:74
+#: /views/nodes/admin_edit.ctp:73
+msgid "Promoted to front page"
+msgstr "トップページに表示する"
+
+#: /views/nodes/admin_index.ctp:76
+msgid "Promote"
+msgstr "推奨"
+
+#: /views/nodes/admin_index.ctp:77
+msgid "Unpromote"
+msgstr "非推奨"
+
+#: /views/nodes/admin_links.ctp:24
+msgid "Sort by:"
+msgstr "並び順:"
+
+#: /views/nodes/index.ctp:4
+#: /views/nodes/promoted.ctp:4
+#: /views/nodes/term.ctp:6
+msgid "No items found."
+msgstr "アイテムが見つかりません"
+
+#: /views/nodes/term.ctp:2
+msgid "Term:"
+msgstr "期間:"
+
+#: /views/regions/admin_index.ctp:6
+msgid "New Region"
+msgstr "地域　新規登録"
+
+#: /views/roles/admin_index.ctp:6
+msgid "New Role"
+msgstr ""
+
+#: /views/settings/admin_add.ctp:13
+#: /views/settings/admin_edit.ctp:14
+msgid "e.g., 'Site.title'"
+msgstr "例） 'Site.Title'"
+
+#: /views/settings/admin_add.ctp:22
+#: /views/settings/admin_edit.ctp:23
+msgid "e.g., 'text' or 'textarea'"
+msgstr "例）'text' 'textarea'"
+
+#: /views/settings/admin_index.ctp:6
+#: /views/settings/admin_view.ctp:46
+msgid "New Setting"
+msgstr "設定新規登録"
+
+#: /views/settings/admin_view.ctp:2
+msgid "Setting"
+msgstr "設定"
+
+#: /views/settings/admin_view.ctp:19
+msgid "Description"
+msgstr "説明"
+
+#: /views/settings/admin_view.ctp:24
+msgid "Input Type"
+msgstr "入力タイプ"
+
+#: /views/settings/admin_view.ctp:29
+msgid "Weight"
+msgstr "太さ"
+
+#: /views/settings/admin_view.ctp:34
+#: /views/types/admin_add.ctp:11
+#: /views/types/admin_edit.ctp:12
+msgid "Params"
+msgstr "パラメーター"
+
+#: /views/settings/admin_view.ctp:43
+msgid "Edit Setting"
+msgstr "設定編集"
+
+#: /views/settings/admin_view.ctp:44
+msgid "Delete Setting"
+msgstr "設定削除"
+
+#: /views/settings/admin_view.ctp:44
+msgid "Are you sure you want to delete # %s?"
+msgstr "本当に「%s」を削除しますか？"
+
+#: /views/settings/admin_view.ctp:45
+msgid "List Settings"
+msgstr "設定リスト"
+
+#: /views/terms/admin_index.ctp:6
+msgid "New Term"
+msgstr "期間新規登録"
+
+#: /views/themes/admin_index.ctp:5
+msgid "Current Theme"
+msgstr "現在のテーマ"
+
+#: /views/themes/admin_index.ctp:17;35
+msgid "Regions supported: "
+msgstr "地域サポート"
+
+#: /views/themes/admin_index.ctp:22
+msgid "Available Themes"
+msgstr "有効なテーマ"
+
+#: /views/themes/admin_index.ctp:36
+msgid "Activate"
+msgstr "有効化"
+
+#: /views/types/admin_add.ctp:9
+#: /views/types/admin_edit.ctp:10
+msgid "Format"
+msgstr "フォーマット"
+
+#: /views/types/admin_add.ctp:31
+#: /views/types/admin_edit.ctp:33
+msgid "Show author's name"
+msgstr "著者を表示"
+
+#: /views/types/admin_add.ctp:34
+#: /views/types/admin_edit.ctp:36
+msgid "Show date"
+msgstr "日付を表示"
+
+#: /views/types/admin_index.ctp:6
+msgid "New Type"
+msgstr "新規タイプ"
+
+#: /views/users/admin_add.ctp:2
+msgid "Add User"
+msgstr "ユーザ新規登録"
+
+#: /views/users/admin_edit.ctp:2
+msgid "Edit User"
+msgstr "ユーザ編集"
+
+#: /views/users/admin_edit.ctp:6
+#: /views/users/admin_reset_password.ctp:2
+msgid "Reset password"
+msgstr "パスワードリセット"
+
+#: /views/users/admin_index.ctp:6
+msgid "New User"
+msgstr "新規ユーザ"
+
+#: /views/users/admin_index.ctp:14
+msgid "Role"
+msgstr "ロール"
+
+#: /views/users/admin_login.ctp:10
+msgid "Forgot password?"
+msgstr "パスワード紛失？"
+
+#: /views/users/admin_reset_password.ctp:8
+msgid "New Password"
+msgstr "新規パスワード"
+
+#: /views/users/index.ctp:4
+#, fuzzy
+msgid "You are currently logged in as:"
+msgstr "としてログイン"
+
+#: /views/users/login.ctp:2
+msgid "Login"
+msgstr "ログイン"
+
+#: /views/users/reset.ctp:6
+msgid "New password"
+msgstr "新規パスワード"
+
+#: /views/vocabularies/admin_add.ctp:8
+#: /views/vocabularies/admin_edit.ctp:9
+msgid "Options"
+msgstr "オップション"
+
+#: /views/vocabularies/admin_index.ctp:6
+msgid "New Vocabulary"
+msgstr "用語新規登録"
+
+#: /views/vocabularies/admin_index.ctp:22
+msgid "View terms"
+msgstr "期間を表示する"
+
+#: /webroot/test.php:99
+msgid "Debug setting does not allow access to this url."
+msgstr "このURLではデバッグが許可されていません。"
+
