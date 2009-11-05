@@ -1,0 +1,109 @@
+
+msgid "User"
+msgstr ""
+
+msgid "Body"
+msgstr ""
+
+msgid "Ip"
+msgstr "IP"
+
+msgid "Created"
+msgstr ""
+
+msgid "Required"
+msgstr ""
+
+msgid "Multiple"
+msgstr ""
+
+msgid "Tags"
+msgstr ""
+
+msgid "Comment Status"
+msgstr ""
+
+msgid "Slug"
+msgstr ""
+
+msgid "Excerpt"
+msgstr ""
+
+msgid "Term"
+msgstr ""
+
+msgid "Link Count"
+msgstr ""
+
+msgid "Visibility Paths"
+msgstr ""
+
+msgid "Edit File: "
+msgstr ""
+
+msgid "Username"
+msgstr ""
+
+msgid "Position"
+msgstr ""
+
+msgid "Address"
+msgstr ""
+
+msgid "Address2"
+msgstr ""
+
+msgid "State"
+msgstr ""
+
+msgid "Country"
+msgstr ""
+
+msgid "Postcode"
+msgstr ""
+
+msgid "Phone"
+msgstr ""
+
+msgid "Fax"
+msgstr ""
+
+msgid "Tagline"
+msgstr ""
+
+msgid "Robots"
+msgstr ""
+
+msgid "Keywords"
+msgstr ""
+
+msgid "Nodes Per Page"
+msgstr ""
+
+msgid "Enable WYSIWYG editor"
+msgstr ""
+
+msgid "Level"
+msgstr ""
+
+msgid "levels deep (threaded comments)"
+msgstr ""
+
+msgid "Feed Limit"
+msgstr ""
+
+msgid "number of comments to show in feed"
+msgstr ""
+
+msgid "Akismet Url"
+msgstr ""
+
+msgid "Akismet Key"
+msgstr ""
+
+msgid "Recaptcha Public Key"
+msgstr ""
+
+msgid "Recaptcha Private Key"
+msgstr ""
+

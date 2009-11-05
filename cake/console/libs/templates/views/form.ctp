@@ -44,7 +44,7 @@
 ?>
 	</fieldset>
 <?php
-	echo "<?php echo \$form->end('Submit');?>\n";
+	echo "<?php echo \$form->end(__('Submit',true));?>\n";
 ?>
 </div>
 <div class="actions">

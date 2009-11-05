@@ -1839,3 +1839,111 @@ msgstr "期間を表示する"
 msgid "Debug setting does not allow access to this url."
 msgstr "このURLではデバッグが許可されていません。"
 
+msgid "User"
+msgstr "ユーザ"
+
+msgid "Body"
+msgstr "本文"
+
+msgid "Ip"
+msgstr "IP"
+
+msgid "Created"
+msgstr "作成日時"
+
+msgid "Required"
+msgstr "必須項目"
+
+msgid "Multiple"
+msgstr "複数選択"
+
+msgid "Tags"
+msgstr "タグ"
+
+msgid "Comment Status"
+msgstr "コメントステータス"
+
+msgid "Slug"
+msgstr "Slug（パーマリンクに使用する文字列）"
+
+msgid "Excerpt"
+msgstr "抜粋を使用する"
+
+msgid "Term"
+msgstr "期間"
+
+msgid "Link Count"
+msgstr "リンク数"
+
+msgid "Visibility Paths"
+msgstr ""
+
+msgid "Edit File: "
+msgstr "編集中のファイル: "
+
+msgid "Username"
+msgstr "ユーザ名"
+
+msgid "Position"
+msgstr "役職"
+
+msgid "Address"
+msgstr "住所"
+
+msgid "Address2"
+msgstr "住所２"
+
+msgid "State"
+msgstr "州"
+
+msgid "Country"
+msgstr "国"
+
+msgid "Postcode"
+msgstr "郵便番号"
+
+msgid "Phone"
+msgstr "電話番号"
+
+msgid "Fax"
+msgstr "FAX番号"
+
+msgid "Tagline"
+msgstr "Tagline"
+
+msgid "Robots"
+msgstr "Robotsを使用する"
+
+msgid "Keywords"
+msgstr "キーワード"
+
+msgid "Nodes Per Page"
+msgstr "１ページに表示する記事数"
+
+msgid "Enable WYSIWYG editor"
+msgstr "ビジュアルエディタを使用する"
+
+msgid "Level"
+msgstr "レベル"
+
+msgid "levels deep (threaded comments)"
+msgstr "レベル深度"
+
+msgid "Feed Limit"
+msgstr "フィードに表示する記事数"
+
+msgid "number of comments to show in feed"
+msgstr "フィードにコメント数を表示する"
+
+msgid "Akismet Url"
+msgstr "Akismet URL"
+
+msgid "Akismet Key"
+msgstr "Akismetキー"
+
+msgid "Recaptcha Public Key"
+msgstr "Recaptcha Public Key"
+
+msgid "Recaptcha Private Key"
+msgstr "Recaptcha Private Key"
+

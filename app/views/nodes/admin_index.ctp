@@ -29,7 +29,7 @@
             $paginator->sort('id'),
             $paginator->sort('title'),
             $paginator->sort('type'),
-            $paginator->sort('user_id'),
+            $paginator->sort(__('User',true),'user_id'),
             $paginator->sort('status'),
             $paginator->sort('promote'),
             $paginator->sort('created'),

@@ -26,21 +26,21 @@
                     if ($setting['Setting']['input_type'] == 'checkbox') {
                         if ($setting['Setting']['value'] == 1) {
                             echo $form->input("Setting.$i.value", array(
-                                'label' => $label,
+                                'label' => __($label,true),
                                 'type' => $setting['Setting']['input_type'],
                                 'checked' => 'checked',
                                 'rel' => $setting['Setting']['description'],
                             ));
                         } else {
                             echo $form->input("Setting.$i.value", array(
-                                'label' => $label,
+                                'label' => __($label,true),
                                 'type' => $setting['Setting']['input_type'],
                                 'rel' => $setting['Setting']['description'],
                             ));
                         }
                     } else {
                         echo $form->input("Setting.$i.value", array(
-                            'label' => $label,
+                            'label' => __($label,true),
                             'type' => $inputType,
                             'value' => $setting['Setting']['value'],
                             'rel' => $setting['Setting']['description'],
@@ -51,5 +51,5 @@
             }
         ?>
         </fieldset>
-    <?php echo $form->end("Submit"); ?>
+    <?php echo $form->end(__("Submit",true)); ?>
 </div>

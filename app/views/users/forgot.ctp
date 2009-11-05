@@ -6,5 +6,5 @@
             echo $form->input('username');
         ?>
         </fieldset>
-    <?php echo $form->end('Submit');?>
+    <?php echo $form->end(__('Submit',true));?>
 </div>

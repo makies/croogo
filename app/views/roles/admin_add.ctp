@@ -7,5 +7,5 @@
             echo $form->input('alias');
         ?>
         </fieldset>
-    <?php echo $form->end('Submit');?>
+    <?php echo $form->end(__('Submit',true));?>
 </div>

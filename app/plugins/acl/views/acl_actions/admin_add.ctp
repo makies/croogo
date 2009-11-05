@@ -11,5 +11,5 @@
             echo $form->input('alias', array());
         ?>
         </fieldset>
-    <?php echo $form->end('Submit'); ?>
+    <?php echo $form->end(__('Submit',true)); ?>
 </div>

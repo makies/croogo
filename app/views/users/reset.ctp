@@ -6,5 +6,5 @@
             echo $form->input('password', array('label' => __('New password', true)));
         ?>
         </fieldset>
-    <?php echo $form->end('Submit');?>
+    <?php echo $form->end(__('Submit',true));?>
 </div>
