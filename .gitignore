@@ -13,3 +13,7 @@ app/tmp/cache/persistent/cake_*
  
 # Cake logs
 app/tmp/logs/*.log
+
+# local
+app/locale/*/*/*.mo
+
