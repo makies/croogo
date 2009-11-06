@@ -1947,3 +1947,19 @@ msgstr "Recaptcha Public Key"
 msgid "Recaptcha Private Key"
 msgstr "Recaptcha Private Key"
 
+msgid "Site"
+msgstr "サイト"
+
+msgid "Meta"
+msgstr "メタ情報"
+
+msgid "Reading"
+msgstr "読み"
+
+msgid "Writing"
+msgstr "書き"
+
+msgid "Service"
+msgstr "サービス"
+
+
