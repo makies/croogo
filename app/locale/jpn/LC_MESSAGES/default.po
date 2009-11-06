@@ -249,7 +249,7 @@ msgstr "コンタクトを追加しました。"
 
 #: /controllers/contacts_controller.php:47;64
 msgid "The Contact could not be saved. Please, try again."
-msgstr "コンタクトを追加でき万でした。もう一度実行してください。"
+msgstr "コンタクトを追加できませんでした。もう一度実行してください。"
 
 #: /controllers/contacts_controller.php:53
 msgid "Edit Contact"
@@ -730,7 +730,7 @@ msgstr "ユーザを保存しました。"
 
 #: /controllers/users_controller.php:48;65;138
 msgid "The User could not be saved. Please, try again."
-msgstr "ユーザを保存する子ができませんでした。もう一度実行してください。"
+msgstr "ユーザを保存することができませんでした。もう一度実行してください。"
 
 #: /controllers/users_controller.php:57;77
 msgid "Invalid User"
@@ -936,37 +936,37 @@ msgstr "アクションを下へ移動"
 #: /plugins/acl/controllers/acl_aros_controller.php:19
 #: /plugins/acl/views/acl_aros/admin_index.ctp:2
 msgid "Aros"
-msgstr "Aro"
+msgstr "アクセス要求オブジェクト"
 
 #: /plugins/acl/controllers/acl_aros_controller.php:26
 #: /plugins/acl/views/acl_aros/admin_add.ctp:2
 #: /plugins/acl/views/acl_aros/admin_edit.ctp:2
 msgid "Add Aro"
-msgstr "Aro新規作成"
+msgstr "アクセス要求オブジェクト新規作成"
 
 #: /plugins/acl/controllers/acl_aros_controller.php:31;48
 msgid "The Aro has been saved"
-msgstr "Aroを保存しました。"
+msgstr "アクセス要求オブジェクトを保存しました。"
 
 #: /plugins/acl/controllers/acl_aros_controller.php:34;51
 msgid "The Aro could not be saved. Please, try again."
-msgstr "Aroを保存できませんでした。"
+msgstr "アクセス要求オブジェクトを保存できませんでした。"
 
 #: /plugins/acl/controllers/acl_aros_controller.php:40
 msgid "Edit Aro"
-msgstr "Aro編集"
+msgstr "アクセス要求オブジェクト編集"
 
 #: /plugins/acl/controllers/acl_aros_controller.php:43
 msgid "Invalid Aro"
-msgstr "不正なAroです。"
+msgstr "不正なアクセス要求オブジェクトです。"
 
 #: /plugins/acl/controllers/acl_aros_controller.php:61
 msgid "Invalid id for Aro"
-msgstr "不正なEdit Aro ID です"
+msgstr "不正なアクセス要求オブジェクト ID です"
 
 #: /plugins/acl/controllers/acl_aros_controller.php:65
 msgid "Aro deleted"
-msgstr "Aroを削除しました。"
+msgstr "アクセス要求オブジェクトを削除しました。"
 
 #: /plugins/acl/controllers/acl_permissions_controller.php:19
 #: /views/elements/admin/navigation.ctp:46
@@ -975,7 +975,7 @@ msgstr "権限"
 
 #: /plugins/acl/views/acl_acos/admin_index.ctp:6
 msgid "New Aco"
-msgstr "Aro新規作成"
+msgstr アクセス制御オブジェクト新規作成"
 
 #: /plugins/acl/views/acl_acos/admin_index.ctp:24
 #: /plugins/acl/views/acl_actions/admin_index.ctp:41
@@ -1061,12 +1061,12 @@ msgstr "本当に？"
 #: /views/users/admin_index.ctp:44
 #: /views/vocabularies/admin_index.ctp:41
 msgid "Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%"
-msgstr ""
+msgstr "%pages%/%page%ページ %start%〜%end%件を表示（%count%件表示）"
 
 #: /plugins/acl/views/acl_actions/admin_add.ctp:9
 #: /plugins/acl/views/acl_actions/admin_edit.ctp:11
 msgid "Choose none if the Aco is a controller."
-msgstr ""
+msgstr "アクセス制御オブジェクトがコントローラーの場合は何も選択しないでください。"
 
 #: /plugins/acl/views/acl_actions/admin_index.ctp:10
 msgid "New Action"
@@ -1108,7 +1108,7 @@ msgstr "下へ移動"
 
 #: /plugins/acl/views/acl_aros/admin_index.ctp:6
 msgid "New Aro"
-msgstr ""
+msgstr "アクセス要求オブジェクト新規作成"
 
 #: /plugins/acl/views/acl_permissions/admin_index.ctp:10
 msgid "Edit Actions"
@@ -1428,7 +1428,7 @@ msgstr "リスト"
 
 #: /views/elements/admin/navigation.ctp:8
 msgid "Content types"
-msgstr "Content type"
+msgstr "コンテンツタイプ"
 
 #: /views/elements/admin/navigation.ctp:9
 #: /views/types/admin_add.ctp:8
@@ -1511,7 +1511,7 @@ msgstr "エラー"
 #: /views/errors/missing_action.ctp:4
 #: /views/errors/missing_controller.ctp:4
 msgid "The requested address was not found on this server."
-msgstr "リンクエストされたアドレスは見つかりませんでした。"
+msgstr "リクエストされたアドレスは見つかりませんでした。"
 
 #: /views/filemanager/admin_browse.ctp:6
 msgid "Upload here"
@@ -1825,7 +1825,7 @@ msgstr "新規パスワード"
 #: /views/vocabularies/admin_add.ctp:8
 #: /views/vocabularies/admin_edit.ctp:9
 msgid "Options"
-msgstr "オップション"
+msgstr "オプション"
 
 #: /views/vocabularies/admin_index.ctp:6
 msgid "New Vocabulary"
@@ -1837,7 +1837,7 @@ msgstr "期間を表示する"
 
 #: /webroot/test.php:99
 msgid "Debug setting does not allow access to this url."
-msgstr "このURLではデバッグが許可されていません。"
+msgstr "デバッグ設定のときは、このURLへのアクセスは許可されていません"
 
 msgid "User"
 msgstr "ユーザ"
@@ -1946,18 +1946,4 @@ msgstr "Recaptcha Public Key"
 
 msgid "Recaptcha Private Key"
 msgstr "Recaptcha Private Key"
-
-
-msgid "Meta"
-msgstr "メタ"
-
-msgid "Reading"
-msgstr "読み"
-
-msgid "Writing"
-msgstr "書き"
-
-msgid "Service"
-msgstr "サービス"
-
 
