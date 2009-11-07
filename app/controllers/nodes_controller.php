@@ -103,10 +103,10 @@ class NodesController extends AppController {
                 'slug' => $this->data['Node']['slug'],
             ));
             if ($this->Node->saveWithMeta($this->data)) {
-                $this->Session->setFlash(__($type['Type']['title'] . ' has been saved', true));
+                $this->Session->setFlash(vprintf(__('%s has been saved.', true),$type['Type']['title']));
                 $this->redirect(array('action'=>'index'));
             } else {
-                $this->Session->setFlash(__($type['Type']['title'] . ' could not be saved. Please, try again.', true));
+                $this->Session->setFlash(vprintf__('%s could not be saved. Please, try again.', true),$type['Type']['title']);
             }
         }
 

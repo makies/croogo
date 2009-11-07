@@ -51,13 +51,13 @@
                         'options' => $options,
                     ));
                     echo $form->input('comment_approve', array(
-                        'label' => 'Auto approve comments',
+                        'label' => __('Auto approve comments',true),
                     ));
                     echo $form->input('comment_spam_protection', array(
-                        'label' => 'Spam protection (requires Akismet API key)',
+                        'label' => __('Spam protection (requires Akismet API key)',true),
                     ));
                     echo $form->input('comment_captcha', array(
-                        'label' => 'Use captcha? (requires Recaptcha API key)',
+                        'label' => __('Use captcha (requires Recaptcha API key)',true),
                     ));
                 ?>
 

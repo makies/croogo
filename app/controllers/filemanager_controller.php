@@ -55,7 +55,7 @@ class FilemanagerController extends AppController {
             $path = APP;
         }
 
-        $this->pageTitle = "File Manager";
+        $this->pageTitle = __("File Manager",true);
         $this->folder->path = $path;
 
         $content = $this->folder->read();
