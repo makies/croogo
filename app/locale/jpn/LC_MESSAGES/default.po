@@ -1294,7 +1294,7 @@ msgstr "コメント"
 #: /views/elements/node_info.ctp:9
 #: /views/themes/admin_index.ctp:15;33
 msgid "by"
-msgstr ""
+msgstr " "
 
 #: /views/contacts/admin_add.ctp:7
 #: /views/contacts/admin_edit.ctp:7
@@ -1364,7 +1364,7 @@ msgstr "題名"
 
 #: /views/contacts/view.ctp:24
 msgid "Send"
-msgstr "送信済み"
+msgstr "送信"
 
 #: /views/elements/comment.ctp:13
 msgid "said on"
