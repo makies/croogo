@@ -17,3 +17,5 @@ app/tmp/logs/*.log
 # local
 app/locale/*/*/*.mo
 
+# uploads
+app/webroot/uploads/*
