@@ -61,7 +61,7 @@ msgstr "ブロック追加"
 
 #: /controllers/blocks_controller.php:46;68
 msgid "The Block has been saved"
-msgstr "ブロックが追加されました。"
+msgstr "ブロックを保存しました。"
 
 #: /controllers/blocks_controller.php:49;71
 msgid "The Block could not be saved. Please, try again."
@@ -510,7 +510,7 @@ msgstr "不正なコンテンツタイプです"
 
 #: /controllers/nodes_controller.php:302
 msgid "Invalid Term."
-msgstr "不正な期間です"
+msgstr "不正な項目です"
 
 #: /controllers/nodes_controller.php:333
 msgid "Nodes"
@@ -628,47 +628,47 @@ msgstr "不正な設定Keyです。"
 #: /views/nodes/admin_add.ctp:15
 #: /views/nodes/admin_edit.ctp:15
 msgid "Terms"
-msgstr "期間"
+msgstr "項目"
 
 #: /controllers/terms_controller.php:56
 msgid "Add Term"
-msgstr "期間新規登録"
+msgstr "項目新規登録"
 
 #: /controllers/terms_controller.php:61;85
 msgid "The Term has been saved"
-msgstr "期間を保存しました。"
+msgstr "項目を保存しました。"
 
 #: /controllers/terms_controller.php:64;88
 msgid "The Term could not be saved. Please, try again."
-msgstr "期間を保存することができませんでした。もう一度実行してください。"
+msgstr "項目を保存することができませんでした。もう一度実行してください。"
 
 #: /controllers/terms_controller.php:77
 msgid "Edit Term"
-msgstr "期間編集"
+msgstr "項目編集"
 
 #: /controllers/terms_controller.php:80
 msgid "Invalid Term"
-msgstr "不正な期間です。"
+msgstr "不正な項目です。"
 
 #: /controllers/terms_controller.php:101
 msgid "Invalid id for Term"
-msgstr "不正な期間IDです。"
+msgstr "不正な項目IDです。"
 
 #: /controllers/terms_controller.php:105
 msgid "Term deleted"
-msgstr "期間を削除しました。"
+msgstr "項目を削除しました。"
 
 #: /controllers/terms_controller.php:147
 msgid "Terms deleted."
-msgstr "期間を削除しました。"
+msgstr "項目を削除しました。"
 
 #: /controllers/terms_controller.php:150
 msgid "Terms published"
-msgstr "期間を公開済みにしました。"
+msgstr "項目を公開済みにしました。"
 
 #: /controllers/terms_controller.php:153
 msgid "Terms unpublished"
-msgstr "期間を未公開にしました。"
+msgstr "項目を未公開にしました。"
 
 #: /controllers/themes_controller.php:37
 #: /views/elements/admin/navigation.ctp:50;52
@@ -1194,7 +1194,7 @@ msgstr "Croogo Install"
 #: /views/attachments/admin_browse.ctp:7
 #: /views/attachments/admin_index.ctp:6
 msgid "New Attachment"
-msgstr "新規添付ファイル"
+msgstr "新規ファイル"
 
 #: /views/attachments/admin_browse.ctp:18
 #: /views/attachments/admin_index.ctp:16
@@ -1207,7 +1207,7 @@ msgstr "挿入"
 
 #: /views/attachments/admin_edit.ctp:9
 msgid "Attachment"
-msgstr "添付ファイル"
+msgstr "ファイル"
 
 #: /views/attachments/admin_edit.ctp:10
 msgid "Info"
@@ -1245,12 +1245,12 @@ msgstr "透明度"
 #: /views/blocks/admin_add.ctp:16
 #: /views/blocks/admin_edit.ctp:17
 msgid "unique name for your block"
-msgstr "ブロックは唯一の名前"
+msgstr "他のブロックと重複しない名前にしてください"
 
 #: /views/blocks/admin_add.ctp:17
 #: /views/blocks/admin_edit.ctp:18
 msgid "if you are not sure, choose 'none'"
-msgstr ""
+msgstr "表示したくない場合は'none'を選択"
 
 #: /views/blocks/admin_add.ctp:35
 #: /views/blocks/admin_edit.ctp:36
@@ -1344,7 +1344,7 @@ msgstr "captcha認証を使用しますか？（Recaptcha API key が必要で�
 #: /views/types/admin_add.ctp:65
 #: /views/types/admin_edit.ctp:66
 msgid "You can manage your API keys here."
-msgstr ""
+msgstr "APIキー管理はこちら"
 
 #: /views/contacts/admin_index.ctp:6
 msgid "New Contact"
@@ -1470,8 +1470,8 @@ msgid "Filter"
 msgstr "フィルター"
 
 #: /views/elements/admin/quick.ctp:4
-msgid "You are logged in as "
-msgstr "としてログイン"
+msgid "You are logged in as %s"
+msgstr "%sとしてログイン"
 
 #: /views/elements/admin/quick.ctp:5
 msgid "Log Out"
@@ -1678,7 +1678,7 @@ msgstr "アイテムが見つかりません"
 
 #: /views/nodes/term.ctp:2
 msgid "Term:"
-msgstr "期間:"
+msgstr "項目:"
 
 #: /views/regions/admin_index.ctp:6
 msgid "New Region"
@@ -1743,7 +1743,7 @@ msgstr "設定リスト"
 
 #: /views/terms/admin_index.ctp:6
 msgid "New Term"
-msgstr "期間新規登録"
+msgstr "項目新規登録"
 
 #: /views/themes/admin_index.ctp:5
 msgid "Current Theme"
@@ -1811,8 +1811,8 @@ msgstr "新規パスワード"
 
 #: /views/users/index.ctp:4
 #, fuzzy
-msgid "You are currently logged in as:"
-msgstr "としてログイン"
+msgid "You are currently logged in as: %s"
+msgstr "%sとしてログインしています。"
 
 #: /views/users/login.ctp:2
 msgid "Login"
@@ -1833,7 +1833,7 @@ msgstr "用語新規登録"
 
 #: /views/vocabularies/admin_index.ctp:22
 msgid "View terms"
-msgstr "期間を表示する"
+msgstr "項目を表示する"
 
 #: /webroot/test.php:99
 msgid "Debug setting does not allow access to this url."
@@ -1870,7 +1870,7 @@ msgid "Excerpt"
 msgstr "抜粋を使用する"
 
 msgid "Term"
-msgstr "期間"
+msgstr "項目"
 
 msgid "Link Count"
 msgstr "リンク数"
@@ -1962,4 +1962,332 @@ msgstr "書き"
 msgid "Service"
 msgstr "サービス"
 
+msgid "Password"
+msgstr "パスワード"
 
+msgid "Log In"
+msgstr "ログイン"
+
+msgid "Auto approve comments"
+msgstr "コメントを自動承認する"
+
+msgid "Spam protection (requires Akismet API key)"
+msgstr "スパム保護（Akismet API Keyが必要です）"
+
+msgid "Use captcha (requires Recaptcha API key)"
+msgstr "captchaを使用する（Recaptcha　API Keyが必要です）"
+
+msgid "Show Title"
+msgstr "タイトルを表示する"
+
+msgid "%s has been saved."
+msgstr "%sを保存しました。"
+
+msgid "%s could not be saved. Please, try again."
+msgstr "%sを保存できませんでした。もう一度実行してください。"
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
