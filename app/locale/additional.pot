@@ -122,4 +122,5 @@ msgstr ""
 msgid "Service"
 msgstr ""
 
-
+msgid "You are not authorized to access that location."
+msgstr ""

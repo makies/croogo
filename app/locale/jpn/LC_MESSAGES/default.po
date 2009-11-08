@@ -1986,8 +1986,8 @@ msgstr "%sを保存しました。"
 msgid "%s could not be saved. Please, try again."
 msgstr "%sを保存できませんでした。もう一度実行してください。"
 
-msgid ""
-msgstr ""
+msgid "You are not authorized to access that location."
+msgstr "権限がありません。"
 
 msgid ""
 msgstr ""
