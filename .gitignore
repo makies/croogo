@@ -18,6 +18,7 @@ app/tmp/logs/*.log
 app/locale/*/*/*.mo
 app/locale/200*.pot
 app/local/*.mo
+app/locale/core.pot
 
 # uploads
 app/webroot/uploads/*
