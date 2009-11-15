@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: croogo 1.1\n"
-"POT-Creation-Date: 2009-11-15 21:34+0900\n"
+"POT-Creation-Date: 2009-11-15 22:39+0900\n"
 "PO-Revision-Date: \n"
 "Last-Translator: maki koiwa <makies@gmail.com>\n"
 "Language-Team: makies <makies@gmail.com>\n"
@@ -295,7 +295,7 @@ msgstr "申し訳ありません。メッセージはスパムと判定されま
 #: /controllers/filemanager_controller.php:58
 #: /views/elements/admin/navigation.ctp:31
 msgid "File Manager"
-msgstr "ファイルマネージャー"
+msgstr "ファイル管理"
 
 #: /controllers/filemanager_controller.php:86
 msgid "File saved successfully"
@@ -543,7 +543,7 @@ msgstr "コンテンツタイプが存在しません。"
 
 #: /controllers/nodes_controller.php:94
 msgid "Create content: "
-msgstr "コンテント新規作成"
+msgstr "コンテンツ新規作成"
 
 #: /controllers/nodes_controller.php:109
 msgid "%s has been saved."
@@ -554,11 +554,11 @@ msgstr "%sを保存しました。"
 #: /controllers/nodes_controller.php:438
 #: /controllers/nodes_controller.php:451
 msgid "Invalid content"
-msgstr "不正なコンテントです。"
+msgstr "不正なコンテンツです。"
 
 #: /controllers/nodes_controller.php:142
 msgid "Edit content: "
-msgstr "コンテント編集"
+msgstr "コンテンツ編集"
 
 #: /controllers/nodes_controller.php:184
 #, fuzzy
@@ -568,7 +568,7 @@ msgstr "不正なロールです"
 #: /controllers/nodes_controller.php:211
 #, fuzzy
 msgid "Translate content:"
-msgstr "コンテント新規作成"
+msgstr "コンテンツ新規作成"
 
 #: /controllers/nodes_controller.php:273
 msgid "Paths updated."
@@ -648,7 +648,7 @@ msgstr "不正な領域IDです。"
 
 #: /controllers/regions_controller.php:78
 msgid "Region deleted"
-msgstr "地域を領域しました。"
+msgstr "領域を領域しました。"
 
 #: /controllers/roles_controller.php:31
 #: /views/elements/admin/navigation.ctp:45
@@ -890,7 +890,7 @@ msgstr "ログアウトしました。"
 
 #: /controllers/users_controller.php:123
 msgid "Register"
-msgstr "地域"
+msgstr "領域"
 
 #: /controllers/users_controller.php:138
 msgid ""
@@ -979,7 +979,7 @@ msgstr "%2$sモデルのCroogo翻訳ビヘイビア データソースは接続�
 
 #: /models/behaviors/croogo_translate.php:458
 msgid "Association %s is already binded to model %s"
-msgstr "アソシエーション'%1$	s'は、既にモデル%2$sに関連づけられています。"
+msgstr "アソシエーション'%1$\ts'は、既にモデル%2$sに関連づけられています。"
 
 #: /plugins/acl/controllers/acl_acos_controller.php:19
 #: /plugins/acl/views/acl_acos/admin_index.ctp:2
@@ -1486,11 +1486,8 @@ msgid "Comment on"
 msgstr "コメント"
 
 #: /views/comments/rss/index.ctp:16
-#: /views/elements/node_info.ctp:9
-#: /views/themes/admin_index.ctp:15
-#: /views/themes/admin_index.ctp:33
-msgid "by"
-msgstr " "
+msgid "by %s"
+msgstr "%s"
 
 #: /views/contacts/admin_add.ctp:7
 #: /views/contacts/admin_edit.ctp:7
@@ -1564,8 +1561,8 @@ msgid "Send"
 msgstr "送信"
 
 #: /views/elements/comment.ctp:13
-msgid "said on"
-msgstr ""
+msgid "said on %s"
+msgstr "%s"
 
 #: /views/elements/comment.ctp:19
 msgid "Reply"
@@ -1598,17 +1595,21 @@ msgstr "webサイト"
 msgid "Post comment"
 msgstr "記事コメント"
 
-#: /views/elements/node_info.ctp:6
-msgid "Posted"
-msgstr ""
+#: /views/elements/node_info.ctp:15
+msgid "Posted by %s"
+msgstr "%s"
 
-#: /views/elements/node_info.ctp:20
-msgid "on"
-msgstr ""
+#: /views/elements/node_info.ctp:17
+msgid "By %s"
+msgstr "%s"
+
+#: /views/elements/node_info.ctp:22
+msgid "on %s"
+msgstr "%s"
 
 #: /views/elements/node_more_info.ctp:17
-msgid "Posted in"
-msgstr ""
+msgid "Posted in %s"
+msgstr "%s"
 
 #: /views/elements/node_more_info.ctp:29
 msgid "Leave a comment"
@@ -1638,7 +1639,7 @@ msgstr "分類"
 
 #: /views/elements/admin/navigation.ctp:24
 msgid "Regions"
-msgstr "地域"
+msgstr "領域"
 
 #: /views/elements/admin/navigation.ctp:28
 msgid "Media"
@@ -1674,8 +1675,9 @@ msgid "Log Out"
 msgstr "ログアウト"
 
 #: /views/elements/email/text/comment.ctp:1
-msgid "A new comment has been posted under: "
-msgstr ""
+#, fuzzy
+msgid "A new comment has been posted under: %s"
+msgstr "コメントは"
 
 #: /views/elements/email/text/forgot_password.ctp:1
 #: /views/elements/email/text/register.ctp:1
@@ -1893,7 +1895,7 @@ msgstr "項目:"
 
 #: /views/regions/admin_index.ctp:6
 msgid "New Region"
-msgstr "地域　新規登録"
+msgstr "領域　新規登録"
 
 #: /views/roles/admin_index.ctp:6
 #, fuzzy
@@ -1961,10 +1963,15 @@ msgstr "項目新規登録"
 msgid "Current Theme"
 msgstr "現在のテーマ"
 
+#: /views/themes/admin_index.ctp:15
+#: /views/themes/admin_index.ctp:33
+msgid "by"
+msgstr " "
+
 #: /views/themes/admin_index.ctp:17
 #: /views/themes/admin_index.ctp:35
 msgid "Regions supported: "
-msgstr "地域サポート"
+msgstr "領域サポート"
 
 #: /views/themes/admin_index.ctp:22
 msgid "Available Themes"
