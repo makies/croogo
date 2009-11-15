@@ -14,7 +14,7 @@
                     'slug' => $termSlug,
                 ));
             }
-            echo __('Posted in') . ' ' . implode(', ', $nodeTermLinks);
+            echo vsprintf(__('Posted in %s',true),implode(', ', $nodeTermLinks));
         }
     }
 

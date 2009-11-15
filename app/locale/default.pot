@@ -1,6 +1,7 @@
 # LANGUAGE translation of CakePHP Application
 # Copyright YEAR NAME <EMAIL@ADDRESS>
-# Generated from file: Revision: 7945 /app/webroot/test.php
+# No version information was available in the source files.
+# Generated from file: Revision: 7945 \app\webroot\test.php
 #
 #, fuzzy
 msgid ""
@@ -14,6 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
 
 #: \app_controller.php:55
 msgid "Site down for maintenance"

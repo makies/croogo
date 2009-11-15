@@ -38,12 +38,12 @@
  * In production mode, flash messages redirect after a time interval.
  * In development mode, you need to click the flash message to continue.
  */
-	Configure::write('debug', 1);
+	Configure::write('debug', 2);
 /**
  * Application wide charset encoding
  */
 	Configure::write('App.encoding', 'UTF-8');
-    Configure::write('Config.language', 'eng');
+//    Configure::write('Config.language', 'eng');
 /**
  * To configure CakePHP *not* to use mod_rewrite and to
  * use CakePHP pretty URLs, remove these .htaccess

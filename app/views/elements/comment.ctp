@@ -10,7 +10,7 @@
             }
         ?>
         </span>
-        <span class="date"><?php echo __('said on', true) . ' ' . $time->nice($comment['Comment']['created']); ?></span>
+        <span class="date"><?php echo vsprintf(__('said on %s', true), $time->nice($comment['Comment']['created'])); ?></span>
     </div>
     <div class="comment-body"><?php echo nl2br($comment['Comment']['body']); ?></div>
     <div class="comment-reply">

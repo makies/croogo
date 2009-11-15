@@ -13,7 +13,7 @@
         );
 
         return array(
-            'title' => __('Comment on', true) . ' ' . $item['Node']['title'] . ' ' . __('by', true) . ' ' . $name,
+            'title' => __('Comment on', true) . ' ' . $item['Node']['title'] . ' ' . vsprintf(__('by %s', true), $name),
             'link' => Router::url($item['Node']['url'], true) . '#comment-' . $item['Comment']['id'],
             'guid' => Router::url($item['Node']['url'], true) . '#comment-' . $item['Comment']['id'],
             'description' => $item['Comment']['body'],
