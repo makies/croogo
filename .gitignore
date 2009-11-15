@@ -16,7 +16,11 @@ app/tmp/logs/*.log
 
 # local
 app/locale/*/*/*.mo
+<<<<<<< HEAD
 app/locale/app.pot
+=======
+app/locale/200*.pot
+>>>>>>> 1f89e6bd6eca37f9053f795b6582c38e952716c5
 app/local/*.mo
 app/locale/core.pot
 
