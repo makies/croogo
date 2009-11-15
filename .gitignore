@@ -16,7 +16,7 @@ app/tmp/logs/*.log
 
 # local
 app/locale/*/*/*.mo
-app/locale/200*.pot
+app/locale/app.pot
 app/local/*.mo
 app/locale/core.pot
 
