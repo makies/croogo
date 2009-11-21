@@ -1,5 +1,12 @@
-<div class="themes">
+<div class="extensions-themes">
     <h2><?php echo $this->pageTitle; ?></h2>
+
+    <div class="actions">
+        <ul>
+            <li><?php echo $html->link(__('Upload', true), array('action' => 'add')); ?></li>
+            <!--<li><?php echo $html->link(__('Editor', true), array('action' => 'editor')); ?></li>-->
+        </ul>
+    </div>
 
     <div class="current-theme">
         <h3><?php __('Current Theme'); ?></h3>
@@ -33,7 +40,10 @@
                         echo $html->tag('h3', $theme['Theme']['name'] . ' ' .vsprintf(__('by %s', true), $theme['Theme']['author']), array());
                         echo $html->tag('p', $theme['Theme']['description'], array('class' => 'description'));
                         echo $html->tag('p', __('Regions supported: ', true) . implode(', ', Set::extract('/region', $theme['Theme']['Regions'])), array('class' => 'regions'));
-                        echo $html->tag('div', $html->link(__('Activate', true), array('action' => 'activate', $theme['Theme']['alias'])), array('class' => 'actions'));
+                        echo $html->tag('div',
+                            $html->link(__('Activate', true), array('action' => 'activate', $theme['Theme']['alias'])) .
+                            $html->link(__('Delete', true), array('action' => 'delete', $theme['Theme']['alias']), null, __('Are you sure?', true)),
+                            array('class' => 'actions'));
                     echo '</li>';
                 }
             }

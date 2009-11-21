@@ -1,6 +1,6 @@
 <?php
 /**
- * Themes Controller
+ * Extensions Themes Controller
  *
  * PHP version 5
  *
@@ -11,14 +11,14 @@
  * @license  http://www.opensource.org/licenses/mit-license.php The MIT License
  * @link     http://www.croogo.org
  */
-class ThemesController extends AppController {
+class ExtensionsThemesController extends AppController {
 /**
  * Controller name
  *
  * @var string
  * @access public
  */
-    var $name = 'Themes';
+    var $name = 'ExtensionsThemes';
 /**
  * Models used by the Controller
  *
@@ -30,6 +30,7 @@ class ThemesController extends AppController {
     function beforeFilter() {
         parent::beforeFilter();
         App::import('Core', 'File');
+        App::import('Core', 'Folder');
         App::import('Xml');
     }
 
@@ -143,6 +144,52 @@ class ThemesController extends AppController {
                 exit();
             }
         }
+    }
+
+    function admin_editor() {
+        $this->pageTitle = __('Theme Editor', true);
+    }
+
+    function admin_save() {
+
+    }
+
+    function admin_delete($alias = null) {
+        if ($alias == null) {
+            $this->Session->setFlash(__('Invalid Theme.', true));
+            $this->redirect(array('action' => 'index'));
+            exit();
+        }
+
+        if ($alias == 'default') {
+            $this->Session->setFlash(__('Default theme cannot be deleted.', true));
+            $this->redirect(array('action' => 'index'));
+            exit();
+        }
+
+        $paths = array(
+            APP . 'webroot' . DS . 'themed' . DS . $alias . DS,
+            APP . 'views' . DS . 'themed' . DS . $alias . DS,
+        );
+
+        $error = 0;
+        $folder =& new Folder;
+        foreach ($paths AS $path) {
+            if (is_dir($path)) {
+                if (!$folder->delete($path)) {
+                    $error = 1;
+                }
+            }
+        }
+
+        if ($error == 1) {
+            $this->Session->setFlash(__('An error occurred.', true));
+        } else {
+            $this->Session->setFlash(__('Theme deleted successfully.', true));
+        }
+
+        $this->redirect(array('action' => 'index'));
+        exit();
     }
 
 }
