@@ -1,3 +1,3 @@
 <?php
-    Configure::write('Config.language', 'eng');
+    Configure::write('Config.language', 'jpn');
 ?>
