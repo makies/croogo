@@ -1,13 +1,12 @@
 # LANGUAGE translation of CakePHP Application
 # Copyright YEAR NAME <EMAIL@ADDRESS>
-# No version information was available in the source files.
-# Generated from file: Revision: 7945 \app\webroot\test.php
+# Generated from file: Revision: 7945 /app/webroot/test.php
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2009-11-15 22:34+0900\n"
+"POT-Creation-Date: 2009-12-12 14:28+0900\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -16,1720 +15,2186 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: /Volumes/dev/3.5/croogo/cake/console/error.php:84;84;84
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/error404.ctp:28;28;28
-msgid "The requested address %s was not found on this server."
+#: /app_controller.php:54
+msgid "Site down for maintenance"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/error.php:96;96;96
-msgid "Missing Controller '%s'"
+#: /controllers/attachments_controller.php:70
+#: /views/elements/admin/navigation.ctp:30
+msgid "Attachments"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/error.php:107;107;107
-msgid "Missing Method '%s' in '%s'"
+#: /controllers/attachments_controller.php:78
+msgid "Add Attachment"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/error.php:118;118;118
-msgid "Trying to access private method '%s' in '%s'"
+#: /controllers/attachments_controller.php:117;139
+msgid "The Attachment has been saved"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/error.php:129;129;129
-msgid "Missing database table '%s' for model '%s'"
+#: /controllers/attachments_controller.php:125;142
+msgid "The Attachment could not be saved. Please, try again."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/error.php:139;139;139
-msgid "Missing Database"
+#: /controllers/attachments_controller.php:131
+msgid "Edit Attachment"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/error.php:150;150;150
-msgid "Missing View '%s' for '%s' in '%s'"
+#: /controllers/attachments_controller.php:134
+msgid "Invalid Attachment"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/error.php:161;161;161
-msgid "Missing Layout '%s'"
+#: /controllers/attachments_controller.php:152;167
+msgid "Invalid id for Attachment"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/error.php:172;172;172
-msgid "Missing Database Connection. Try 'cake bake'"
+#: /controllers/attachments_controller.php:163
+msgid "Attachment deleted"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/error.php:183;183;183
-msgid "Missing Helper file '%s' for '%s'"
+#: /controllers/blocks_controller.php:31
+#: /views/elements/admin/navigation.ctp:21;23
+msgid "Blocks"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/error.php:194;194;194
-msgid "Missing Helper class '%s' in '%s'"
+#: /controllers/blocks_controller.php:39
+#: /views/blocks/admin_add.ctp:2
+msgid "Add Block"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/error.php:205;205;205
-msgid "Missing Component file '%s' for '%s'"
+#: /controllers/blocks_controller.php:46;68
+msgid "The Block has been saved"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/error.php:216;216;216
-msgid "Missing Component class '%s' in '%s'"
+#: /controllers/blocks_controller.php:49;71
+msgid "The Block could not be saved. Please, try again."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/error.php:227;227;227
-msgid "Missing model '%s'"
+#: /controllers/blocks_controller.php:58
+#: /views/blocks/admin_edit.ctp:2
+msgid "Edit Block"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:78;78;78
-msgid "Error: Your current Cake configuration is set to"
+#: /controllers/blocks_controller.php:61
+msgid "Invalid Block"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:79;79;79
-msgid "an ACL implementation other than DB. Please change"
+#: /controllers/blocks_controller.php:89
+msgid "Invalid id for Block"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:80;80;80
-msgid "your core config to reflect your decision to use"
+#: /controllers/blocks_controller.php:93
+msgid "Block deleted"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:81;81;81
-msgid "DbAcl before attempting to use this script"
+#: /controllers/blocks_controller.php:100
+#: /controllers/languages_controller.php:85
+#: /controllers/links_controller.php:142
+#: /controllers/settings_controller.php:131
+#: /controllers/terms_controller.php:112
+msgid "Moved up succuessfully"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:83;83;83
-msgid "Current ACL Classname: %s"
+#: /controllers/blocks_controller.php:102
+#: /controllers/languages_controller.php:87
+#: /controllers/links_controller.php:144
+#: /controllers/settings_controller.php:133
+#: /controllers/terms_controller.php:114
+msgid "Could not move up"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:91;91;91
-#: /Volumes/dev/3.5/croogo/cake/console/libs/bake.php:74;74;74
-#: /Volumes/dev/3.5/croogo/cake/console/libs/i18n.php:61;61;61
-msgid "Your database configuration was not found. Take a moment to create one."
+#: /controllers/blocks_controller.php:110
+#: /controllers/languages_controller.php:95
+#: /controllers/links_controller.php:152
+#: /controllers/settings_controller.php:141
+#: /controllers/terms_controller.php:122
+msgid "Moved down succuessfully"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:110;110;110
-msgid "Available ACL commands:"
+#: /controllers/blocks_controller.php:112
+#: /controllers/languages_controller.php:97
+#: /controllers/links_controller.php:154
+#: /controllers/settings_controller.php:143
+#: /controllers/terms_controller.php:124
+msgid "Could not move down"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:122;122;122
-msgid "For help, run the 'help' command.  For help on a specific command, run 'help <command>'"
+#: /controllers/blocks_controller.php:128
+#: /controllers/comments_controller.php:100
+#: /controllers/links_controller.php:170
+#: /controllers/messages_controller.php:100
+#: /controllers/nodes_controller.php:351
+#: /controllers/terms_controller.php:140
+msgid "No items selected."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:151;151;151
-msgid "Could not find parent node using reference \"%s\""
+#: /controllers/blocks_controller.php:134
+msgid "Blocks deleted."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:169;169;169
-msgid "/ can not be used as an alias!"
+#: /controllers/blocks_controller.php:137
+msgid "Blocks published"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:169;169;169
-msgid "\\t/ is the root, please supply a sub alias"
+#: /controllers/blocks_controller.php:140
+msgid "Blocks unpublished"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:177;177;177
-msgid "New %s '%s' created.\n"
+#: /controllers/blocks_controller.php:142
+#: /controllers/comments_controller.php:114
+#: /controllers/links_controller.php:184
+#: /controllers/messages_controller.php:114
+#: /controllers/nodes_controller.php:371
+#: /controllers/terms_controller.php:154
+#: /controllers/users_controller.php:161;201;212
+#: /plugins/extensions/controllers/extensions_themes_controller.php:180
+msgid "An error occurred."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:179;179;179
-msgid "There was a problem creating a new %s '%s'."
+#: /controllers/comments_controller.php:31;121
+#: /views/elements/comments.ctp:7
+#: /views/elements/node_more_info.ctp:33
+#: /views/elements/admin/navigation.ctp:10
+#: /views/nodes/admin_add.ctp:16
+#: /views/nodes/admin_edit.ctp:30
+#: /views/types/admin_add.ctp:10
+#: /views/types/admin_edit.ctp:11
+msgid "Comments"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:192;192;192
-msgid "Node Not Deleted"
+#: /controllers/comments_controller.php:50
+#: /views/comments/admin_edit.ctp:17
+#: /views/comments/admin_index.ctp:14
+#: /views/elements/admin/nodes_filter.ctp:24
+#: /views/nodes/admin_add.ctp:73
+#: /views/nodes/admin_edit.ctp:86
+msgid "Published"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:192;192;192
-msgid "There was an error deleting the %s. Check that the node exists"
+#: /controllers/comments_controller.php:52
+#: /views/comments/admin_index.ctp:15
+msgid "Approval"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:194;194;194
-msgid "%s deleted"
+#: /controllers/comments_controller.php:60
+msgid "Edit Comment"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:214;214;214
-msgid "Error in setting new parent. Please make sure the parent node exists, and is not a descendant of the node specified."
+#: /controllers/comments_controller.php:63
+msgid "Invalid Comment"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:216;216;216
-msgid "Node parent set to %s"
+#: /controllers/comments_controller.php:68
+msgid "The Comment has been saved"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:231;231;231
-msgid "Supplied Node '%s' not found"
+#: /controllers/comments_controller.php:71
+msgid "The Comment could not be saved. Please, try again."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:231;315;317;464;231;315;317;464;231;315;317;464
-msgid "No tree returned."
+#: /controllers/comments_controller.php:81
+msgid "Invalid id for Comment"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:247;247;247
-msgid "%s is allowed."
+#: /controllers/comments_controller.php:85
+msgid "Comment deleted"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:249;249;249
-msgid "%s is not allowed."
+#: /controllers/comments_controller.php:106
+msgid "Comments deleted."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:262;262;262
-msgid "Permission granted."
+#: /controllers/comments_controller.php:109
+msgid "Comments published"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:264;264;264
-msgid "Permission was not granted."
+#: /controllers/comments_controller.php:112
+msgid "Comments unpublished"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:277;277;277
-msgid "Permission denied."
+#: /controllers/comments_controller.php:139;150
+#: /controllers/nodes_controller.php:261
+msgid "Invalid Node"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:279;279;279
-msgid "Permission was not denied."
+#: /controllers/comments_controller.php:157
+msgid "Maximum level reached. You cannot reply to that comment."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:292;292;292
-msgid "Permission inherited."
+#: /controllers/comments_controller.php:205
+msgid "Your comment has been added successfully."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:294;294;294
-msgid "Permission was not inherited."
+#: /controllers/comments_controller.php:207
+msgid "Your comment will appear after moderation."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:315;317;464;315;317;464;315;317;464
-#: /Volumes/dev/3.5/croogo/cake/console/libs/api.php:94;94;94
-#: /Volumes/dev/3.5/croogo/cake/libs/folder.php:581;581;581
-msgid "%s not found"
+#: /controllers/comments_controller.php:213
+msgid "New comment posted under"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:363;363;363
-msgid "Usage: cake acl <command> <arg1> <arg2>..."
+#: /controllers/comments_controller.php:238
+msgid "Sorry, the comment appears to be spam."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:365;365;365
-msgid "Commands:"
+#: /controllers/comments_controller.php:251
+#: /controllers/contacts_controller.php:157
+msgid "Invalid captcha entry"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:369;369;369
-msgid "Creates a new ACL object <node> under the parent specified by <parent>, an id/alias."
+#: /controllers/contacts_controller.php:31
+#: /views/elements/admin/navigation.ctp:35;37
+msgid "Contacts"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:370;370;370
-msgid "The <parent> and <node> references can be in one of the following formats:"
+#: /controllers/contacts_controller.php:39
+msgid "Add Contact"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:371;371;371
-msgid "<model>.<id> - The node will be bound to a specific record of the given model"
+#: /controllers/contacts_controller.php:44;61
+msgid "The Contact has been saved"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:372;372;372
-msgid "<alias> - The node will be given a string alias (or path, in the case of <parent>),"
+#: /controllers/contacts_controller.php:47;64
+msgid "The Contact could not be saved. Please, try again."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:373;373;373
-msgid "i.e. 'John'.  When used with <parent>, this takes the form of an alias path,"
+#: /controllers/contacts_controller.php:53
+msgid "Edit Contact"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:374;374;374
-msgid "i.e. <group>/<subgroup>/<parent>."
+#: /controllers/contacts_controller.php:56
+msgid "Invalid Contact"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:375;375;375
-msgid "To add a node at the root level, enter 'root' or '/' as the <parent> parameter."
+#: /controllers/contacts_controller.php:74
+msgid "Invalid id for Contact"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:378;378;378
-msgid "Deletes the ACL object with the given <node> reference (see 'create' for info on node references)."
+#: /controllers/contacts_controller.php:78
+msgid "Contact deleted"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:381;381;381
-msgid "Moves the ACL object specified by <node> beneath the parent ACL object specified by <parent>."
+#: /controllers/contacts_controller.php:113
+msgid "Your message has been received..."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:382;382;382
-msgid "To identify the node and parent, use the row id."
+#: /controllers/contacts_controller.php:144
+msgid "Sorry, the message appears to be spam."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:385;385;385
-msgid "Returns the path to the ACL object specified by <node>. This command"
+#: /controllers/filemanager_controller.php:97
+msgid "File saved successfully"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:386;386;386
-msgid "is useful in determining the inhertiance of permissions for a certain"
+#: /controllers/filemanager_controller.php:107
+#: /plugins/extensions/views/extensions_hooks/admin_index.ctp:9
+#: /plugins/extensions/views/extensions_locales/admin_add.ctp:15
+#: /plugins/extensions/views/extensions_locales/admin_index.ctp:6
+#: /plugins/extensions/views/extensions_plugins/admin_add.ctp:15
+#: /plugins/extensions/views/extensions_plugins/admin_index.ctp:6
+#: /plugins/extensions/views/extensions_themes/admin_add.ctp:15
+#: /plugins/extensions/views/extensions_themes/admin_index.ctp:6
+#: /views/attachments/admin_add.ctp:12
+msgid "Upload"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:387;387;387
-msgid "object in the tree."
+#: /controllers/filemanager_controller.php:121
+msgid "File uploaded successfully."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:388;392;398;404;409;414;388;392;398;404;409;414;388;392;398;404;409;414
-msgid "For more detailed parameter usage info, see help for the 'create' command."
+#: /controllers/filemanager_controller.php:136
+msgid "File deleted"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:390;394;400;406;390;394;400;406;390;394;400;406
-msgid "or"
+#: /controllers/filemanager_controller.php:138;160;206;230
+msgid "An error occured"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:391;391;391
-msgid "Use this command to check ACL permissions."
+#: /controllers/filemanager_controller.php:158
+msgid "Directory deleted"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:395;395;395
-msgid "Use this command to grant ACL permissions. Once executed, the ARO"
+#: /controllers/filemanager_controller.php:191
+msgid "New Directory"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:396;396;396
-msgid "specified (and its children, if any) will have ALLOW access to the"
+#: /controllers/filemanager_controller.php:202
+msgid "Directory created successfully."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:397;403;397;403;397;403
-msgid "specified ACO action (and the ACO's children, if any)."
+#: /controllers/filemanager_controller.php:214
+msgid "New File"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:401;401;401
-msgid "Use this command to deny ACL permissions. Once executed, the ARO"
+#: /controllers/filemanager_controller.php:226
+msgid "File created successfully."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:402;402;402
-msgid "specified (and its children, if any) will have DENY access to the"
+#: /controllers/languages_controller.php:31
+#: /views/elements/admin/navigation.ctp:68
+msgid "Languages"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:407;407;407
-msgid "Use this command to force a child ARO object to inherit its"
+#: /controllers/languages_controller.php:39
+msgid "Add Language"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:408;408;408
-msgid "permissions settings from its parent."
+#: /controllers/languages_controller.php:44;61
+msgid "The Language has been saved"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:412;412;412
-msgid "The view command will return the ARO or ACO tree. The optional"
+#: /controllers/languages_controller.php:47;64
+msgid "The Language could not be saved. Please, try again."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:413;413;413
-msgid "id/alias parameter allows you to return only a portion of the requested tree."
+#: /controllers/languages_controller.php:53
+msgid "Edit Language"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:417;417;417
-msgid "Uses this command : cake schema run create DbAcl"
+#: /controllers/languages_controller.php:56
+#: /controllers/nodes_controller.php:192
+msgid "Invalid Language"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:420;420;420
-msgid "Displays this help message, or a message on a specific command."
+#: /controllers/languages_controller.php:74
+msgid "Invalid id for Language"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:431;431;431
-msgid "Command '%s' not found"
+#: /controllers/languages_controller.php:78
+msgid "Language deleted"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:444;444;444
-msgid "Missing/Unknown node type: '%s'"
+#: /controllers/languages_controller.php:110
+msgid "Select a language"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/acl.php:444;444;444
-msgid "Please specify which ACL object type you wish to create."
+#: /controllers/links_controller.php:54
+msgid "Links"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/api.php:103;103;103
-msgid "%s::%s() could not be found"
+#: /controllers/links_controller.php:76
+msgid "Add Link"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/api.php:120;120;120
-msgid "Select a number to see the more information about a specific method. q to quit. l to list."
+#: /controllers/links_controller.php:82;108
+msgid "The Link has been saved"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/api.php:122;122;122
-msgid "Done"
+#: /controllers/links_controller.php:85;111
+msgid "The Link could not be saved. Please, try again."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/api.php:193;193;193
-msgid "%s could not be found"
+#: /controllers/links_controller.php:99
+msgid "Edit Link"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/bake.php:56;56;56
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/plugin.php:96;96;96
-msgid "%s directory could not be found.\nBe sure you have created %s"
+#: /controllers/links_controller.php:102
+msgid "Invalid Link"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/bake.php:87;87;87
-msgid "What would you like to Bake?"
+#: /controllers/links_controller.php:131
+msgid "Invalid id for Link"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/bake.php:108;108;108
-msgid "You have made an invalid selection. Please choose a type of class to Bake by entering D, M, V, or C."
+#: /controllers/links_controller.php:135
+msgid "Link deleted"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/bake.php:150;150;150
-msgid "%s Model was baked."
+#: /controllers/links_controller.php:176
+msgid "Links deleted."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/bake.php:160;160;160
-msgid "%s Controller was baked."
+#: /controllers/links_controller.php:179
+msgid "Links published"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/bake.php:169;169;169
-msgid "Bake All complete"
+#: /controllers/links_controller.php:182
+msgid "Links unpublished"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/bake.php:172;172;172
-msgid "Bake All could not continue without a valid model"
+#: /controllers/menus_controller.php:31
+#: /views/elements/admin/navigation.ctp:14;16
+msgid "Menus"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/i18n.php:72;72;72
-msgid "I18n Shell"
+#: /controllers/menus_controller.php:39
+#: /views/elements/admin/navigation.ctp:17
+msgid "Add Menu"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/i18n.php:74;74;74
-msgid "[E]xtract POT file from sources"
+#: /controllers/menus_controller.php:44;61
+msgid "The Menu has been saved"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/i18n.php:75;75;75
-msgid "[I]nitialize i18n database table"
+#: /controllers/menus_controller.php:47;64
+msgid "The Menu could not be saved. Please, try again."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/i18n.php:76;76;76
-msgid "[H]elp"
+#: /controllers/menus_controller.php:53
+msgid "Edit Menu"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/i18n.php:77;77;77
-msgid "[Q]uit"
+#: /controllers/menus_controller.php:56
+msgid "Invalid Menu"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/i18n.php:79;79;79
-msgid "What would you like to do?"
+#: /controllers/menus_controller.php:74
+msgid "Invalid id for Menu"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/i18n.php:94;94;94
-msgid "You have made an invalid selection. Please choose a command to execute by entering E, I, H, or Q."
+#: /controllers/menus_controller.php:78
+msgid "Menu deleted"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/i18n.php:115;115;115
-msgid "I18n Shell:"
+#: /controllers/messages_controller.php:31
+#: /views/elements/admin/navigation.ctp:38
+msgid "Messages"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/i18n.php:117;117;117
-msgid "I18n Shell initializes i18n database table for your application"
+#: /controllers/messages_controller.php:50
+#: /views/messages/admin_index.ctp:7
+msgid "Read"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/i18n.php:118;118;118
-msgid "and generates .pot file(s) with translations."
+#: /controllers/messages_controller.php:52
+#: /views/messages/admin_index.ctp:6
+msgid "Unread"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/i18n.php:120;120;120
-msgid "usage:"
+#: /controllers/messages_controller.php:60
+msgid "Edit Message"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:104;104;104
-msgid "Schema could not be found"
+#: /controllers/messages_controller.php:63
+msgid "Invalid Message"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:115;115;115
-msgid "Generating Schema..."
+#: /controllers/messages_controller.php:68
+msgid "The Message has been saved"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:169;172;169;172;169;172
-msgid "Schema file: %s generated"
+#: /controllers/messages_controller.php:71
+msgid "The Message could not be saved. Please, try again."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:187;187;187
-msgid "Schema could not be loaded"
+#: /controllers/messages_controller.php:81
+msgid "Invalid id for Message"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:206;206;206
-msgid "SQL dump file created in %s"
+#: /controllers/messages_controller.php:85
+msgid "Message deleted"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:209;209;209
-msgid "SQL dump could not be created"
+#: /controllers/messages_controller.php:106
+msgid "Messages deleted."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:223;270;223;270;223;270
-msgid "Command not found"
+#: /controllers/messages_controller.php:109
+msgid "Messages marked as read"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:241;241;241
-msgid "Performing a dry run."
+#: /controllers/messages_controller.php:112
+msgid "Messages marked as unread"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:253;253;253
-msgid "%s could not be loaded"
+#: /controllers/nodes_controller.php:45
+#: /plugins/extensions/views/extensions_locales/admin_edit.ctp:16
+#: /views/elements/admin/navigation.ctp:4
+msgid "Content"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:295;345;295;345;295;345
-msgid "Schema is up to date."
+#: /controllers/nodes_controller.php:76
+#: /views/elements/admin/navigation.ctp:7
+#: /views/nodes/admin_index.ctp:9
+msgid "Create content"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:299;299;299
-msgid "The following table(s) will be dropped."
+#: /controllers/nodes_controller.php:89;136;201
+msgid "Content type does not exist."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:302;302;302
-msgid "Are you sure you want to drop the table(s)?"
+#: /controllers/nodes_controller.php:93
+msgid "Create content: "
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:303;303;303
-msgid "Dropping table(s)."
+#: /controllers/nodes_controller.php:108
+msgid "%s has been saved."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:307;307;307
-msgid "The following table(s) will be created."
+#: /controllers/nodes_controller.php:127;176;472;484
+msgid "Invalid content"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:310;310;310
-msgid "Are you sure you want to create the table(s)?"
+#: /controllers/nodes_controller.php:140
+msgid "Edit content: "
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:311;311;311
-msgid "Creating table(s)."
+#: /controllers/nodes_controller.php:181
+#: /plugins/extensions/controllers/extensions_locales_controller.php:167
+msgid "Invalid locale"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:315;315;315
-msgid "End create."
+#: /controllers/nodes_controller.php:205
+msgid "Translate content:"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:326;326;326
-msgid "Comparing Database to Schema..."
+#: /controllers/nodes_controller.php:229;235
+msgid "Invalid Node."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:349;349;349
-msgid "The following statements will run."
+#: /controllers/nodes_controller.php:238
+msgid "Translations: "
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:351;351;351
-msgid "Are you sure you want to alter the tables?"
+#: /controllers/nodes_controller.php:255
+msgid "Invalid Locale or Node"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:353;353;353
-msgid "Updating Database..."
+#: /controllers/nodes_controller.php:272
+msgid "Translation for the locale deleted successfully."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:357;357;357
-msgid "End update."
+#: /controllers/nodes_controller.php:274
+msgid "Translation for the locale could not be deleted."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:366;366;366
-msgid "Sql could not be run"
+#: /controllers/nodes_controller.php:313
+msgid "Paths updated."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:375;375;375
-msgid "%s is up to date."
+#: /controllers/nodes_controller.php:319
+msgid "Invalid id for Node"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:378;378;378
-msgid "Dry run for %s :"
+#: /controllers/nodes_controller.php:323
+msgid "Node deleted"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/schema.php:394;394;394
-msgid "%s updated."
+#: /controllers/nodes_controller.php:357
+msgid "Nodes deleted."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/shell.php:427;427;427
-msgid "Creating file %s"
+#: /controllers/nodes_controller.php:360
+msgid "Nodes published"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/shell.php:429;429;429
-msgid "File exists, overwrite?"
+#: /controllers/nodes_controller.php:363
+msgid "Nodes unpublished"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/shell.php:431;431;431
-msgid "Quitting."
+#: /controllers/nodes_controller.php:366
+msgid "Nodes promoted"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/shell.php:434;434;434
-msgid "Skip"
+#: /controllers/nodes_controller.php:369
+msgid "Nodes unpromoted"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/shell.php:445;445;445
-msgid "Wrote"
+#: /controllers/nodes_controller.php:390;422;447
+msgid "Invalid content type."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/shell.php:448;448;448
-msgid "Error! Could not write to"
+#: /controllers/nodes_controller.php:405
+msgid "Invalid Term."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/controller.php:125;125;125
-msgid "Would you like to build your controller interactively?"
+#: /controllers/nodes_controller.php:435
+msgid "Nodes"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/controller.php:127;127;127
-msgid "Warning: Choosing no will overwrite the %sController."
+#: /controllers/regions_controller.php:31
+msgid "Region"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/controller.php:134;134;134
-msgid "Would you like to use scaffolding?"
+#: /controllers/regions_controller.php:39
+msgid "Add Region"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/controller.php:138;164;138;164;138;164
-msgid "Would you like to include some basic class methods (index(), add(), view(), edit())?"
+#: /controllers/regions_controller.php:44;61
+msgid "The Region has been saved"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/controller.php:141;167;141;167;141;167
-msgid "Would you like to create the methods for admin routing?"
+#: /controllers/regions_controller.php:47;64
+msgid "The Region could not be saved. Please, try again."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/controller.php:144;144;144
-msgid "Would you like this controller to use other helpers besides HtmlHelper and FormHelper?"
+#: /controllers/regions_controller.php:53
+msgid "Edit Region"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/controller.php:147;147;147
-msgid "Please provide a comma separated list of the other helper names you'd like to use.\nExample: 'Ajax, Javascript, Time'"
+#: /controllers/regions_controller.php:56
+msgid "Invalid Region"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/controller.php:151;151;151
-msgid "Would you like this controller to use any components?"
+#: /controllers/regions_controller.php:74
+msgid "Invalid id for Region"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/controller.php:154;154;154
-msgid "Please provide a comma separated list of the component names you'd like to use.\nExample: 'Acl, Security, RequestHandler'"
+#: /controllers/regions_controller.php:78
+msgid "Region deleted"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/controller.php:159;159;159
-msgid "Would you like to use Sessions?"
+#: /controllers/roles_controller.php:31
+#: /views/elements/admin/navigation.ctp:45
+msgid "Roles"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/controller.php:219;219;219
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:202;202;202
-msgid "Look okay?"
+#: /controllers/roles_controller.php:39
+msgid "Add Role"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/controller.php:251;251;251
-msgid "You must have a model for this class to build scaffold methods. Please try again."
+#: /controllers/roles_controller.php:44;61
+msgid "The Role has been saved"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/controller.php:512;512;512
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:761;761;761
-msgid "Your database does not have any tables."
+#: /controllers/roles_controller.php:47;64
+msgid "The Role could not be saved. Please, try again."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/controller.php:539;539;539
-msgid "Enter a number from the list above, type in the name of another controller, or 'q' to exit"
+#: /controllers/roles_controller.php:53
+msgid "Edit Role"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/controller.php:542;542;542
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:792;792;792
-msgid "Exit"
+#: /controllers/roles_controller.php:56
+msgid "Invalid Role"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/controller.php:547;547;547
-msgid "Error:"
+#: /controllers/roles_controller.php:74
+msgid "Invalid id for Role"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/controller.php:548;548;548
-msgid "The Controller name you supplied was empty, or the number \nyou selected was not an option. Please try again."
+#: /controllers/roles_controller.php:78
+msgid "Role deleted"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:100;100;100
-msgid "Use Database Config"
+#: /controllers/settings_controller.php:38
+msgid "Dashboard"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:111;111;111
-msgid "Given your model named '%s', Cake would expect a database table named %s"
+#: /controllers/settings_controller.php:54
+msgid "Invalid Setting."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:112;112;112
-msgid "Do you want to use this table?"
+#: /controllers/settings_controller.php:66;83
+msgid "The Setting has been saved"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:116;123;116;123;116;123
-msgid "What is the name of the table (enter \"null\" to use NO table)?"
+#: /controllers/settings_controller.php:69;86
+msgid "The Setting could not be saved. Please, try again."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:130;130;130
-msgid "Would you like to supply validation criteria for the fields in your model?"
+#: /controllers/settings_controller.php:78
+msgid "Invalid Setting"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:143;143;143
-msgid "What is the primaryKey?"
+#: /controllers/settings_controller.php:96
+msgid "Invalid id for Setting"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:151;151;151
-msgid "Would you like to define model associations (hasMany, hasOne, belongsTo, etc.)?"
+#: /controllers/settings_controller.php:100
+msgid "Setting deleted"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:158;158;158
-msgid "The following Model will be created:"
+#: /controllers/settings_controller.php:106
+#: /views/elements/admin/navigation.ctp:59
+#: /views/settings/admin_add.ctp:7
+#: /views/settings/admin_edit.ctp:7
+msgid "Settings"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:309;309;309
-msgid "One moment while the associations are detected."
+#: /controllers/settings_controller.php:109
+msgid "Settings updated successfully"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:392;392;392
-msgid "None found."
+#: /controllers/settings_controller.php:123
+msgid "Invalid Setting key"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:394;394;394
-msgid "Please confirm the following associations:"
+#: /controllers/terms_controller.php:40
+#: /views/nodes/admin_add.ctp:15
+#: /views/nodes/admin_edit.ctp:29
+msgid "Terms"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:415;415;415
-msgid "This is a self join. Use %s as the alias"
+#: /controllers/terms_controller.php:56
+msgid "Add Term"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:418;418;418
-msgid "Specify an alternate alias."
+#: /controllers/terms_controller.php:61;85
+msgid "The Term has been saved"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:430;430;430
-msgid "Would you like to define some additional model associations?"
+#: /controllers/terms_controller.php:64;88
+msgid "The Term could not be saved. Please, try again."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:436;436;436
-msgid "What is the association type?"
+#: /controllers/terms_controller.php:77
+msgid "Edit Term"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:441;476;441;476;441;476
-msgid "Enter a number"
+#: /controllers/terms_controller.php:80
+msgid "Invalid Term"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:444;444;444
-msgid "The selection you entered was invalid. Please enter a number between 1 and 4."
+#: /controllers/terms_controller.php:101
+msgid "Invalid id for Term"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:449;449;449
-msgid "For the following options be very careful to match your setup exactly. Any spelling mistakes will cause errors."
+#: /controllers/terms_controller.php:105
+msgid "Term deleted"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:451;451;451
-msgid "What is the alias for this association?"
+#: /controllers/terms_controller.php:146
+msgid "Terms deleted."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:452;452;452
-msgid "What className will %s use?"
+#: /controllers/terms_controller.php:149
+msgid "Terms published"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:466;466;466
-msgid "What is the table for this model?"
+#: /controllers/terms_controller.php:152
+msgid "Terms unpublished"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:472;472;472
-msgid "A helpful List of possible keys"
+#: /controllers/types_controller.php:31
+#: /views/types/admin_add.ctp:7
+#: /views/types/admin_edit.ctp:8
+msgid "Type"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:476;476;476
-msgid "What is the foreignKey?"
+#: /controllers/types_controller.php:39
+msgid "Add Type"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:482;482;482
-msgid "What is the foreignKey? Specify your own."
+#: /controllers/types_controller.php:44;64
+msgid "The Type has been saved"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:485;485;485
-msgid "What is the associationForeignKey?"
+#: /controllers/types_controller.php:47;67
+msgid "The Type could not be saved. Please, try again."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:486;486;486
-msgid "What is the joinTable?"
+#: /controllers/types_controller.php:56
+msgid "Edit Type"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:498;498;498
-msgid "Define another association?"
+#: /controllers/types_controller.php:59
+msgid "Invalid Type"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:768;768;768
-msgid "Possible Models based on your current database:"
+#: /controllers/types_controller.php:80
+msgid "Invalid id for Type"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:789;789;789
-msgid "Enter a number from the list above, type in the name of another model, or 'q' to exit"
+#: /controllers/types_controller.php:84
+msgid "Tyoe deleted"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/model.php:797;797;797
-msgid "The model name you supplied was empty, or the number you selected was not an option. Please try again."
+#: /controllers/users_controller.php:35;118
+#: /views/elements/admin/navigation.ctp:42;44
+#: /views/users/admin_index.ctp:2
+msgid "Users"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/plugin.php:112;112;112
-msgid "Enter the name of the plugin in CamelCase format"
+#: /controllers/users_controller.php:45;65
+msgid "The User has been saved"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/plugin.php:116;116;116
-msgid "An error occured trying to bake: %s in %s"
+#: /controllers/users_controller.php:48;68;140
+msgid "The User could not be saved. Please, try again."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/plugin.php:140;140;140
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/project.php:148;148;148
-msgid "Do you want verbose output?"
+#: /controllers/users_controller.php:60;80
+msgid "Invalid User"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/plugin.php:177;177;177
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/project.php:153;153;153
-msgid "Created: %s in %s"
+#: /controllers/users_controller.php:85
+msgid "Password has been reset."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/project.php:81;81;81
-msgid "Welcome page created"
+#: /controllers/users_controller.php:88
+msgid "Password could not be reset. Please, try again."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/project.php:83;83;83
-msgid "The Welcome page was NOT created"
+#: /controllers/users_controller.php:98
+msgid "Invalid id for User"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/project.php:87;87;87
-msgid "Random hash key created for 'Security.salt'"
+#: /controllers/users_controller.php:102
+msgid "User deleted"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/project.php:89;89;89
-msgid "Unable to generate random hash for 'Security.salt', you should change it in %s"
+#: /controllers/users_controller.php:108
+msgid "Admin Login"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/project.php:94;94;94
-msgid "CAKE_CORE_INCLUDE_PATH set to %s in webroot/index.php"
+#: /controllers/users_controller.php:113;236
+msgid "Log out successful."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/project.php:95;95;95
-msgid "CAKE_CORE_INCLUDE_PATH set to %s in webroot/test.php"
+#: /controllers/users_controller.php:122
+msgid "Register"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/project.php:96;96;96
-msgid "Remember to check these value after moving to production server"
+#: /controllers/users_controller.php:137
+msgid "You have successfully registered an account. An email has been sent with further instructions."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/project.php:98;98;98
-msgid "Unable to set CAKE_CORE_INCLUDE_PATH, you should change it in %s"
+#: /controllers/users_controller.php:159
+msgid "Account activated successfully."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/project.php:102;102;102
-msgid "Could not set permissions on %s"
+#: /controllers/users_controller.php:170
+msgid "Forgot Password"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/project.php:103;103;103
-msgid "chmod -R 0777 %s"
+#: /controllers/users_controller.php:175
+msgid "Invalid username."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/project.php:128;128;128
-msgid "What is the path to the directory layout you wish to copy?\nExample: %s"
+#: /controllers/users_controller.php:186;198
+msgid "Reset Password"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/project.php:130;130;130
-msgid "The directory path you supplied was empty. Please try again."
+#: /controllers/users_controller.php:189
+msgid "An email has been sent with instructions for resetting your password."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/project.php:133;133;133
-msgid "Directory path does not exist please choose another:"
+#: /controllers/users_controller.php:192;224
+msgid "An error occurred. Please try again."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/test.php:102;102;102
-msgid "Enter the class to test or (q)uit"
+#: /controllers/users_controller.php:221
+msgid "Your password has been reset successfully."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/test.php:110;110;110
-msgid "Enter the name for the test or (q)uit"
+#: /controllers/users_controller.php:232
+msgid "Log in"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/test.php:114;114;114
-msgid "Enter a test case or (q)uit"
+#: /controllers/users_controller.php:243
+msgid "Invalid User."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/test.php:120;120;120
-msgid "Test baked\n"
+#: /controllers/vocabularies_controller.php:31
+#: /views/vocabularies/admin_add.ctp:10
+#: /views/vocabularies/admin_edit.ctp:8
+msgid "Vocabulary"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/test.php:178;178;178
-msgid "Is this correct?"
+#: /controllers/vocabularies_controller.php:39
+msgid "Add Vocabulary"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/view.php:236;236;236
-msgid "Controller not found"
+#: /controllers/vocabularies_controller.php:44;64
+msgid "The Vocabulary has been saved"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/view.php:246;246;246
-msgid "The file '%s' could not be found.\nIn order to bake a view, you'll need to first create the controller."
+#: /controllers/vocabularies_controller.php:47;67
+msgid "The Vocabulary could not be saved. Please, try again."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/tasks/view.php:347;347;347
-msgid "Template for %s could not be found"
+#: /controllers/vocabularies_controller.php:56
+msgid "Edit Vocabulary"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/templates/skel/views/layouts/default.ctp:30;30;30
-#: /Volumes/dev/3.5/croogo/cake/libs/view/layouts/default.ctp:30;30;30
-msgid "CakePHP: the rapid development php framework:"
+#: /controllers/vocabularies_controller.php:59
+msgid "Invalid Vocabulary"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/templates/skel/views/layouts/default.ctp:44;55;44;55;44;55
-#: /Volumes/dev/3.5/croogo/cake/libs/view/layouts/default.ctp:44;55;44;55;44;55
-msgid "CakePHP: the rapid development php framework"
+#: /controllers/vocabularies_controller.php:80
+msgid "Invalid id for Vocabulary"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/console/libs/templates/skel/webroot/test.php:98;98;98
-msgid "Debug setting does not allow access to this url."
+#: /controllers/vocabularies_controller.php:84
+msgid "Vocabulary deleted"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/libs/cache.php:452;452;452
-msgid "Method write() not implemented in %s"
+#: /models/behaviors/croogo_translate.php:73
+msgid "Datasource %s for CroogoTranslateBehavior of model %s is not connected"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/libs/cache.php:462;462;462
-msgid "Method read() not implemented in %s"
+#: /plugins/acl/controllers/acl_acos_controller.php:19
+#: /plugins/acl/views/acl_acos/admin_index.ctp:2
+msgid "Acos"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/libs/class_registry.php:152;152;152
-msgid "(ClassRegistry::init() could not create instance of %1$s class %2$s "
+#: /plugins/acl/controllers/acl_acos_controller.php:26
+#: /plugins/acl/views/acl_acos/admin_add.ctp:2
+#: /plugins/acl/views/acl_acos/admin_edit.ctp:2
+msgid "Add Aco"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/libs/class_registry.php:162;162;162
-msgid "(ClassRegistry::init() Attempted to create instance of a class with a numeric name"
+#: /plugins/acl/controllers/acl_acos_controller.php:31;48
+msgid "The Aco has been saved"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/libs/configure.php:420;420;420
-msgid "Configure::load() - no variable $config found in %s.php"
+#: /plugins/acl/controllers/acl_acos_controller.php:34;51
+msgid "The Aco could not be saved. Please, try again."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/libs/configure.php:652;652;652
-msgid "Can't find application core file. Please create %score.php, and make sure it is readable by PHP."
+#: /plugins/acl/controllers/acl_acos_controller.php:40
+msgid "Edit Aco"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/libs/configure.php:656;656;656
-msgid "Can't find application bootstrap file. Please create %sbootstrap.php, and make sure it is readable by PHP."
+#: /plugins/acl/controllers/acl_acos_controller.php:43
+msgid "Invalid Aco"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/libs/debugger.php:557;557;557
-msgid "Please change the value of 'Security.salt' in app/config/core.php to a salt value specific to your application"
+#: /plugins/acl/controllers/acl_acos_controller.php:61
+msgid "Invalid id for Aco"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/libs/error.php:153;153;153
-msgid "Not Found"
+#: /plugins/acl/controllers/acl_acos_controller.php:65
+msgid "Aco deleted"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/libs/error.php:172;172;172
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_controller.ctp:25;25;25
-msgid "Missing Controller"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/error.php:190;190;190
-msgid "Missing Method in Controller"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/error.php:206;206;206
-msgid "Trying to access private method in class"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/error.php:222;222;222
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_table.ctp:25;25;25
-msgid "Missing Database Table"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/error.php:234;234;234
-msgid "Scaffold Missing Database Connection"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/error.php:251;251;251
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_view.ctp:25;25;25
-msgid "Missing View"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/error.php:267;267;267
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_layout.ctp:25;25;25
-msgid "Missing Layout"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/error.php:282;282;282
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_connection.ctp:25;25;25
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_scaffolddb.ctp:25;25;25
-msgid "Missing Database Connection"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/error.php:298;298;298
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_helper_file.ctp:25;25;25
-msgid "Missing Helper File"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/error.php:314;314;314
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_helper_class.ctp:25;25;25
-msgid "Missing Helper Class"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/error.php:331;331;331
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_component_file.ctp:25;25;25
-msgid "Missing Component File"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/error.php:348;348;348
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_component_class.ctp:25;25;25
-msgid "Missing Component Class"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/error.php:363;363;363
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_model.ctp:25;25;25
-msgid "Missing Model"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/folder.php:357;378;357;378;357;378
-msgid "%s changed to %s"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/folder.php:361;380;361;380;361;380
-msgid "%s NOT changed to %s"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/folder.php:458;458;458
-msgid "%s is a file"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/folder.php:468;617;468;617;468;617
-msgid "%s created"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/folder.php:472;472;472
-msgid "%s NOT created"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/folder.php:542;556;542;556;542;556
-msgid "%s removed"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/folder.php:544;553;544;553;544;553
-msgid "%s NOT removed"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/folder.php:590;590;590
-msgid "%s not writable"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/folder.php:604;604;604
-msgid "%s copied to %s"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/folder.php:606;606;606
-msgid "%s NOT copied to %s"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/folder.php:621;621;621
-msgid "%s not created"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/http_socket.php:444;444;444
-msgid "HttpSocket::decodeBody - Unknown encoding: %s. Activate quirks mode to surpress error."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/http_socket.php:469;469;469
-msgid "HttpSocket::decodeChunkedBody - Could not parse malformed chunk. Activate quirks mode to do this."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/http_socket.php:726;726;726
-msgid "HttpSocket::buildRequestLine - Passed an invalid request line string. Activate quirks mode to do this."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/http_socket.php:741;741;741
-msgid "HttpSocket::buildRequestLine - The \"*\" asterisk character is only allowed for the following methods: %s. Activate quirks mode to work outside of HTTP/1.1 specs."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/overloadable_php4.php:75;132;75;132;75;132
-#: /Volumes/dev/3.5/croogo/cake/libs/overloadable_php5.php:50;80;50;80;50;80
-msgid "Magic method handler call__ not defined in %s"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/security.php:174;174;174
-msgid "You cannot use an empty key for Security::cipher()"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/session.php:460;460;460
-msgid "You must set the all Configure::write('Session.*') in core.php to use database storage"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/socket.php:228;228;228
-msgid "Connection timed out"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/validation.php:350;350;350
-msgid "You must define the $operator parameter for Validation::comparison()"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/validation.php:373;373;373
-msgid "You must define a regular expression for Validation::custom()"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/cache/file.php:262;262;262
-msgid "%s is not writable"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/controller.php:328;328;328
-msgid "Controller::__construct() : Can not get or parse my own class name, exiting."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/controller.php:707;707;707
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/components/auth.php:519;519;519
-msgid "%s::isAuthorized() is not defined."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/controller.php:976;976;976
-msgid "Controller::paginate() - can't find model %1$s in controller %2$sController"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/scaffold.php:157;157;157
-msgid "Scaffold :: "
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/scaffold.php:200;203;200;203;200;203
-msgid "No id set for %s::view()"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/scaffold.php:257;257;257
-msgid "updated"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/scaffold.php:260;260;260
-msgid "saved"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/scaffold.php:270;270;270
-msgid "Invalid id for %s::edit()"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/scaffold.php:287;287;287
-msgid "The %1$s has been %2$s"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/scaffold.php:303;303;303
-msgid "Please correct errors below."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/scaffold.php:342;345;342;345;342;345
-msgid "No id set for %s::delete()"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/scaffold.php:351;354;351;354;351;354
-msgid "The %1$s with id: %2$d has been deleted."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/scaffold.php:359;362;359;362;359;362
-msgid "There was an error deleting the %1$s with id: %2$d"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/components/acl.php:56;56;56
-msgid "Could not find %s."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/components/acl.php:167;167;167
-msgid "[acl_base] The AclBase class constructor has been called, or the class was instantiated. This class must remain abstract. Please refer to the Cake docs for ACL configuration."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/components/acl.php:252;252;252
-msgid "ACO permissions key %s does not exist in DbAcl::check()"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/components/acl.php:325;325;325
-msgid "DbAcl::allow() - Invalid node"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/components/auth.php:420;420;420
-msgid "Could not find $userModel. Please set AuthComponent::$userModel in beforeFilter()."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/components/auth.php:430;430;430
-msgid "Login failed. Invalid username or password."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/components/auth.php:431;431;431
-msgid "You are not authorized to access that location."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/components/auth.php:513;513;513
-msgid "Could not find %s. Set AuthComponent::$object in beforeFilter() or pass a valid object"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/components/auth.php:527;527;527
-msgid "Auth::isAuthorized() - $authorize is set to an incorrect value.  Allowed settings are: \"actions\", \"crud\", \"model\" or null."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/components/auth.php:759;759;759
-msgid "Auth::getModel() - Model is not set or could not be found"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/controller/components/security.php:301;301;301
-msgid "SecurityComponent::loginCredentials() - Server does not support digest authentication"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/model/connection_manager.php:109;109;109
-msgid "ConnectionManager::getDataSource - Non-existent data source %s"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/model/connection_manager.php:178;178;178
-msgid "Unable to load DataSource file %s.php"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/model/model.php:923;923;923
-msgid "(Model::getColumnTypes) Unable to build model field data. If you are using a model without a database table, try implementing schema()"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/model/model.php:2410;2410;2410
-msgid "This field cannot be left blank"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/model/model.php:2718;2718;2718
-msgid "Invalid join model settings in %s"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/model/behaviors/containable.php:340;340;340
-msgid "Model \"%s\" is not associated with model \"%s\""
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/model/behaviors/translate.php:61;61;61
-msgid "Datasource %s for TranslateBehavior of model %s is not connected"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/model/behaviors/translate.php:432;432;432
-msgid "Association %s is already binded to model %s"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/model/datasources/dbo_source.php:746;746;746
-#: /Volumes/dev/3.5/croogo/cake/libs/model/datasources/dbo/dbo_oracle.php:958;958;958
-msgid "SQL Error in model %s:"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/model/datasources/dbo_source.php:2251;2308;2251;2308;2251;2308
-#: /Volumes/dev/3.5/croogo/cake/libs/model/datasources/dbo/dbo_mysql.php:265;265;265
-#: /Volumes/dev/3.5/croogo/cake/libs/model/datasources/dbo/dbo_oracle.php:1108;1108;1108
-msgid "Invalid schema object"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/model/datasources/dbo/dbo_oracle.php:560;560;560
-msgid "Must specify table to operate on constraints"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/model/datasources/dbo/dbo_oracle.php:618;618;618
-msgid "DboOracle::constraint() accepts only enable, disable, or list"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helper.php:143;143;143
-msgid "Method %1$s::%2$s does not exist"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/view.php:402;402;402
-msgid "Error in view %s, got: <blockquote>%s</blockquote>"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/view.php:461;461;461
-msgid "Error in layout %s, got: <blockquote>%s</blockquote>"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/elements/dump.ctp:26;26;26
-msgid "Controller dump:"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/error404.ctp:27;27;27
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_action.ctp:27;31;27;31;27;31
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_component_class.ctp:27;31;27;31;27;31
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_component_file.ctp:27;31;27;31;27;31
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_connection.ctp:27;31;27;31;27;31
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_controller.ctp:27;31;27;31;27;31
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_helper_class.ctp:27;31;27;31;27;31
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_helper_file.ctp:27;31;27;31;27;31
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_layout.ctp:27;31;27;31;27;31
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_model.ctp:27;31;27;31;27;31
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_scaffolddb.ctp:27;31;27;31;27;31
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_table.ctp:27;27;27
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_view.ctp:27;31;27;31;27;31
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/private_action.ctp:27;27;27
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/scaffold_error.ctp:27;27;27
-msgid "Error"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_action.ctp:25;25;25
-msgid "Missing Method in %s"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_action.ctp:28;28;28
-msgid "The action %1$s is not defined in controller %2$s"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_action.ctp:32;32;32
-msgid "Create %1$s%2$s in file: %3$s."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_action.ctp:49;49;49
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_component_class.ctp:42;42;42
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_component_file.ctp:42;42;42
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_connection.ctp:35;35;35
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_controller.ctp:43;43;43
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_helper_class.ctp:42;42;42
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_helper_file.ctp:42;42;42
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_layout.ctp:35;35;35
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_model.ctp:44;44;44
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_scaffolddb.ctp:35;35;35
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_table.ctp:31;31;31
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_view.ctp:35;35;35
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/private_action.ctp:31;31;31
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/scaffold_error.ctp:31;31;31
-msgid "Notice"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_action.ctp:50;50;50
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_connection.ctp:36;36;36
-msgid "If you want to customize this error message, create %s."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_component_class.ctp:28;28;28
-msgid "Component class %1$s in %2$s was not found."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_component_class.ctp:32;32;32
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_component_file.ctp:32;32;32
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_model.ctp:32;32;32
-msgid "Create the class %s in file: %s"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_component_class.ctp:43;43;43
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_component_file.ctp:43;43;43
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_controller.ctp:44;44;44
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_helper_class.ctp:43;43;43
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_helper_file.ctp:43;43;43
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_layout.ctp:36;36;36
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_model.ctp:45;45;45
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_scaffolddb.ctp:36;36;36
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_table.ctp:32;32;32
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_view.ctp:36;36;36
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/private_action.ctp:32;32;32
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/scaffold_error.ctp:32;32;32
-msgid "If you want to customize this error message, create %s"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_component_file.ctp:28;28;28
-msgid "The component file was not found."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_connection.ctp:28;28;28
-msgid "%s requires a database connection"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_connection.ctp:32;32;32
-msgid "Confirm you have created the file : %s."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_controller.ctp:28;28;28
-msgid "%s could not be found."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_controller.ctp:32;32;32
-msgid "Create the class %s below in file: %s"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_helper_class.ctp:28;28;28
-msgid "The helper class <em>%s</em> can not be found or does not exist."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_helper_class.ctp:32;32;32
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_helper_file.ctp:32;32;32
-msgid "Create the class below in file: %s"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_helper_file.ctp:28;28;28
-msgid "The helper file %s can not be found or does not exist."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_layout.ctp:28;28;28
-msgid "The layout file %s can not be found or does not exist."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_layout.ctp:32;32;32
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_scaffolddb.ctp:32;32;32
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_view.ctp:32;32;32
-msgid "Confirm you have created the file: %s"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_model.ctp:28;28;28
-msgid "<em>%s</em> could not be found."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_scaffolddb.ctp:28;28;28
-msgid "Scaffold requires a database connection"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_table.ctp:28;28;28
-msgid "Database table %1$s for model %2$s was not found."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/missing_view.ctp:28;28;28
-msgid "The view for %1$s%2$s was not found."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/private_action.ctp:25;25;25
-msgid "Private Method in %s"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/private_action.ctp:28;28;28
-msgid "%s%s cannot be accessed directly."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/scaffold_error.ctp:25;25;25
-msgid "Scaffold Error"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/errors/scaffold_error.ctp:28;28;28
-msgid "Method _scaffoldError in was not found in the controller"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/form.php:286;1096;286;1096;286;1096
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/edit.ctp:29;29;29
-msgid "Submit"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/form.php:421;421;421
-msgid "Error in field %s"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/form.php:512;512;512
-msgid "New"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/form.php:518;518;518
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/index.ctp:66;66;66
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/view.ctp:145;145;145
-msgid "Edit"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/form.php:1810;1810;1810
-msgid "January"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/form.php:1811;1811;1811
-msgid "February"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/form.php:1812;1812;1812
-msgid "March"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/form.php:1813;1813;1813
-msgid "April"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/form.php:1814;1814;1814
-msgid "May"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/form.php:1815;1815;1815
-msgid "June"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/form.php:1816;1816;1816
-msgid "July"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/form.php:1817;1817;1817
-msgid "August"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/form.php:1818;1818;1818
-msgid "September"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/form.php:1819;1819;1819
-msgid "October"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/form.php:1820;1820;1820
-msgid "November"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/form.php:1821;1821;1821
-msgid "December"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/number.php:59;59;59
-msgid "%d KB"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/number.php:61;61;61
-msgid "%.2f MB"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/number.php:63;63;63
-msgid "%.2f GB"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/number.php:65;65;65
-msgid "%.2f TB"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/number.php:57;57;57
-msgid "%d Byte"
-msgid_plural "%d Bytes"
-msgstr[0] ""
-msgstr[1] ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/session.php:176;176;176
-msgid "You can not write to a Session from the view"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/text.php:334;334;334
-msgid "(TextHelper::flay) Deprecated: the Flay library is no longer supported and will be removed in a future version."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/time.php:111;111;111
-msgid "Today, %s"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/time.php:113;113;113
-msgid "Yesterday, %s"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/time.php:424;424;424
-msgid "on %s"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/time.php:458;458;458
-msgid "%s ago"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/time.php:486;486;486
-msgid "days"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/time.php:428;428;428
-msgid "year"
-msgid_plural "years"
-msgstr[0] ""
-msgstr[1] ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/time.php:429;434;429;434;429;434
-msgid "month"
-msgid_plural "months"
-msgstr[0] ""
-msgstr[1] ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/time.php:430;435;439;430;435;439;430;435;439
-msgid "week"
-msgid_plural "weeks"
-msgstr[0] ""
-msgstr[1] ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/time.php:431;436;440;443;431;436;440;443;431;436;440;443
-msgid "day"
-msgid_plural "days"
-msgstr[0] ""
-msgstr[1] ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/time.php:444;447;444;447;444;447
-msgid "hour"
-msgid_plural "hours"
-msgstr[0] ""
-msgstr[1] ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/time.php:448;451;448;451;448;451
-msgid "minute"
-msgid_plural "minutes"
-msgstr[0] ""
-msgstr[1] ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/helpers/time.php:454;454;454
-msgid "second"
-msgid_plural "seconds"
-msgstr[0] ""
-msgstr[1] ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:28;28;28
-msgid "Release Notes for CakePHP %s."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:29;29;29
-msgid "Read the changelog"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:39;39;39
-msgid "Your tmp directory is writable."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:43;43;43
-msgid "Your tmp directory is NOT writable."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:53;53;53
-msgid "The %s is being used for caching. To change the config edit APP/config/core.php "
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:57;57;57
-msgid "Your cache is NOT working. Please check the settings in APP/config/core.php"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:67;67;67
-msgid "Your database configuration file is present."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:72;72;72
-msgid "Your database configuration file is NOT present."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:74;74;74
-msgid "Rename config/database.php.default to config/database.php"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:89;89;89
-msgid "Cake is able to connect to the database."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:93;93;93
-msgid "Cake is NOT able to connect to the database."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:99;99;99
-msgid "Editing this Page"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:102;102;102
-msgid "To change the content of this page, create: APP/views/pages/home.ctp.<br />\nTo change its layout, create: APP/views/layouts/default.ctp.<br />\nYou can also add some CSS styles for your pages at: APP/webroot/css."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:107;107;107
-msgid "Getting Started"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:112;112;112
-msgid "The 15 min Blog Tutorial"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:114;114;114
-msgid "More about Cake"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:116;116;116
-msgid "CakePHP is a rapid development framework for PHP which uses commonly known design patterns like Active Record, Association Data Mapping, Front Controller and MVC."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:119;119;119
-msgid "Our primary goal is to provide a structured framework that enables PHP users at all levels to rapidly develop robust web applications, without any loss to flexibility."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:123;123;123
-msgid "Cake Software Foundation"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:124;124;124
-msgid "Promoting development related to CakePHP"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:125;125;125
-msgid "CakePHP"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:126;126;126
-msgid "The Rapid Development Framework"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:127;127;127
-msgid "CakePHP Documentation"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:128;128;128
-msgid "Your Rapid Development Cookbook"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:129;129;129
-msgid "CakePHP API"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:130;130;130
-msgid "Quick Reference"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:131;131;131
-msgid "The Bakery"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:132;132;132
-msgid "Everything CakePHP"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:133;133;133
-msgid "The Show"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:134;134;134
-msgid "The Show is a live and archived internet radio broadcast CakePHP-related topics and answer questions live via IRC, Skype, and telephone."
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:135;135;135
-msgid "CakePHP Google Group"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:136;136;136
-msgid "Community mailing list"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:138;138;138
-msgid "Live chat about CakePHP"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:139;139;139
-msgid "CakePHP Trac"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:140;140;140
-msgid "For the Development of CakePHP (Tickets, SVN browser, Roadmap, Changelogs)"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:141;141;141
-msgid "CakeForge"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:142;142;142
-msgid "Open Development for CakePHP"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:143;143;143
-msgid "Book Store"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:144;144;144
-msgid "Recommended Software Books"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:145;145;145
-msgid "CakePHP gear"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/pages/home.ctp:146;146;146
-msgid "Get your own CakePHP gear - Doughnate to Cake"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/edit.ctp:35;35;35
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/index.ctp:67;67;67
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/view.ctp:146;146;146
-msgid "Delete"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/edit.ctp:35;35;35
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/index.ctp:67;67;67
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/view.ctp:58;146;58;146;58;146
-msgid "Are you sure you want to delete"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/edit.ctp:37;37;37
-msgid "List"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/edit.ctp:43;43;43
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/index.ctp:89;89;89
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/view.ctp:59;66;59;66;59;66
-msgid "List %s"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/edit.ctp:44;44;44
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/index.ctp:90;90;90
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/view.ctp:60;67;155;60;67;155;60;67;155
-msgid "New %s"
-msgstr ""
-
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/index.ctp:37;37;37
+#: /plugins/acl/controllers/acl_actions_controller.php:20
+#: /plugins/acl/views/acl_acos/admin_index.ctp:18
+#: /plugins/acl/views/acl_actions/admin_index.ctp:20
+#: /plugins/acl/views/acl_aros/admin_index.ctp:18
+#: /plugins/extensions/views/extensions_locales/admin_index.ctp:16
+#: /plugins/extensions/views/extensions_plugins/admin_index.ctp:15
+#: /views/attachments/admin_browse.ctp:19
+#: /views/attachments/admin_index.ctp:17
+#: /views/blocks/admin_index.ctp:20
+#: /views/comments/admin_index.ctp:31
+#: /views/contacts/admin_index.ctp:17
+#: /views/filemanager/admin_browse.ctp:29
+#: /views/languages/admin_index.ctp:18
+#: /views/links/admin_index.ctp:26
+#: /views/menus/admin_index.ctp:17
+#: /views/messages/admin_index.ctp:30
+#: /views/nodes/admin_index.ctp:36
+#: /views/nodes/admin_translations.ctp:28
+#: /views/regions/admin_index.ctp:16
+#: /views/roles/admin_index.ctp:16
+#: /views/settings/admin_index.ctp:17
+#: /views/terms/admin_index.ctp:25
+#: /views/types/admin_index.ctp:17
+#: /views/users/admin_index.ctp:18
+#: /views/vocabularies/admin_index.ctp:16
 msgid "Actions"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/index.ctp:65;65;65
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/view.ctp:144;144;144
-msgid "View"
+#: /plugins/acl/controllers/acl_actions_controller.php:32
+msgid "Add Action"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/index.ctp:77;77;77
-msgid "previous"
+#: /plugins/acl/controllers/acl_actions_controller.php:72
+msgid "Edit Action"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/index.ctp:79;79;79
-msgid "next"
+#: /plugins/acl/controllers/acl_actions_controller.php:75
+msgid "Invalid Action"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/view.ctp:26;26;26
-msgid "View %s"
+#: /plugins/acl/controllers/acl_actions_controller.php:80
+msgid "The Action has been saved"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/view.ctp:57;98;57;98;57;98
-msgid "Edit %s"
+#: /plugins/acl/controllers/acl_actions_controller.php:83
+msgid "The Action could not be saved. Please, try again."
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/view.ctp:58;58;58
-msgid "Delete %s"
+#: /plugins/acl/controllers/acl_actions_controller.php:110;121
+msgid "Invalid id for Action"
 msgstr ""
 
-#: /Volumes/dev/3.5/croogo/cake/libs/view/scaffolds/view.ctp:79;118;79;118;79;118
-msgid "Related %s"
+#: /plugins/acl/controllers/acl_actions_controller.php:114
+msgid "Action deleted"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_actions_controller.php:126
+msgid "Action moved up"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_actions_controller.php:131
+msgid "Action moved down"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_aros_controller.php:19
+#: /plugins/acl/views/acl_aros/admin_index.ctp:2
+msgid "Aros"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_aros_controller.php:26
+#: /plugins/acl/views/acl_aros/admin_add.ctp:2
+#: /plugins/acl/views/acl_aros/admin_edit.ctp:2
+msgid "Add Aro"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_aros_controller.php:31;48
+msgid "The Aro has been saved"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_aros_controller.php:34;51
+msgid "The Aro could not be saved. Please, try again."
+msgstr ""
+
+#: /plugins/acl/controllers/acl_aros_controller.php:40
+msgid "Edit Aro"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_aros_controller.php:43
+msgid "Invalid Aro"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_aros_controller.php:61
+msgid "Invalid id for Aro"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_aros_controller.php:65
+msgid "Aro deleted"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_permissions_controller.php:19
+#: /views/elements/admin/navigation.ctp:46
+msgid "Permissions"
+msgstr ""
+
+#: /plugins/acl/views/acl_acos/admin_add.ctp:12
+#: /plugins/acl/views/acl_acos/admin_edit.ctp:13
+#: /plugins/acl/views/acl_actions/admin_add.ctp:14
+#: /plugins/acl/views/acl_actions/admin_edit.ctp:16
+#: /plugins/acl/views/acl_aros/admin_add.ctp:12
+#: /plugins/acl/views/acl_aros/admin_edit.ctp:13
+#: /plugins/extensions/views/extensions_locales/admin_add.ctp:18
+#: /plugins/extensions/views/extensions_locales/admin_edit.ctp:23
+#: /views/attachments/admin_add.ctp:15
+#: /views/attachments/admin_edit.ctp:42
+#: /views/blocks/admin_add.ctp:45
+#: /views/blocks/admin_edit.ctp:46
+#: /views/blocks/admin_index.ctp:57
+#: /views/comments/admin_edit.ctp:31
+#: /views/comments/admin_index.ctp:74
+#: /views/contacts/admin_add.ctp:66
+#: /views/contacts/admin_edit.ctp:67
+#: /views/languages/admin_add.ctp:12
+#: /views/languages/admin_edit.ctp:13
+#: /views/links/admin_add.ctp:51
+#: /views/links/admin_edit.ctp:52
+#: /views/links/admin_index.ctp:61
+#: /views/menus/admin_add.ctp:28
+#: /views/menus/admin_edit.ctp:29
+#: /views/messages/admin_edit.ctp:16
+#: /views/messages/admin_index.ctp:66
+#: /views/nodes/admin_add.ctp:81
+#: /views/nodes/admin_edit.ctp:94
+#: /views/nodes/admin_index.ctp:83
+#: /views/regions/admin_add.ctp:10
+#: /views/regions/admin_edit.ctp:11
+#: /views/roles/admin_add.ctp:10
+#: /views/roles/admin_edit.ctp:12
+#: /views/settings/admin_add.ctp:31
+#: /views/settings/admin_edit.ctp:32
+#: /views/settings/admin_prefix.ctp:54
+#: /views/terms/admin_add.ctp:17
+#: /views/terms/admin_edit.ctp:15
+#: /views/terms/admin_index.ctp:59
+#: /views/types/admin_add.ctp:82
+#: /views/types/admin_edit.ctp:82
+#: /views/users/add.ctp:13
+#: /views/users/admin_add.ctp:16
+#: /views/users/admin_edit.ctp:22
+#: /views/users/admin_reset_password.ctp:11
+#: /views/users/forgot.ctp:9
+#: /views/users/login.ctp:10
+#: /views/users/reset.ctp:9
+#: /views/vocabularies/admin_add.ctp:32
+#: /views/vocabularies/admin_edit.ctp:31
+msgid "Submit"
+msgstr ""
+
+#: /plugins/acl/views/acl_acos/admin_index.ctp:6
+msgid "New Aco"
+msgstr ""
+
+#: /plugins/acl/views/acl_acos/admin_index.ctp:24
+#: /plugins/acl/views/acl_actions/admin_index.ctp:41
+#: /plugins/acl/views/acl_aros/admin_index.ctp:24
+#: /plugins/extensions/views/extensions_locales/admin_index.ctp:24
+#: /views/attachments/admin_browse.ctp:25
+#: /views/attachments/admin_index.ctp:23
+#: /views/blocks/admin_index.ctp:28
+#: /views/comments/admin_index.ctp:37
+#: /views/contacts/admin_index.ctp:25
+#: /views/filemanager/admin_browse.ctp:51
+#: /views/languages/admin_index.ctp:26
+#: /views/links/admin_index.ctp:34
+#: /views/menus/admin_index.ctp:24
+#: /views/messages/admin_index.ctp:36
+#: /views/nodes/admin_index.ctp:42
+#: /views/nodes/admin_translations.ctp:34
+#: /views/regions/admin_index.ctp:22
+#: /views/roles/admin_index.ctp:22
+#: /views/settings/admin_index.ctp:25
+#: /views/terms/admin_index.ctp:33
+#: /views/types/admin_index.ctp:23
+#: /views/users/admin_index.ctp:24
+#: /views/vocabularies/admin_index.ctp:23
+msgid "Edit"
+msgstr ""
+
+#: /plugins/acl/views/acl_acos/admin_index.ctp:25
+#: /plugins/acl/views/acl_actions/admin_index.ctp:42
+#: /plugins/acl/views/acl_aros/admin_index.ctp:25
+#: /plugins/extensions/views/extensions_locales/admin_index.ctp:25
+#: /plugins/extensions/views/extensions_plugins/admin_index.ctp:24
+#: /plugins/extensions/views/extensions_themes/admin_index.ctp:45
+#: /views/attachments/admin_browse.ctp:26
+#: /views/attachments/admin_index.ctp:24
+#: /views/blocks/admin_index.ctp:29;53
+#: /views/comments/admin_index.ctp:38;70
+#: /views/contacts/admin_index.ctp:26
+#: /views/filemanager/admin_browse.ctp:38;53
+#: /views/languages/admin_index.ctp:27
+#: /views/links/admin_index.ctp:35;57
+#: /views/menus/admin_index.ctp:25
+#: /views/messages/admin_index.ctp:37;62
+#: /views/nodes/admin_index.ctp:44;79
+#: /views/nodes/admin_translations.ctp:35
+#: /views/regions/admin_index.ctp:23
+#: /views/roles/admin_index.ctp:23
+#: /views/settings/admin_index.ctp:26
+#: /views/terms/admin_index.ctp:34;55
+#: /views/types/admin_index.ctp:24
+#: /views/users/admin_index.ctp:25
+#: /views/vocabularies/admin_index.ctp:24
+msgid "Delete"
+msgstr ""
+
+#: /plugins/acl/views/acl_acos/admin_index.ctp:25
+#: /plugins/acl/views/acl_actions/admin_index.ctp:42
+#: /plugins/acl/views/acl_aros/admin_index.ctp:25
+#: /plugins/extensions/views/extensions_locales/admin_index.ctp:25
+#: /plugins/extensions/views/extensions_plugins/admin_index.ctp:24
+#: /plugins/extensions/views/extensions_themes/admin_index.ctp:45
+#: /views/attachments/admin_browse.ctp:26
+#: /views/attachments/admin_index.ctp:24
+#: /views/blocks/admin_index.ctp:29
+#: /views/comments/admin_index.ctp:38
+#: /views/contacts/admin_index.ctp:26
+#: /views/languages/admin_index.ctp:27
+#: /views/links/admin_index.ctp:35
+#: /views/menus/admin_index.ctp:25
+#: /views/messages/admin_index.ctp:37
+#: /views/nodes/admin_index.ctp:44
+#: /views/nodes/admin_translations.ctp:35
+#: /views/regions/admin_index.ctp:23
+#: /views/roles/admin_index.ctp:23
+#: /views/settings/admin_index.ctp:26
+#: /views/terms/admin_index.ctp:34
+#: /views/types/admin_index.ctp:24
+#: /views/users/admin_index.ctp:25
+#: /views/vocabularies/admin_index.ctp:24
+msgid "Are you sure?"
+msgstr ""
+
+#: /plugins/acl/views/acl_acos/admin_index.ctp:44
+#: /plugins/acl/views/acl_aros/admin_index.ctp:44
+#: /views/attachments/admin_browse.ctp:56
+#: /views/attachments/admin_index.ctp:50
+#: /views/blocks/admin_index.ctp:63
+#: /views/comments/admin_index.ctp:80
+#: /views/contacts/admin_index.ctp:49
+#: /views/languages/admin_index.ctp:46
+#: /views/menus/admin_index.ctp:43
+#: /views/messages/admin_index.ctp:72
+#: /views/nodes/admin_index.ctp:89
+#: /views/regions/admin_index.ctp:40
+#: /views/roles/admin_index.ctp:40
+#: /views/settings/admin_index.ctp:53
+#: /views/types/admin_index.ctp:42
+#: /views/users/admin_index.ctp:44
+#: /views/vocabularies/admin_index.ctp:41
+msgid "Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%"
+msgstr ""
+
+#: /plugins/acl/views/acl_actions/admin_add.ctp:9
+#: /plugins/acl/views/acl_actions/admin_edit.ctp:11
+msgid "Choose none if the Aco is a controller."
+msgstr ""
+
+#: /plugins/acl/views/acl_actions/admin_index.ctp:10
+msgid "New Action"
+msgstr ""
+
+#: /plugins/acl/views/acl_actions/admin_index.ctp:11
+#: /plugins/acl/views/acl_permissions/admin_index.ctp:9
+msgid "Generate Actions"
+msgstr ""
+
+#: /plugins/acl/views/acl_actions/admin_index.ctp:18
+#: /plugins/acl/views/acl_permissions/admin_index.ctp:20
+#: /views/links/admin_index.ctp:23
+#: /views/settings/admin_view.ctp:4
+#: /views/terms/admin_index.ctp:23
+msgid "Id"
+msgstr ""
+
+#: /plugins/acl/views/acl_actions/admin_index.ctp:19
+#: /plugins/acl/views/acl_permissions/admin_index.ctp:21
+msgid "Alias"
+msgstr ""
+
+#: /plugins/acl/views/acl_actions/admin_index.ctp:43
+#: /views/blocks/admin_index.ctp:26
+#: /views/languages/admin_index.ctp:24
+#: /views/links/admin_index.ctp:32
+#: /views/settings/admin_index.ctp:23
+#: /views/terms/admin_index.ctp:31
+msgid "Move up"
+msgstr ""
+
+#: /plugins/acl/views/acl_actions/admin_index.ctp:44
+#: /views/blocks/admin_index.ctp:27
+#: /views/languages/admin_index.ctp:25
+#: /views/links/admin_index.ctp:33
+#: /views/settings/admin_index.ctp:24
+#: /views/terms/admin_index.ctp:32
+msgid "Move down"
+msgstr ""
+
+#: /plugins/acl/views/acl_aros/admin_index.ctp:6
+msgid "New Aro"
+msgstr ""
+
+#: /plugins/acl/views/acl_permissions/admin_index.ctp:10
+msgid "Edit Actions"
+msgstr ""
+
+#: /plugins/acl/views/acl_permissions/admin_toggle.ctp:9
+msgid "error"
+msgstr ""
+
+#: /plugins/example/controllers/example_controller.php:31
+#: /plugins/example/views/elements/admin_menu.ctp:1
+msgid "Example"
+msgstr ""
+
+#: /plugins/example/views/elements/admin_menu.ctp:3
+msgid "Example 1"
+msgstr ""
+
+#: /plugins/example/views/elements/admin_menu.ctp:4
+msgid "Example 2"
+msgstr ""
+
+#: /plugins/example/views/example/index.ctp:3
+msgid "content here"
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_hooks_controller.php:37
+#: /views/elements/admin/navigation.ctp:55
+msgid "Hooks"
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_locales_controller.php:37
+#: /views/elements/admin/navigation.ctp:53
+msgid "Locales"
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_locales_controller.php:48
+msgid "Locale does not exist."
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_locales_controller.php:61
+msgid "Could not edit croogo_bootstrap.php file."
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_locales_controller.php:67
+msgid "Upload a new locale"
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_locales_controller.php:93;142
+msgid "Invalid locale."
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_locales_controller.php:98
+msgid "Locale already exists."
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_locales_controller.php:147
+msgid "The file default.po does not exist."
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_locales_controller.php:157
+msgid "Locale updated successfully"
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_locales_controller.php:173
+msgid "Locale deleted successfully."
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_locales_controller.php:175
+msgid "Local could not be deleted."
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_plugins_controller.php:51
+#: /views/elements/admin/navigation.ctp:54
+msgid "Plugins"
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_plugins_controller.php:62
+msgid "Upload a new plugin"
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_plugins_controller.php:91
+msgid "Invalid plugin."
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_plugins_controller.php:96
+msgid "Plugin already exists."
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_plugins_controller.php:138
+msgid "Invalid plugin"
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_plugins_controller.php:144
+msgid "Plugin deleted successfully."
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_plugins_controller.php:146
+msgid "Plugin could not be deleted."
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_themes_controller.php:38
+#: /views/elements/admin/navigation.ctp:52
+msgid "Themes"
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_themes_controller.php:59
+msgid "Theme activated."
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_themes_controller.php:65
+msgid "Upload a new theme"
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_themes_controller.php:85;95
+msgid "Invalid XML file"
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_themes_controller.php:101
+msgid "Directory with theme alias already exists."
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_themes_controller.php:146
+msgid "Theme Editor"
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_themes_controller.php:155
+msgid "Invalid Theme."
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_themes_controller.php:160
+msgid "Default theme cannot be deleted."
+msgstr ""
+
+#: /plugins/extensions/controllers/extensions_themes_controller.php:182
+msgid "Theme deleted successfully."
+msgstr ""
+
+#: /plugins/extensions/views/extensions_hooks/admin_index.ctp:17
+msgid "Hook"
+msgstr ""
+
+#: /plugins/extensions/views/extensions_hooks/admin_index.ctp:18
+msgid "Hook type"
+msgstr ""
+
+#: /plugins/extensions/views/extensions_hooks/admin_index.ctp:19
+#: /views/links/admin_index.ctp:25
+msgid "Status"
+msgstr ""
+
+#: /plugins/extensions/views/extensions_locales/admin_index.ctp:14
+#: /views/nodes/admin_translations.ctp:27
+msgid "Locale"
+msgstr ""
+
+#: /plugins/extensions/views/extensions_locales/admin_index.ctp:15
+msgid "Default"
+msgstr ""
+
+#: /plugins/extensions/views/extensions_locales/admin_index.ctp:23
+#: /plugins/extensions/views/extensions_themes/admin_index.ctp:44
+msgid "Activate"
+msgstr ""
+
+#: /plugins/extensions/views/extensions_plugins/admin_index.ctp:14
+msgid "Plugin"
+msgstr ""
+
+#: /plugins/extensions/views/extensions_themes/admin_index.ctp:7
+msgid "Editor"
+msgstr ""
+
+#: /plugins/extensions/views/extensions_themes/admin_index.ctp:12
+msgid "Current Theme"
+msgstr ""
+
+#: /plugins/extensions/views/extensions_themes/admin_index.ctp:22;40
+#: /views/comments/rss/index.ctp:16
+msgid "by %s"
+msgstr ""
+
+#: /plugins/extensions/views/extensions_themes/admin_index.ctp:24;42
+msgid "Regions supported: "
+msgstr ""
+
+#: /plugins/extensions/views/extensions_themes/admin_index.ctp:29
+msgid "Available Themes"
+msgstr ""
+
+#: /plugins/install/controllers/install_controller.php:56
+msgid "Installation: Welcome"
+msgstr ""
+
+#: /plugins/install/controllers/install_controller.php:64
+msgid "Step 1: Database"
+msgstr ""
+
+#: /plugins/install/controllers/install_controller.php:85
+msgid "Could not write database.php file."
+msgstr ""
+
+#: /plugins/install/controllers/install_controller.php:88;108
+msgid "Could not connect to database."
+msgstr ""
+
+#: /plugins/install/controllers/install_controller.php:98
+msgid "Step 2: Run SQL"
+msgstr ""
+
+#: /plugins/install/controllers/install_controller.php:125
+msgid "Installation completed successfully"
+msgstr ""
+
+#: /plugins/install/controllers/install_controller.php:131
+msgid "Installataion files deleted successfully."
+msgstr ""
+
+#: /plugins/install/controllers/install_controller.php:134
+msgid "Could not delete installation files."
+msgstr ""
+
+#: /plugins/install/views/install/data.ctp:5
+msgid "Click here to build your database"
+msgstr ""
+
+#: /plugins/install/views/install/finish.ctp:21
+msgid "Click here to delete installation files"
+msgstr ""
+
+#: /plugins/install/views/layouts/install.ctp:5
+#: /views/layouts/admin.ctp:5
+#: /views/layouts/admin_full.ctp:5
+#: /views/layouts/admin_login.ctp:5
+msgid "Croogo"
+msgstr ""
+
+#: /plugins/install/views/layouts/install.ctp:21
+msgid "Install Croogo"
+msgstr ""
+
+#: /views/attachments/admin_browse.ctp:7
+#: /views/attachments/admin_index.ctp:6
+msgid "New Attachment"
+msgstr ""
+
+#: /views/attachments/admin_browse.ctp:18
+#: /views/attachments/admin_index.ctp:16
+msgid "URL"
+msgstr ""
+
+#: /views/attachments/admin_browse.ctp:37
+msgid "Insert"
+msgstr ""
+
+#: /views/attachments/admin_edit.ctp:9
+msgid "Attachment"
+msgstr ""
+
+#: /views/attachments/admin_edit.ctp:10
+msgid "Info"
+msgstr ""
+
+#: /views/attachments/admin_edit.ctp:29
+msgid "Caption"
+msgstr ""
+
+#: /views/attachments/admin_edit.ctp:36
+msgid "File URL"
+msgstr ""
+
+#: /views/attachments/admin_edit.ctp:37
+msgid "Mime Type"
+msgstr ""
+
+#: /views/blocks/admin_add.ctp:7
+#: /views/blocks/admin_edit.ctp:7
+msgid "Block"
+msgstr ""
+
+#: /views/blocks/admin_add.ctp:8
+#: /views/blocks/admin_edit.ctp:8
+#: /views/links/admin_add.ctp:8
+#: /views/links/admin_edit.ctp:8
+msgid "Access"
+msgstr ""
+
+#: /views/blocks/admin_add.ctp:9
+#: /views/blocks/admin_edit.ctp:9
+msgid "Visibilities"
+msgstr ""
+
+#: /views/blocks/admin_add.ctp:16
+#: /views/blocks/admin_edit.ctp:17
+msgid "unique name for your block"
+msgstr ""
+
+#: /views/blocks/admin_add.ctp:17
+#: /views/blocks/admin_edit.ctp:18
+msgid "if you are not sure, choose 'none'"
+msgstr ""
+
+#: /views/blocks/admin_add.ctp:35
+#: /views/blocks/admin_edit.ctp:36
+msgid "Enter one URL per line. Leave blank if you want this Block to appear in all pages."
+msgstr ""
+
+#: /views/blocks/admin_index.ctp:6
+msgid "New Block"
+msgstr ""
+
+#: /views/blocks/admin_index.ctp:51
+#: /views/comments/admin_index.ctp:68
+#: /views/links/admin_index.ctp:55
+#: /views/nodes/admin_index.ctp:75
+msgid "Publish"
+msgstr ""
+
+#: /views/blocks/admin_index.ctp:52
+#: /views/comments/admin_index.ctp:69
+#: /views/links/admin_index.ctp:56
+#: /views/nodes/admin_index.ctp:76
+msgid "Unpublish"
+msgstr ""
+
+#: /views/comments/admin_edit.ctp:8
+#: /views/elements/comments.ctp:5
+#: /views/elements/node_more_info.ctp:31
+msgid "Comment"
+msgstr ""
+
+#: /views/comments/admin_edit.ctp:9
+msgid "Contact Info"
+msgstr ""
+
+#: /views/comments/rss/index.ctp:16
+msgid "Comment on"
+msgstr ""
+
+#: /views/contacts/admin_add.ctp:7
+#: /views/contacts/admin_edit.ctp:7
+msgid "Contact"
+msgstr ""
+
+#: /views/contacts/admin_add.ctp:8
+#: /views/contacts/admin_edit.ctp:8
+msgid "Details"
+msgstr ""
+
+#: /views/contacts/admin_add.ctp:9
+#: /views/contacts/admin_edit.ctp:9
+#: /views/contacts/view.ctp:20
+msgid "Message"
+msgstr ""
+
+#: /views/contacts/admin_add.ctp:39
+#: /views/contacts/admin_edit.ctp:40
+msgid "Let users leave a message"
+msgstr ""
+
+#: /views/contacts/admin_add.ctp:42
+#: /views/contacts/admin_edit.ctp:43
+msgid "Save messages in database"
+msgstr ""
+
+#: /views/contacts/admin_add.ctp:45
+#: /views/contacts/admin_edit.ctp:46
+msgid "Notify by email instantly"
+msgstr ""
+
+#: /views/contacts/admin_add.ctp:48
+#: /views/contacts/admin_edit.ctp:49
+#: /views/types/admin_add.ctp:57
+#: /views/types/admin_edit.ctp:57
+msgid "Spam protection (requires Akismet API key)"
+msgstr ""
+
+#: /views/contacts/admin_add.ctp:51
+#: /views/contacts/admin_edit.ctp:52
+#: /views/types/admin_add.ctp:60
+msgid "Use captcha? (requires Recaptcha API key)"
+msgstr ""
+
+#: /views/contacts/admin_add.ctp:56
+#: /views/contacts/admin_edit.ctp:57
+#: /views/types/admin_add.ctp:66
+#: /views/types/admin_edit.ctp:66
+msgid "You can manage your API keys here."
+msgstr ""
+
+#: /views/contacts/admin_index.ctp:6
+msgid "New Contact"
+msgstr ""
+
+#: /views/contacts/view.ctp:17
+msgid "Your name"
+msgstr ""
+
+#: /views/contacts/view.ctp:18
+msgid "Your email"
+msgstr ""
+
+#: /views/contacts/view.ctp:19
+msgid "Subject"
+msgstr ""
+
+#: /views/contacts/view.ctp:24
+msgid "Send"
+msgstr ""
+
+#: /views/elements/comment.ctp:13
+msgid "said on %s"
+msgstr ""
+
+#: /views/elements/comment.ctp:19
+msgid "Reply"
+msgstr ""
+
+#: /views/elements/comments_form.ctp:2
+msgid "Add new comment"
+msgstr ""
+
+#: /views/elements/comments_form.ctp:7
+msgid "Go back to original post"
+msgstr ""
+
+#: /views/elements/comments_form.ctp:23;39
+msgid "Name"
+msgstr ""
+
+#: /views/elements/comments_form.ctp:28;40
+msgid "Email"
+msgstr ""
+
+#: /views/elements/comments_form.ctp:33;41
+msgid "Website"
+msgstr ""
+
+#: /views/elements/comments_form.ctp:48
+msgid "Post comment"
+msgstr ""
+
+#: /views/elements/node_info.ctp:6
+msgid "Posted"
+msgstr ""
+
+#: /views/elements/node_info.ctp:9
+msgid "by"
+msgstr ""
+
+#: /views/elements/node_info.ctp:20
+msgid "on"
+msgstr ""
+
+#: /views/elements/node_more_info.ctp:17
+msgid "Posted in %s"
+msgstr ""
+
+#: /views/elements/node_more_info.ctp:29
+msgid "Leave a comment"
+msgstr ""
+
+#: /views/elements/admin/logo.ctp:2
+msgid "Admin Panel"
+msgstr ""
+
+#: /views/elements/admin/logo.ctp:4
+msgid "Visit website"
+msgstr ""
+
+#: /views/elements/admin/navigation.ctp:6
+msgid "List"
+msgstr ""
+
+#: /views/elements/admin/navigation.ctp:8
+msgid "Content types"
+msgstr ""
+
+#: /views/elements/admin/navigation.ctp:9
+#: /views/types/admin_add.ctp:8
+#: /views/types/admin_edit.ctp:9
+msgid "Taxonomy"
+msgstr ""
+
+#: /views/elements/admin/navigation.ctp:24
+msgid "Regions"
+msgstr ""
+
+#: /views/elements/admin/navigation.ctp:28
+msgid "Media"
+msgstr ""
+
+#: /views/elements/admin/navigation.ctp:31
+msgid "File Manager"
+msgstr ""
+
+#: /views/elements/admin/navigation.ctp:50
+msgid "Extensions"
+msgstr ""
+
+#: /views/elements/admin/nodes_filter.ctp:25
+msgid "Unpublished"
+msgstr ""
+
+#: /views/elements/admin/nodes_filter.ctp:35
+msgid "Promoted"
+msgstr ""
+
+#: /views/elements/admin/nodes_filter.ctp:37
+msgid "Yes"
+msgstr ""
+
+#: /views/elements/admin/nodes_filter.ctp:38
+msgid "No"
+msgstr ""
+
+#: /views/elements/admin/nodes_filter.ctp:43
+#: /views/nodes/admin_index.ctp:10
+msgid "Filter"
+msgstr ""
+
+#: /views/elements/admin/quick.ctp:4
+msgid "You are logged in as %s"
+msgstr ""
+
+#: /views/elements/admin/quick.ctp:5
+msgid "Log Out"
+msgstr ""
+
+#: /views/elements/email/text/comment.ctp:2
+msgid "A new comment has been posted under: "
+msgstr ""
+
+#: /views/elements/email/text/comment.ctp:3
+msgid "A new comment has been posted under: %s"
+msgstr ""
+
+#: /views/elements/email/text/comment.ctp:6
+msgid "Name: "
+msgstr ""
+
+#: /views/elements/email/text/comment.ctp:7
+msgid "Email: "
+msgstr ""
+
+#: /views/elements/email/text/comment.ctp:8
+msgid "Website: "
+msgstr ""
+
+#: /views/elements/email/text/comment.ctp:9
+#: /views/elements/email/text/forgot_password.ctp:17
+msgid "IP Address: "
+msgstr ""
+
+#: /views/elements/email/text/comment.ctp:10
+msgid "Comment: "
+msgstr ""
+
+#: /views/elements/email/text/forgot_password.ctp:1
+#: /views/elements/email/text/register.ctp:1
+msgid "Hello"
+msgstr ""
+
+#: /views/elements/email/text/forgot_password.ctp:4
+msgid "Please visit this link to reset your password"
+msgstr ""
+
+#: /views/elements/email/text/forgot_password.ctp:14
+msgid "If you did not request a password reset, then please ignore this email."
+msgstr ""
+
+#: /views/elements/email/text/register.ctp:4
+msgid "Please visit this link to activate your account"
+msgstr ""
+
+#: /views/errors/missing_action.ctp:1
+#: /views/errors/missing_controller.ctp:1
+msgid "Page not found"
+msgstr ""
+
+#: /views/errors/missing_action.ctp:2
+#: /views/errors/missing_controller.ctp:2
+msgid "Error"
+msgstr ""
+
+#: /views/errors/missing_action.ctp:4
+#: /views/errors/missing_controller.ctp:4
+msgid "The requested address was not found on this server."
+msgstr ""
+
+#: /views/filemanager/admin_browse.ctp:6
+msgid "Upload here"
+msgstr ""
+
+#: /views/filemanager/admin_browse.ctp:7
+msgid "Create directory"
+msgstr ""
+
+#: /views/filemanager/admin_browse.ctp:8
+msgid "Create file"
+msgstr ""
+
+#: /views/filemanager/admin_browse.ctp:14
+#: /views/filemanager/admin_create_directory.ctp:6
+#: /views/filemanager/admin_create_file.ctp:6
+#: /views/filemanager/admin_editfile.ctp:6
+#: /views/filemanager/admin_upload.ctp:6
+msgid "You are here:"
+msgstr ""
+
+#: /views/filemanager/admin_browse.ctp:28
+msgid "Directory content"
+msgstr ""
+
+#: /views/filemanager/admin_browse.ctp:36
+msgid "Open"
+msgstr ""
+
+#: /views/helpers/meta.php:34
+#: /views/settings/admin_view.ctp:9
+msgid "Key"
+msgstr ""
+
+#: /views/helpers/meta.php:38
+#: /views/settings/admin_view.ctp:14
+msgid "Value"
+msgstr ""
+
+#: /views/helpers/meta.php:53
+msgid "Remove"
+msgstr ""
+
+#: /views/languages/admin_index.ctp:6
+#: /views/languages/admin_select.ctp:6
+msgid "New Language"
+msgstr ""
+
+#: /views/layouts/admin_login.ctp:21
+msgid "Back to"
+msgstr ""
+
+#: /views/layouts/maintenance.ctp:13
+msgid "Site down for maintenance."
+msgstr ""
+
+#: /views/links/admin_add.ctp:7
+#: /views/links/admin_edit.ctp:7
+msgid "Link"
+msgstr ""
+
+#: /views/links/admin_add.ctp:9
+#: /views/links/admin_edit.ctp:9
+#: /views/menus/admin_add.ctp:8
+#: /views/menus/admin_edit.ctp:8
+#: /views/settings/admin_add.ctp:8
+#: /views/settings/admin_edit.ctp:8
+msgid "Misc."
+msgstr ""
+
+#: /views/links/admin_add.ctp:16
+#: /views/links/admin_edit.ctp:17
+msgid "Parent"
+msgstr ""
+
+#: /views/links/admin_add.ctp:22
+#: /views/links/admin_edit.ctp:23
+msgid "Link to a Node"
+msgstr ""
+
+#: /views/links/admin_index.ctp:6
+msgid "New Link"
+msgstr ""
+
+#: /views/links/admin_index.ctp:24
+#: /views/nodes/admin_translations.ctp:26
+#: /views/terms/admin_index.ctp:24
+msgid "Title"
+msgstr ""
+
+#: /views/menus/admin_add.ctp:7
+#: /views/menus/admin_edit.ctp:7
+msgid "Menu"
+msgstr ""
+
+#: /views/menus/admin_index.ctp:6
+msgid "New Menu"
+msgstr ""
+
+#: /views/menus/admin_index.ctp:23
+msgid "View links"
+msgstr ""
+
+#: /views/messages/admin_index.ctp:60
+msgid "Mark as read"
+msgstr ""
+
+#: /views/messages/admin_index.ctp:61
+msgid "Mark as unread"
+msgstr ""
+
+#: /views/nodes/admin_add.ctp:17
+#: /views/nodes/admin_edit.ctp:31
+msgid "Custom fields"
+msgstr ""
+
+#: /views/nodes/admin_add.ctp:18
+#: /views/nodes/admin_edit.ctp:32
+msgid "Publishing"
+msgstr ""
+
+#: /views/nodes/admin_add.ctp:44
+#: /views/nodes/admin_edit.ctp:59
+#: /views/types/admin_add.ctp:42
+#: /views/types/admin_edit.ctp:44
+msgid "Disabled"
+msgstr ""
+
+#: /views/nodes/admin_add.ctp:45
+#: /views/nodes/admin_edit.ctp:60
+#: /views/types/admin_add.ctp:43
+#: /views/types/admin_edit.ctp:45
+msgid "Read only"
+msgstr ""
+
+#: /views/nodes/admin_add.ctp:46
+#: /views/nodes/admin_edit.ctp:61
+#: /views/types/admin_add.ctp:44
+#: /views/types/admin_edit.ctp:46
+msgid "Read/Write"
+msgstr ""
+
+#: /views/nodes/admin_add.ctp:68
+#: /views/nodes/admin_edit.ctp:81
+msgid "Add another field"
+msgstr ""
+
+#: /views/nodes/admin_add.ctp:74
+#: /views/nodes/admin_edit.ctp:87
+msgid "Promoted to front page"
+msgstr ""
+
+#: /views/nodes/admin_edit.ctp:15
+#: /views/nodes/admin_index.ctp:43
+msgid "Translations"
+msgstr ""
+
+#: /views/nodes/admin_index.ctp:32
+msgid "User"
+msgstr ""
+
+#: /views/nodes/admin_index.ctp:77
+msgid "Promote"
+msgstr ""
+
+#: /views/nodes/admin_index.ctp:78
+msgid "Unpromote"
+msgstr ""
+
+#: /views/nodes/admin_links.ctp:24
+msgid "Sort by:"
+msgstr ""
+
+#: /views/nodes/admin_translations.ctp:8
+msgid "Translate in a new language"
+msgstr ""
+
+#: /views/nodes/admin_translations.ctp:52
+msgid "No translations available."
+msgstr ""
+
+#: /views/nodes/index.ctp:4
+#: /views/nodes/promoted.ctp:4
+#: /views/nodes/term.ctp:6
+msgid "No items found."
+msgstr ""
+
+#: /views/nodes/term.ctp:2
+msgid "Term:"
+msgstr ""
+
+#: /views/regions/admin_index.ctp:6
+msgid "New Region"
+msgstr ""
+
+#: /views/roles/admin_index.ctp:6
+msgid "New Role"
+msgstr ""
+
+#: /views/settings/admin_add.ctp:13
+#: /views/settings/admin_edit.ctp:14
+msgid "e.g., 'Site.title'"
+msgstr ""
+
+#: /views/settings/admin_add.ctp:22
+#: /views/settings/admin_edit.ctp:23
+msgid "e.g., 'text' or 'textarea'"
+msgstr ""
+
+#: /views/settings/admin_index.ctp:6
+#: /views/settings/admin_view.ctp:46
+msgid "New Setting"
+msgstr ""
+
+#: /views/settings/admin_view.ctp:2
+msgid "Setting"
+msgstr ""
+
+#: /views/settings/admin_view.ctp:19
+msgid "Description"
+msgstr ""
+
+#: /views/settings/admin_view.ctp:24
+msgid "Input Type"
+msgstr ""
+
+#: /views/settings/admin_view.ctp:29
+msgid "Weight"
+msgstr ""
+
+#: /views/settings/admin_view.ctp:34
+#: /views/types/admin_add.ctp:11
+#: /views/types/admin_edit.ctp:12
+msgid "Params"
+msgstr ""
+
+#: /views/settings/admin_view.ctp:43
+msgid "Edit Setting"
+msgstr ""
+
+#: /views/settings/admin_view.ctp:44
+msgid "Delete Setting"
+msgstr ""
+
+#: /views/settings/admin_view.ctp:44
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: /views/settings/admin_view.ctp:45
+msgid "List Settings"
+msgstr ""
+
+#: /views/terms/admin_index.ctp:6
+msgid "New Term"
+msgstr ""
+
+#: /views/types/admin_add.ctp:9
+#: /views/types/admin_edit.ctp:10
+msgid "Format"
+msgstr ""
+
+#: /views/types/admin_add.ctp:31
+#: /views/types/admin_edit.ctp:33
+msgid "Show author's name"
+msgstr ""
+
+#: /views/types/admin_add.ctp:34
+#: /views/types/admin_edit.ctp:36
+msgid "Show date"
+msgstr ""
+
+#: /views/types/admin_add.ctp:51
+msgid "Comment Status"
+msgstr ""
+
+#: /views/types/admin_edit.ctp:54
+msgid "Auto approve comments"
+msgstr ""
+
+#: /views/types/admin_edit.ctp:60
+msgid "Use captcha (requires Recaptcha API key)"
+msgstr ""
+
+#: /views/types/admin_index.ctp:6
+msgid "New Type"
+msgstr ""
+
+#: /views/users/admin_add.ctp:3;19
+msgid "Add User"
+msgstr ""
+
+#: /views/users/admin_edit.ctp:2
+msgid "Edit User"
+msgstr ""
+
+#: /views/users/admin_edit.ctp:6
+#: /views/users/admin_reset_password.ctp:2
+msgid "Reset password"
+msgstr ""
+
+#: /views/users/admin_index.ctp:6
+msgid "New User"
+msgstr ""
+
+#: /views/users/admin_index.ctp:14
+msgid "Role"
+msgstr ""
+
+#: /views/users/admin_login.ctp:10
+msgid "Forgot password?"
+msgstr ""
+
+#: /views/users/admin_login.ctp:17
+msgid "Log In"
+msgstr ""
+
+#: /views/users/admin_reset_password.ctp:8
+msgid "New Password"
+msgstr ""
+
+#: /views/users/index.ctp:4
+msgid "You are currently logged in as:"
+msgstr ""
+
+#: /views/users/login.ctp:2
+msgid "Login"
+msgstr ""
+
+#: /views/users/reset.ctp:6
+msgid "New password"
+msgstr ""
+
+#: /views/vocabularies/admin_add.ctp:11
+#: /views/vocabularies/admin_edit.ctp:9
+msgid "Options"
+msgstr ""
+
+#: /views/vocabularies/admin_index.ctp:6
+msgid "New Vocabulary"
+msgstr ""
+
+#: /views/vocabularies/admin_index.ctp:22
+msgid "View terms"
+msgstr ""
+
+#: /webroot/test.php:99
+msgid "Debug setting does not allow access to this url."
 msgstr ""
 
