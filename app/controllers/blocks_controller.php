@@ -31,7 +31,7 @@ class BlocksController extends AppController {
         $this->pageTitle = __('Blocks', true);
 
         $this->Block->recursive = 0;
-        $this->paginate['Block']['order'] = array('Block.region_id' => 'ASC', 'Block.weight' => 'ASC');
+        $this->paginate['Block']['order'] = array('Block.weight' => 'ASC');
         $this->set('blocks', $this->paginate());
     }
 
@@ -89,7 +89,7 @@ class BlocksController extends AppController {
             $this->Session->setFlash(__('Invalid id for Block', true));
             $this->redirect(array('action'=>'index'));
         }
-        if ($this->Block->del($id)) {
+        if ($this->Block->delete($id)) {
             $this->Session->setFlash(__('Block deleted', true));
             $this->redirect(array('action'=>'index'));
         }
@@ -127,7 +127,6 @@ class BlocksController extends AppController {
         if (count($ids) == 0 || $action == null) {
             $this->Session->setFlash(__('No items selected.', true));
             $this->redirect(array('action' => 'index'));
-            exit();
         }
 
         if ($action == 'delete' &&
@@ -144,7 +143,6 @@ class BlocksController extends AppController {
         }
 
         $this->redirect(array('action' => 'index'));
-        exit();
     }
 
 }

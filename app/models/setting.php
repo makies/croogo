@@ -28,25 +28,52 @@ class Setting extends AppModel {
  * @var boolean
  * @access public
  */
-    var $cacheConfiguration = true;
+    var $cacheConfiguration = false;
 /**
  * Behaviors used by the Model
  *
  * @var array
  * @access public
  */
-    var $actsAs = array('Ordered' => array(
-            'field'         => 'weight',
-            'foreign_key'     => false
-        ));
+    var $actsAs = array(
+        'Ordered' => array(
+            'field' => 'weight',
+            'foreign_key' => false,
+        ),
+    );
+/**
+ * Validation
+ *
+ * @var array
+ * @access public
+ */
+    var $validate = array(
+        'key' => array(
+            'isUnique' => array(
+                'rule' => 'isUnique',
+                'message' => 'This key has already been taken.',
+            ),
+            'minLength' => array(
+                'rule' => array('minLength', 1),
+                'message' => 'Key cannot be empty.',
+            ),
+        ),
+    );
 /**
  * afterSave callback
  *
  * @return void
  */
     function afterSave() {
-        $settings = $this->find('all', array('fields' => array('Setting.key', 'Setting.value')));
-        Cache::write("settings", $settings);
+        if ($this->cacheConfiguration) {
+            $settings = $this->find('all', array(
+                'fields' => array(
+                    'Setting.key',
+                    'Setting.value',
+                ),
+            ));
+            Cache::write('settings', $settings);
+        }
         $this->writeConfiguration();
     }
 /**
@@ -55,8 +82,15 @@ class Setting extends AppModel {
  * @return void
  */
     function afterDelete() {
-        $settings = $this->find('all', array('fields' => array('Setting.key', 'Setting.value')));
-        Cache::write("settings", $settings);
+        if ($this->cacheConfiguration) {
+            $settings = $this->find('all', array(
+                'fields' => array(
+                    'Setting.key',
+                    'Setting.value',
+                ),
+            ));
+            Cache::write("settings", $settings);
+        }
         $this->writeConfiguration();
     }
 /**
@@ -94,14 +128,33 @@ class Setting extends AppModel {
         }
     }
 /**
+ * Deletes setting record for given key
+ *
+ * @param string $key
+ * @return boolean
+ */
+    function deleteKey($key) {
+        $setting = $this->findByKey($key);
+        if (isset($setting['Setting']['id']) &&
+            $this->delete($setting['Setting']['id'])) {
+            return true;
+        }
+        return false;
+    }
+/**
  * All key/value pairs are made accessible from Configure class
  *
  * @return void
  */
     function writeConfiguration() {
-        /*if( $this->useCache == false || ($settings = Cache::read("settings")) === false ) {
-            $settings = $this->find('all', array('fields' => array('Setting.key', 'Setting.value')));
-            Cache::write("settings", $settings);
+        /*if (!$this->cacheConfiguration || ($settings = Cache::read("settings")) === false) {
+            $settings = $this->find('all', array(
+                'fields' => array(
+                    'Setting.key',
+                    'Setting.value',
+                ),
+            ));
+            Cache::write('settings', $settings);
         }*/
 
         $settings = $this->find('all', array('fields' => array('Setting.key', 'Setting.value')));

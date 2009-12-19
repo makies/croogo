@@ -27,7 +27,6 @@ class NodesController extends AppController {
  */
     var $uses = array(
         'Node',
-        'Language',
     );
 
     function beforeFilter() {
@@ -88,7 +87,6 @@ class NodesController extends AppController {
         if (!isset($type['Type']['alias'])) {
             $this->Session->setFlash(__('Content type does not exist.', true));
             $this->redirect(array('action' => 'create'));
-            exit();
         }
 
         $this->pageTitle = __("Create content: ", true) . $type['Type']['title'];
@@ -105,6 +103,7 @@ class NodesController extends AppController {
                 'type' => $this->Node->type,
                 'slug' => $this->data['Node']['slug'],
             ));
+            $this->data['Node']['visibility_roles'] = $this->Node->encodeData($this->data['Role']['Role']);
             if ($this->Node->saveWithMeta($this->data)) {
                 $this->Session->setFlash(vprintf(__('%s has been saved.', true),$type['Type']['title']));
                 $this->redirect(array('action'=>'index'));
@@ -114,13 +113,14 @@ class NodesController extends AppController {
         }
 
         $nodes = $this->Node->generatetreelist();
+        $roles   = $this->Node->User->Role->find('list');
         $terms = array();
         foreach ($type['Vocabulary'] AS $vocabulary) {
             $vocabularyTitle = $vocabulary['title'];
             $termsConditions = array('Term.vocabulary_id' => $vocabulary['id']);
             $terms[$vocabularyTitle] = $this->Node->Term->generatetreelist($termsConditions);
         }
-        $this->set(compact('typeAlias', 'type', 'nodes', 'terms'));
+        $this->set(compact('typeAlias', 'type', 'nodes', 'roles', 'terms'));
     }
 
     function admin_edit($id = null) {
@@ -136,7 +136,6 @@ class NodesController extends AppController {
         if (!isset($type['Type']['alias'])) {
             $this->Session->setFlash(__('Content type does not exist.', true));
             $this->redirect(array('action' => 'create'));
-            exit();
         }
 
         $this->pageTitle = __("Edit content: ", true) . $type['Type']['title'];
@@ -152,6 +151,7 @@ class NodesController extends AppController {
                 'type' => $this->Node->type,
                 'slug' => $this->data['Node']['slug'],
             ));
+            $this->data['Node']['visibility_roles'] = $this->Node->encodeData($this->data['Role']['Role']);
             if ($this->Node->saveWithMeta($this->data)) {
                 $this->Session->setFlash(__($type['Type']['title'] . ' has been saved', true));
                 $this->redirect(array('action'=>'index'));
@@ -160,132 +160,20 @@ class NodesController extends AppController {
             }
         }
         if (empty($this->data)) {
-            $this->data = $this->Node->read(null, $id);
+            $data = $this->Node->read(null, $id);
+            $data['Role']['Role'] = $this->Node->decodeData($data['Node']['visibility_roles']);
+            $this->data = $data;
         }
 
         $nodes = $this->Node->generatetreelist();
+        $roles   = $this->Node->User->Role->find('list');
         $terms = array();
         foreach ($type['Vocabulary'] AS $vocabulary) {
             $vocabularyTitle = $vocabulary['title'];
             $termsConditions = array('Term.vocabulary_id' => $vocabulary['id']);
             $terms[$vocabularyTitle] = $this->Node->Term->generatetreelist($termsConditions);
         }
-        $this->set(compact('typeAlias', 'type', 'nodes', 'terms'));
-    }
-
-    function admin_translate($id = null) {
-        if (!$id && empty($this->data)) {
-            $this->Session->setFlash(__('Invalid content', true));
-            $this->redirect(array('action'=>'index'));
-            exit();
-        }
-
-        if (!isset($this->params['named']['locale'])) {
-            $this->Session->setFlash(__('Invalid locale', true));
-            $this->redirect(array('action' => 'index'));
-            exit();
-        }
-
-        $language = $this->Language->find('first', array(
-            'conditions' => array(
-                'Language.alias' => $this->params['named']['locale'],
-                'Language.status' => 1,
-            ),
-        ));
-        if (!isset($language['Language']['id'])) {
-            $this->Session->setFlash(__('Invalid Language', true));
-            $this->redirect(array('action' => 'index'));
-            exit();
-        }
-
-        $this->Node->id = $id;
-        $typeAlias = $this->Node->field('type');
-
-        $type = $this->Node->Term->Vocabulary->Type->findByAlias($typeAlias);
-        if (!isset($type['Type']['alias'])) {
-            $this->Session->setFlash(__('Content type does not exist.', true));
-            $this->redirect(array('action' => 'create'));
-            exit();
-        }
-
-        $this->pageTitle  = __('Translate content:', true) . ' ';
-        $this->pageTitle .= $language['Language']['title'] . ' (' . $language['Language']['native'] . ')';
-
-        $this->Node->type = $type['Type']['alias'];
-        $this->Node->Behaviors->attach('Tree', array('scope' => array('Node.type' => $this->Node->type)));
-
-        $this->Node->locale = $this->params['named']['locale'];
-        $fields = $this->Node->getTranslationFields();
-        if (!empty($this->data)) {
-            if ($this->Node->saveTranslation($this->data)) {
-                $this->Session->setFlash(__($type['Type']['title'] . ' has been translated', true));
-                $this->redirect(array('action'=>'translations', $id));
-            } else {
-                $this->Session->setFlash(__($type['Type']['title'] . ' could not be translated. Please, try again.', true));
-            }
-        }
-        if (empty($this->data)) {
-            $this->data = $this->Node->read(null, $id);
-        }
-        $this->set(compact('typeAlias', 'type', 'fields', 'language'));
-    }
-
-    function admin_translations($id = null) {
-        if ($id == null) {
-            $this->Session->setFlash(__('Invalid Node.', true));
-            $this->redirect(array('action' => 'index'));
-            exit();
-        }
-
-        $node = $this->Node->findById($id);
-        if (!isset($node['Node']['id'])) {
-            $this->Session->setFlash(__('Invalid Node.', true));
-            $this->redirect(array('action' => 'index'));
-            exit();
-        }
-        $this->pageTitle = __('Translations: ', true) . $node['Node']['title'];
-
-        $runtimeModel =& $this->Node->translateModel();
-        $runtimeModelAlias = $runtimeModel->alias;
-        $translations = $runtimeModel->find('all', array(
-            'conditions' => array(
-                $runtimeModelAlias.'.model' => $this->Node->name,
-                $runtimeModelAlias.'.foreign_key' => $id,
-                $runtimeModelAlias.'.field' => 'title',
-            ),
-        ));
-
-        $this->set(compact('runtimeModelAlias', 'translations', 'node', 'id'));
-    }
-
-    function admin_delete_translation($locale = null, $id = null) {
-        if ($locale == null || $id == null) {
-            $this->Session->setFlash(__('Invalid Locale or Node', true));
-            $this->redirect(array('action' => 'index'));
-            exit();
-        }
-
-        $node = $this->Node->findById($id);
-        if (!isset($node['Node']['id'])) {
-            $this->Session->setFlash(__('Invalid Node', true));
-            $this->redirect(array('action' => 'index'));
-            exit();
-        }
-
-        $runtimeModel =& $this->Node->translateModel();
-        $runtimeModelAlias = $runtimeModel->alias;
-        if ($runtimeModel->deleteAll(array(
-                $runtimeModelAlias.'.model' => $this->Node->name,
-                $runtimeModelAlias.'.foreign_key' => $id,
-                $runtimeModelAlias.'.locale' => $locale,
-            ))) {
-            $this->Session->setFlash(__('Translation for the locale deleted successfully.', true));
-        } else {
-            $this->Session->setFlash(__('Translation for the locale could not be deleted.', true));
-        }
-
-        $this->redirect(array('action' => 'translations', $id));
-        exit();
+        $this->set(compact('typeAlias', 'type', 'nodes', 'roles', 'terms'));
     }
 
     function admin_update_paths() {
@@ -323,7 +211,6 @@ class NodesController extends AppController {
 
         $this->Session->setFlash(__('Paths updated.', true));
         $this->redirect(array('action' => 'index'));
-        exit();
     }
 
     function admin_delete($id = null) {
@@ -331,7 +218,7 @@ class NodesController extends AppController {
             $this->Session->setFlash(__('Invalid id for Node', true));
             $this->redirect(array('action'=>'index'));
         }
-        if ($this->Node->del($id)) {
+        if ($this->Node->delete($id)) {
             $this->Session->setFlash(__('Node deleted', true));
             $this->redirect(array('action'=>'index'));
         }
@@ -362,7 +249,6 @@ class NodesController extends AppController {
         if (count($ids) == 0 || $action == null) {
             $this->Session->setFlash(__('No items selected.', true));
             $this->redirect(array('action' => 'index'));
-            exit();
         }
 
         if ($action == 'delete' &&
@@ -385,7 +271,6 @@ class NodesController extends AppController {
         }
 
         $this->redirect(array('action' => 'index'));
-        exit();
     }
 
     function index() {
@@ -397,13 +282,16 @@ class NodesController extends AppController {
         $this->paginate['Node']['limit'] = Configure::read('Reading.nodes_per_page');
         $this->paginate['Node']['conditions'] = array(
             'Node.status' => 1,
+            'OR' => array(
+                'Node.visibility_roles' => '',
+                'Node.visibility_roles LIKE' => '%"' . $this->Croogo->roleId . '"%',
+            ),
         );
         if (isset($this->params['named']['type'])) {
             $type = $this->Node->Term->Vocabulary->Type->findByAlias($this->params['named']['type']);
             if (!isset($type['Type']['id'])) {
                 $this->Session->setFlash(__('Invalid content type.', true));
                 $this->redirect('/');
-                exit();
             }
 
             $this->paginate['Node']['conditions']['Node.type'] = $type['Type']['alias'];
@@ -430,13 +318,16 @@ class NodesController extends AppController {
         $this->paginate['Node']['conditions'] = array(
             'Node.status' => 1,
             'Node.terms LIKE' => '%"' . $this->params['named']['slug'] . '"%',
+            'OR' => array(
+                'Node.visibility_roles' => '',
+                'Node.visibility_roles LIKE' => '%"' . $this->Croogo->roleId . '"%',
+            ),
         );
         if (isset($this->params['named']['type'])) {
             $type = $this->Node->Term->Vocabulary->Type->findByAlias($this->params['named']['type']);
             if (!isset($type['Type']['id'])) {
                 $this->Session->setFlash(__('Invalid content type.', true));
                 $this->redirect('/');
-                exit();
             }
 
             $this->paginate['Node']['conditions']['Node.type'] = $type['Type']['alias'];
@@ -455,6 +346,10 @@ class NodesController extends AppController {
         $this->paginate['Node']['conditions'] = array(
             'Node.status' => 1,
             'Node.promote' => 1,
+            'OR' => array(
+                'Node.visibility_roles' => '',
+                'Node.visibility_roles LIKE' => '%"' . $this->Croogo->roleId . '"%',
+            ),
         );
 
         if (isset($this->params['named']['type'])) {
@@ -462,7 +357,6 @@ class NodesController extends AppController {
             if (!isset($type['Type']['id'])) {
                 $this->Session->setFlash(__('Invalid content type.', true));
                 $this->redirect('/');
-                exit();
             }
 
             $this->paginate['Node']['conditions']['Node.type'] = $type['Type']['alias'];
@@ -483,12 +377,15 @@ class NodesController extends AppController {
                     'Node.slug' => $this->params['named']['slug'],
                     'Node.type' => $this->params['named']['type'],
                     'Node.status' => 1,
+                    'OR' => array(
+                        'Node.visibility_roles' => '',
+                        'Node.visibility_roles LIKE' => '%"' . $this->Croogo->roleId . '"%',
+                    ),
                 ),
             ));
         } elseif ($id == null) {
             $this->Session->setFlash(__('Invalid content', true));
             $this->redirect('/');
-            exit();
         } else {
             $node = $this->Node->find('first', array(
                 'conditions' => array(
@@ -501,7 +398,6 @@ class NodesController extends AppController {
         if (!isset($node['Node']['id'])) {
             $this->Session->setFlash(__('Invalid content', true));
             $this->redirect('/');
-            exit();
         }
 
         if ($node['Node']['comment_count'] > 0) {

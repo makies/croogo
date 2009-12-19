@@ -34,8 +34,19 @@ class FilemanagerController extends AppController {
  */
     var $helpers = array('Html', 'Form', 'Filemanager');
 
+    var $deletablePaths = array();
+
     function beforeFilter() {
         parent::beforeFilter();
+
+        $this->deletablePaths = array(
+            APP.'views'.DS.'themed'.DS,
+            WWW_ROOT.'css'.DS,
+            WWW_ROOT.'img'.DS,
+            WWW_ROOT.'js'.DS,
+            WWW_ROOT.'themed'.DS,
+        );
+        $this->set('deletablePaths', $this->deletablePaths);
 
         //App::import('Core', 'Folder');
         App::import('Core', 'File');
@@ -55,7 +66,7 @@ class FilemanagerController extends AppController {
             $path = APP;
         }
 
-        $this->pageTitle = __("File Manager",true);
+        $this->pageTitle = "File Manager";
         $this->folder->path = $path;
 
         $content = $this->folder->read();
@@ -119,7 +130,6 @@ class FilemanagerController extends AppController {
             $path = $this->params['url']['path'];
         } else {
             $this->redirect(array('controller' => 'filemanager', 'action' => 'browse'));
-            exit();
         }
 
         if (file_exists($path) && unlink($path)) {
@@ -142,7 +152,6 @@ class FilemanagerController extends AppController {
             $path = $this->params['url']['path'];
         } else {
             $this->redirect(array('controller' => 'filemanager', 'action' => 'browse'));
-            exit();
         }
 
         if (is_dir($path) && rmdir($path)) {
@@ -165,7 +174,6 @@ class FilemanagerController extends AppController {
             $path = $this->params['url']['path'];
         } else {
             $this->redirect(array('controller' => 'filemanager', 'action' => 'browse'));
-            exit();
         }
 
         if (isset($this->params['url']['newpath'])) {
@@ -186,7 +194,6 @@ class FilemanagerController extends AppController {
             $path = $this->params['url']['path'];
         } else {
             $this->redirect(array('controller' => 'filemanager', 'action' => 'browse'));
-            exit();
         }
 
         if (!empty($this->data)) {
@@ -210,7 +217,6 @@ class FilemanagerController extends AppController {
             $path = $this->params['url']['path'];
         } else {
             $this->redirect(array('controller' => 'filemanager', 'action' => 'browse'));
-            exit();
         }
 
         if (!empty($this->data)) {

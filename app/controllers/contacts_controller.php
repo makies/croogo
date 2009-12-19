@@ -74,7 +74,7 @@ class ContactsController extends AppController {
             $this->Session->setFlash(__('Invalid id for Contact', true));
             $this->redirect(array('action'=>'index'));
         }
-        if ($this->Contact->del($id)) {
+        if ($this->Contact->delete($id)) {
             $this->Session->setFlash(__('Contact deleted', true));
             $this->redirect(array('action'=>'index'));
         }
@@ -83,7 +83,6 @@ class ContactsController extends AppController {
     function view($alias = null) {
         if (!$alias) {
             $this->redirect('/');
-            exit();
         }
 
         $contact = $this->Contact->find('first', array(
@@ -92,7 +91,6 @@ class ContactsController extends AppController {
         ));
         if (!isset($contact['Contact']['id'])) {
             $this->redirect('/');
-            exit();
         }
         $this->set('contact', $contact);
 

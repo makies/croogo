@@ -41,6 +41,7 @@ class UsersController extends AppController {
     function admin_add() {
         if (!empty($this->data)) {
             $this->User->create();
+            $this->data['User']['activation_key'] = md5(uniqid());
             if ($this->User->save($this->data)) {
                 $this->Session->setFlash(__('The User has been saved', true));
                 $this->redirect(array('action' => 'index'));
@@ -98,7 +99,7 @@ class UsersController extends AppController {
             $this->Session->setFlash(__('Invalid id for User', true));
             $this->redirect(array('action' => 'index'));
         }
-        if ($this->User->del($id)) {
+        if ($this->User->delete($id)) {
             $this->Session->setFlash(__('User deleted', true));
             $this->redirect(array('action' => 'index'));
         }
@@ -112,7 +113,6 @@ class UsersController extends AppController {
     function admin_logout() {
         $this->Session->setFlash(__('Log out successful.', true));
         $this->redirect($this->Auth->logout());
-        exit();
     }
 
     function index() {
@@ -146,7 +146,6 @@ class UsersController extends AppController {
     function activate($username = null, $key = null) {
         if ($username == null || $key == null) {
             $this->redirect(array('action' => 'login'));
-            exit();
         }
 
         if ($this->User->hasAny(array(
@@ -164,7 +163,6 @@ class UsersController extends AppController {
         }
 
         $this->redirect(array('action' => 'login'));
-        exit();
     }
 
     function edit() {}
@@ -177,7 +175,6 @@ class UsersController extends AppController {
             if (!isset($user['User']['id'])) {
                 $this->Session->setFlash(__('Invalid username.', true));
                 $this->redirect(array('action' => 'login'));
-                exit();
             }
 
             $this->User->id = $user['User']['id'];
@@ -192,7 +189,6 @@ class UsersController extends AppController {
             if ($this->Email->send()) {
                 $this->Session->setFlash(__('An email has been sent with instructions for resetting your password.', true));
                 $this->redirect(array('action' => 'login'));
-                exit();
             } else {
                 $this->Session->setFlash(__('An error occurred. Please try again.', true));
             }
@@ -205,7 +201,6 @@ class UsersController extends AppController {
         if ($username == null || $key == null) {
             $this->Session->setFlash(__('An error occurred.', true));
             $this->redirect(array('action' => 'login'));
-            exit();
         }
 
         $user = $this->User->find('first', array(
@@ -217,7 +212,6 @@ class UsersController extends AppController {
         if (!isset($user['User']['id'])) {
             $this->Session->setFlash(__('An error occurred.', true));
             $this->redirect(array('action' => 'login'));
-            exit();
         }
 
         if (!empty($this->data) && isset($this->data['User']['password'])) {
@@ -227,7 +221,6 @@ class UsersController extends AppController {
             if ($this->User->save($user['User'])) {
                 $this->Session->setFlash(__('Your password has been reset successfully.', true));
                 $this->redirect(array('action' => 'login'));
-                exit();
             } else {
                 $this->Session->setFlash(__('An error occurred. Please try again.', true));
             }
@@ -243,7 +236,6 @@ class UsersController extends AppController {
     function logout() {
         $this->Session->setFlash(__('Log out successful.', true));
         $this->redirect($this->Auth->logout());
-        exit();
     }
 
     function view($username) {

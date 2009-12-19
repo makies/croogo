@@ -81,7 +81,7 @@ class MessagesController extends AppController {
             $this->Session->setFlash(__('Invalid id for Message', true));
             $this->redirect(array('action'=>'index'));
         }
-        if ($this->Message->del($id)) {
+        if ($this->Message->delete($id)) {
             $this->Session->setFlash(__('Message deleted', true));
             $this->redirect(array('action'=>'index'));
         }
@@ -99,7 +99,6 @@ class MessagesController extends AppController {
         if (count($ids) == 0 || $action == null) {
             $this->Session->setFlash(__('No items selected.', true));
             $this->redirect(array('action' => 'index'));
-            exit();
         }
 
         if ($action == 'delete' &&
@@ -116,7 +115,6 @@ class MessagesController extends AppController {
         }
 
         $this->redirect(array('action' => 'index'));
-        exit();
     }
 
 }

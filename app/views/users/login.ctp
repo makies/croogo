@@ -3,8 +3,8 @@
     <?php echo $form->create('User', array('url' => array('controller' => 'users', 'action' => 'login')));?>
         <fieldset>
         <?php
-            echo $form->input('username');
-            echo $form->input('password');
+            echo $form->input('username',array("label"=>"Username"));
+            echo $form->input('password',array("label"=>"Password"));
         ?>
         </fieldset>
     <?php echo $form->end(__('Submit',true));?>

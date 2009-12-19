@@ -203,10 +203,10 @@ INSERT INTO `aros_acos` (`id`, `aro_id`, `aco_id`, `_create`, `_read`, `_update`
 --
 
 INSERT INTO `blocks` (`id`, `region_id`, `title`, `alias`, `body`, `show_title`, `class`, `status`, `weight`, `element`, `visibility_roles`, `visibility_paths`, `visibility_php`, `params`, `updated`, `created`) VALUES
-(3, 4, 'About', 'about', 'This is the content of your block. Can be modified in admin panel.', 1, '', 1, NULL, '', '', '', '', '', '2009-10-30 19:10:34', '2009-07-26 17:13:14'),
-(5, 4, 'Meta', 'meta', '[menu:meta]', 1, '', 1, 3, '', '', '', '', '', '2009-10-06 21:13:27', '2009-09-12 06:36:22'),
-(6, 4, 'Blogroll', 'blogroll', '[menu:blogroll]', 1, '', 1, 2, '', '', '', '', '', '2009-10-06 21:13:30', '2009-09-12 23:33:27'),
-(7, 4, 'Categories', 'categories', '[vocabulary:categories type="blog"]', 1, '', 1, 1, '', '', '', '', '', '2009-10-06 21:13:30', '2009-10-03 16:52:50');
+(3, 4, 'About', 'about', 'This is the content of your block. Can be modified in admin panel.', 1, '', 1, 1, '', '', '', '', '', '2009-10-30 19:10:34', '2009-07-26 17:13:14'),
+(5, 4, 'Meta', 'meta', '[menu:meta]', 1, '', 1, 4, '', '', '', '', '', '2009-10-06 21:13:27', '2009-09-12 06:36:22'),
+(6, 4, 'Blogroll', 'blogroll', '[menu:blogroll]', 1, '', 1, 3, '', '', '', '', '', '2009-10-06 21:13:30', '2009-09-12 23:33:27'),
+(7, 4, 'Categories', 'categories', '[vocabulary:categories type="blog"]', 1, '', 1, 2, '', '', '', '', '', '2009-10-06 21:13:30', '2009-10-03 16:52:50');
 
 --
 -- Dumping data for table `comments`
@@ -278,9 +278,9 @@ INSERT INTO `meta` (`id`, `model`, `foreign_key`, `key`, `value`, `weight`) VALU
 -- Dumping data for table `nodes`
 --
 
-INSERT INTO `nodes` (`id`, `parent_id`, `user_id`, `title`, `slug`, `body`, `excerpt`, `status`, `mime_type`, `comment_status`, `comment_count`, `promote`, `path`, `terms`, `sticky`, `lft`, `rght`, `type`, `updated`, `created`) VALUES
-(20, NULL, 1, 'About', 'about', '<p>This is an example of a Croogo page, you could edit this to put information about yourself or your site.</p>', '', 1, '', 0, 0, 0, '/page/about', '', 0, 1, 2, 'page', '2009-10-07 23:15:24', '2009-08-11 05:47:03'),
-(21, NULL, 1, 'Hello World', 'hello-world', '<p>Welcome to Croogo. This is your first post. You can edit or delete it from the admin panel.</p>', '', 1, '', 2, 1, 1, '/blog/hello-world', '{"1":"uncategorized","5":"random"}', 0, 1, 2, 'blog', '2009-10-07 20:42:37', '2009-09-02 19:50:56');
+INSERT INTO `nodes` (`id`, `parent_id`, `user_id`, `title`, `slug`, `body`, `excerpt`, `status`, `mime_type`, `comment_status`, `comment_count`, `promote`, `path`, `terms`, `sticky`, `lft`, `rght`, `visibility_roles`, `type`, `updated`, `created`) VALUES
+(20, NULL, 1, 'About', 'about', '<p>This is an example of a Croogo page, you could edit this to put information about yourself or your site.</p>', '', 1, '', 0, 0, 0, '/page/about', '', 0, 1, 2, '', 'page', '2009-10-07 23:15:24', '2009-08-11 05:47:03'),
+(21, NULL, 1, 'Hello World', 'hello-world', '<p>Welcome to Croogo. This is your first post. You can edit or delete it from the admin panel.</p>', '', 1, '', 2, 1, 1, '/blog/hello-world', '{"1":"uncategorized","5":"random"}', 0, 1, 2, '', 'blog', '2009-10-07 20:42:37', '2009-09-02 19:50:56');
 
 --
 -- Dumping data for table `nodes_terms`
@@ -343,7 +343,9 @@ INSERT INTO `settings` (`id`, `key`, `value`, `title`, `description`, `input_typ
 (23, 'Writing.wysiwyg', '1', 'Enable WYSIWYG editor', '', 'checkbox', 1, 17, ''),
 (24, 'Comment.level', '1', '', 'levels deep (threaded comments)', '', 1, 18, ''),
 (25, 'Comment.feed_limit', '10', '', 'number of comments to show in feed', '', 1, 19, ''),
-(26, 'Site.locale', 'eng', '', '', 'text', 0, 20, '');
+(26, 'Site.locale', 'eng', '', '', 'text', 0, 20, ''),
+(27, 'Reading.date_time_format', 'D, M d Y', '', '', '', 1, 21, ''),
+(28, 'Comment.date_time_format', 'M d, Y', '', '', '', 1, 22, '');
 
 --
 -- Dumping data for table `terms`
