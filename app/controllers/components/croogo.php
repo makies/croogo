@@ -81,6 +81,7 @@ class CroogoComponent extends Object {
         if ($this->Session->check('Auth.User.id')) {
             $this->roleId = $this->Session->read('Auth.User.role_id');
         }
+        $this->hook('startup');
 
         if (!isset($this->controller->params['admin'])) {
             $this->blocks();
@@ -88,8 +89,6 @@ class CroogoComponent extends Object {
             $this->vocabularies();
             $this->types();
         }
-
-        $this->hook('startup');
     }
 /**
  * Load hooks as components
@@ -107,7 +106,7 @@ class CroogoComponent extends Object {
                     $hookE = explode('.', $hook);
                     $plugin = $hookE['0'];
                     $hookComponent = $hookE['1'];
-                    $filePath = APP.'plugins'.DS.$plugin.DS.'controllers'.DS.'components'.DS.Inflector::underscore($hookComponent).'.php';
+                    $filePath = APP.'plugins'.DS.Inflector::underscore($plugin).DS.'controllers'.DS.'components'.DS.Inflector::underscore($hookComponent).'.php';
                 } else {
                     $plugin = null;
                     $filePath = APP.'controllers'.DS.'components'.DS.Inflector::underscore($hook).'.php';
@@ -123,7 +122,7 @@ class CroogoComponent extends Object {
                 $componentName = $hook;
                 if (strstr($hook, '.')) {
                     $hookE = explode('.', $hook);
-                    $componentName = $hookE['0'];
+                    $componentName = $hookE['1'];
                 }
                 $componentClassName = $componentName.'Component';
 
@@ -342,6 +341,12 @@ class CroogoComponent extends Object {
         $this->controller->set('vocabularies_for_layout', $this->vocabularies_for_layout);
         $this->controller->set('types_for_layout', $this->types_for_layout);
 
+        $helperPaths = Configure::read('helperPaths');
+        if ($controller->theme) {
+            array_unshift($helperPaths, APP.'views'.DS.'themed'.DS.$controller->theme.DS.'helpers'.DS);
+            Configure::write('helperPaths', $helperPaths);
+        }
+
         $this->hook('beforeRender');
     }
 /**
@@ -377,6 +382,180 @@ class CroogoComponent extends Object {
         return $path;
     }
 /**
+ * ACL: add ACO
+ *
+ * Creates ACOs with permissions for roles.
+ *
+ * @param string $action possible values: ControllerName, ControllerName/method_name
+ * @param array $allowRoles Role aliases
+ * @return void
+ */
+    function addAco($action, $allowRoles = array()) {
+        // AROs
+        $aroIds = array();
+        if (count($allowRoles) > 0) {
+            $roles = ClassRegistry::init('Role')->find('list', array(
+                'conditions' => array(
+                    'Role.alias' => $allowRoles,
+                ),
+                'fields' => array(
+                    'Role.id',
+                    'Role.alias',
+                ),
+            ));
+            $roleIds = array_keys($roles);
+            $aros = $this->controller->Acl->Aro->find('list', array(
+                'conditions' => array(
+                    'Aro.model' => 'Role',
+                    'Aro.foreign_key' => $roleIds,
+                ),
+                'fields' => array(
+                    'Aro.id',
+                    'Aro.alias',
+                ),
+            ));
+            $aroIds = array_keys($aros);
+        }
+
+        // ACOs
+        $acoNode = $this->controller->Acl->Aco->node($this->controller->Auth->actionPath.$action);
+        if (!isset($acoNode['0']['Aco']['id'])) {
+            if (!strstr($action, '/')) {
+                $parentNode = $this->controller->Acl->Aco->node(str_replace('/', '', $this->controller->Auth->actionPath));
+                $alias = $action;
+            } else {
+                $actionE = explode('/', $action);
+                $controllerName = $actionE['0'];
+                $method = $actionE['1'];
+                $alias = $method;
+                $parentNode = $this->controller->Acl->Aco->node($this->controller->Auth->actionPath.$controllerName);
+            }
+            $parentId = $parentNode['0']['Aco']['id'];
+            $acoData = array(
+                'parent_id' => $parentId,
+                'model' => null,
+                'foreign_key' => null,
+                'alias' => $alias,
+            );
+            $this->controller->Acl->Aco->id = false;
+            $this->controller->Acl->Aco->save($acoData);
+            $acoId = $this->controller->Acl->Aco->id;
+        } else {
+            $acoId = $acoNode['0']['Aco']['id'];
+        }
+
+        // Permissions (aros_acos)
+        foreach ($aroIds AS $aroId) {
+            $permission = $this->controller->Acl->Aro->Permission->find('first', array(
+                'conditions' => array(
+                    'Permission.aro_id' => $aroId,
+                    'Permission.aco_id' => $acoId,
+                ),
+            ));
+            if (!isset($permission['Permission']['id'])) {
+                // create a new record
+                $permissionData = array(
+                    'aro_id' => $aroId,
+                    'aco_id' => $acoId,
+                    '_create' => 1,
+                    '_read' => 1,
+                    '_update' => 1,
+                    '_delete' => 1,
+                );
+                $this->controller->Acl->Aco->Permission->id = false;
+                $this->controller->Acl->Aco->Permission->save($permissionData);
+            } else {
+                // check if not permitted
+                if ($permission['Permission']['_create'] == 0 ||
+                    $permission['Permission']['_read'] == 0 ||
+                    $permission['Permission']['_update'] == 0 ||
+                    $permission['Permission']['_delete'] == 0) {
+                    $permissionData = array(
+                        'id' => $permission['Permission']['id'],
+                        'aro_id' => $aroId,
+                        'aco_id' => $acoId,
+                        '_create' => 1,
+                        '_read' => 1,
+                        '_update' => 1,
+                        '_delete' => 1,
+                    );
+                    $this->controller->Acl->Aco->Permission->id = $permission['Permission']['id'];
+                    $this->controller->Acl->Aco->Permission->save($permissionData);
+                }
+            }
+        }
+    }
+/**
+ * ACL: remove ACO
+ *
+ * Removes ACOs and their Permissions
+ *
+ * @param string $action possible values: ControllerName, ControllerName/method_name
+ * @return void
+ */
+    function removeAco($action) {
+        $acoNode = $this->controller->Acl->Aco->node($this->controller->Auth->actionPath.$action);
+        if (isset($acoNode['0']['Aco']['id'])) {
+            $this->controller->Acl->Aco->delete($acoNode['0']['Aco']['id']);
+        }
+    }
+/**
+ * Loads plugin's routes.php file
+ *
+ * Plugin names stored in /app/config/plugin_routes.txt
+ *
+ * @param string $plugin Plugin name (underscored)
+ * @return void
+ */
+    function addPluginRoutes($plugin) {
+        App::import('Core', 'File');
+        $file = new File(APP.'config'.DS.'plugin_routes.txt', true);
+        $content = $file->read();
+
+        if ($content == null) {
+            $plugins = array();
+        } else {
+            $plugins = explode(',', $content);
+        }
+        if (array_search($plugin, $plugins) !== false) {
+            $plugins = $content;
+        } else {
+            $plugins[] = $plugin;
+            $plugins = implode(',', $plugins);
+        }
+
+        $file->write($plugins);
+    }
+/**
+ * Plugin name will be removed from /app/config/plugin_routes.txt file
+ *
+ * @param string $plugin Plugin name (underscored)
+ * @return void
+ */
+    function removePluginRoutes($plugin) {
+        App::import('Core', 'File');
+        $file = new File(APP.'config'.DS.'plugin_routes.txt', true);
+        $content = $file->read();
+
+        if ($content == null) {
+            return;
+        }
+
+        $plugins = explode(',', $content);
+        if (array_search($plugin, $plugins) !== false) {
+            $k = array_search($plugin, $plugins);
+            unset($plugins[$k]);
+        }
+
+        if (count($plugins) == 0) {
+            $plugins = '';
+        } else {
+            $plugins = implode(',', $plugins);
+        }
+
+        $file->write($plugins);
+    }
+/**
  * Hook
  *
  * Used for calling hook methods from other HookComponents
@@ -385,10 +564,6 @@ class CroogoComponent extends Object {
  * @return void
  */
     function hook($methodName) {
-        if (isset($this->controller->params['admin'])) {
-            return;
-        }
-
         foreach ($this->hooks AS $hook) {
             if (strstr($hook, '.')) {
                 $hookE = explode('.', $hook);

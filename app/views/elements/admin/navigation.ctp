@@ -68,5 +68,16 @@
                 <li><?php echo $html->link(__('Languages', true), array('plugin' => 0, 'controller' => 'languages', 'action' => 'index')); ?></li>
             </ul>
         </li>
+        <?php
+            if (Configure::read('Admin.menus')) {
+                foreach (array_keys(Configure::read('Admin.menus')) AS $plugin) {
+                    if (file_exists(APP.'plugins'.DS.$plugin.DS.'views'.DS.'elements'.DS.'admin_menu.ctp')) {
+                        echo '<li>';
+                        echo $this->element('admin_menu', array('plugin' => $plugin));
+                        echo '</li>';
+                    }
+                }
+            }
+        ?>
 	</ul>
 </div>

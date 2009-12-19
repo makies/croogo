@@ -74,7 +74,7 @@ class LanguagesController extends AppController {
             $this->Session->setFlash(__('Invalid id for Language', true));
             $this->redirect(array('action'=>'index'));
         }
-        if ($this->Language->del($id)) {
+        if ($this->Language->delete($id)) {
             $this->Session->setFlash(__('Language deleted', true));
             $this->redirect(array('action'=>'index'));
         }
@@ -100,12 +100,10 @@ class LanguagesController extends AppController {
         $this->redirect(array('action' => 'index'));
     }
 
-    function admin_select($controller = null, $action = null, $id = null) {
-        if ($controller == null ||
-            $action == null ||
-            $id == null) {
+    function admin_select($id = null, $modelAlias = null) {
+        if ($id == null ||
+            $modelAlias == null) {
             $this->redirect(array('action' => 'index'));
-            exit();
         }
 
         $this->pageTitle = __('Select a language', true);
@@ -115,7 +113,7 @@ class LanguagesController extends AppController {
             ),
             'order' => 'Language.weight ASC',
         ));
-        $this->set(compact('controller', 'action', 'id', 'languages'));
+        $this->set(compact('id', 'modelAlias', 'languages'));
     }
 
 }

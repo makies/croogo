@@ -25,7 +25,9 @@ class Term extends AppModel {
  * @var array
  * @access public
  */
-    var $actsAs = array('Tree');
+    var $actsAs = array(
+        'Tree',
+    );
 /**
  * Validation
  *
@@ -34,8 +36,14 @@ class Term extends AppModel {
  */
     var $validate = array(
         'slug' => array(
-            'rule' => 'isUnique',
-            'message' => 'This slug has already been taken.',
+            'isUnique' => array(
+                'rule' => 'isUnique',
+                'message' => 'This slug has already been taken.',
+            ),
+            'minLength' => array(
+                'rule' => array('minLength', 1),
+                'message' => 'Slug cannot be empty.',
+            ),
         ),
     );
 /**
@@ -45,7 +53,9 @@ class Term extends AppModel {
  * @access public
  */
     var $belongsTo = array(
-        'Vocabulary' => array('counterCache' => true)
+        'Vocabulary' => array(
+            'counterCache' => true,
+        ),
     );
 
 }

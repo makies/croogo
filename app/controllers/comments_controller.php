@@ -81,7 +81,7 @@ class CommentsController extends AppController {
             $this->Session->setFlash(__('Invalid id for Comment', true));
             $this->redirect(array('action'=>'index'));
         }
-        if ($this->Comment->del($id)) {
+        if ($this->Comment->delete($id)) {
             $this->Session->setFlash(__('Comment deleted', true));
             $this->redirect(array('action'=>'index'));
         }
@@ -99,7 +99,6 @@ class CommentsController extends AppController {
         if (count($ids) == 0 || $action == null) {
             $this->Session->setFlash(__('No items selected.', true));
             $this->redirect(array('action' => 'index'));
-            exit();
         }
 
         if ($action == 'delete' &&
@@ -116,7 +115,6 @@ class CommentsController extends AppController {
         }
 
         $this->redirect(array('action' => 'index'));
-        exit();
     }
 
     function index() {
@@ -125,7 +123,6 @@ class CommentsController extends AppController {
         if (!isset($this->params['url']['ext']) ||
             $this->params['url']['ext'] != 'rss') {
             $this->redirect('/');
-            exit();
         }
 
         $this->paginate['Comment']['order'] = 'Comment.created DESC';
@@ -141,7 +138,6 @@ class CommentsController extends AppController {
         if (!$nodeId) {
             $this->Session->setFlash(__('Invalid Node', true));
             $this->redirect('/');
-            exit();
         }
 
         $node = $this->Comment->Node->find('first', array(
@@ -153,7 +149,6 @@ class CommentsController extends AppController {
         if (!isset($node['Node']['id'])) {
             $this->Session->setFlash(__('Invalid Node', true));
             $this->redirect('/');
-            exit();
         }
         if ($parentId) {
             $commentPath = $this->Comment->getpath($parentId, array('Comment.id'));
@@ -161,7 +156,6 @@ class CommentsController extends AppController {
             if ($commentLevel > Configure::read('Comment.level')) {
                 $this->Session->setFlash(__('Maximum level reached. You cannot reply to that comment.', true));
                 $this->redirect($node['Node']['url']);
-                exit();
             }
         }
         $type = $this->Comment->Node->Term->Vocabulary->Type->findByAlias($node['Node']['type']);
@@ -192,11 +186,11 @@ class CommentsController extends AppController {
                 $data['email'] = $this->Session->read('Auth.User.email');
                 $data['website'] = $this->Session->read('Auth.User.website');
             } else {
-                $data['name'] = $this->data['Comment']['name'];
+                $data['name'] = htmlspecialchars($this->data['Comment']['name']);
                 $data['email'] = $this->data['Comment']['email'];
                 $data['website'] = $this->data['Comment']['website'];
             }
-            $data['body'] = $this->data['Comment']['body'];
+            $data['body'] = htmlspecialchars($this->data['Comment']['body']);
             $data['ip'] = $_SERVER['REMOTE_ADDR'];
             $data['type'] = $node['Node']['type'];
             if ($type['Type']['comment_approve']) {
@@ -272,7 +266,7 @@ class CommentsController extends AppController {
             ));
 
             if (isset($comment['Comment']['id']) &&
-                $this->Comment->del($id)) {
+                $this->Comment->delete($id)) {
                 $success = 1;
             }
         }
