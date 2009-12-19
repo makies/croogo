@@ -10,6 +10,7 @@
     ?>
 
     <?php 
+    if (count($nodes)) {
         foreach ($nodes AS $node) {
             $layout->setNode($node);
     ?>
@@ -23,6 +24,7 @@
     </div>
     <?php 
         }
+    }
     ?>
 
     <div class="paging"><?php echo $paginator->numbers(); ?></div>
