@@ -31,9 +31,6 @@ class Node extends AppModel {
         'Encoder',
         'Meta',
         'Url',
-        'Acl' => array(
-            'type' => 'controlled',
-        ),
     );
 /**
  * Node type
@@ -63,8 +60,14 @@ class Node extends AppModel {
             'message' => 'This field cannot be left blank.',
         ),
         'slug' => array(
-            'rule' => 'isUnique',
-            'message' => 'This slug has already been taken',
+            'isUnique' => array(
+                'rule' => 'isUnique',
+                'message' => 'This slug has already been taken.',
+            ),
+            'minLength' => array(
+                'rule' => array('minLength', 1),
+                'message' => 'Slug cannot be empty.',
+            ),
         ),
     );
 /**
@@ -74,12 +77,13 @@ class Node extends AppModel {
  * @access public
  */
     var $belongsTo = array(
-            'User' => array('className' => 'User',
-                                'foreignKey' => 'user_id',
-                                'conditions' => '',
-                                'fields' => '',
-                                'order' => ''
-            )
+        'User' => array(
+            'className' => 'User',
+            'foreignKey' => 'user_id',
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+        ),
     );
 /**
  * Model associations: hasMany
@@ -88,30 +92,32 @@ class Node extends AppModel {
  * @access public
  */
     var $hasMany = array(
-            'Comment' => array('className' => 'Comment',
-                                'foreignKey' => 'node_id',
-                                'dependent' => false,
-                                'conditions' => array('Comment.status' => 1),
-                                'fields' => '',
-                                'order' => '',
-                                'limit' => '5',
-                                'offset' => '',
-                                'exclusive' => '',
-                                'finderQuery' => '',
-                                'counterQuery' => ''
-            ),
-            'Meta' => array('className' => 'Meta',
-                                'foreignKey' => 'foreign_key',
-                                'dependent' => false,
-                                'conditions' => array('Meta.model' => 'Node'),
-                                'fields' => '',
-                                'order' => 'Meta.key ASC',
-                                'limit' => '',
-                                'offset' => '',
-                                'exclusive' => '',
-                                'finderQuery' => '',
-                                'counterQuery' => ''
-            )
+        'Comment' => array(
+            'className' => 'Comment',
+            'foreignKey' => 'node_id',
+            'dependent' => false,
+            'conditions' => array('Comment.status' => 1),
+            'fields' => '',
+            'order' => '',
+            'limit' => '5',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => '',
+        ),
+        'Meta' => array(
+            'className' => 'Meta',
+            'foreignKey' => 'foreign_key',
+            'dependent' => false,
+            'conditions' => array('Meta.model' => 'Node'),
+            'fields' => '',
+            'order' => 'Meta.key ASC',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => '',
+        ),
     );
 /**
  * Model associations: hasAndBelongsToMany
@@ -120,33 +126,39 @@ class Node extends AppModel {
  * @access public
  */
     var $hasAndBelongsToMany = array(
-            'Term' => array('className' => 'Term',
-                        'joinTable' => 'nodes_terms',
-                        'foreignKey' => 'node_id',
-                        'associationForeignKey' => 'term_id',
-                        'unique' => true,
-                        'conditions' => '',
-                        'fields' => '',
-                        'order' => '',
-                        'limit' => '',
-                        'offset' => '',
-                        'finderQuery' => '',
-                        'deleteQuery' => '',
-                        'insertQuery' => ''
-            )
+        'Term' => array(
+            'className' => 'Term',
+            'joinTable' => 'nodes_terms',
+            'foreignKey' => 'node_id',
+            'associationForeignKey' => 'term_id',
+            'unique' => true,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'finderQuery' => '',
+            'deleteQuery' => '',
+            'insertQuery' => '',
+        ),
     );
-
-    function parentNode() {
-        return null;
-    }
-
+/**
+ * beforeFind callback
+ *
+ * @param array $q
+ * @return array
+ */
     function beforeFind($q) {
         if($this->type != null) {
             $q['conditions']['Node.type'] = $this->type;
         }
         return $q;
     }
-
+/**
+ * beforeSave callback
+ *
+ * @return boolean
+ */
     function beforeSave() {
         if ($this->type != null) {
             $this->data['Node']['type'] = $this->type;
@@ -155,11 +167,11 @@ class Node extends AppModel {
 
         return true;
     }
-
-    function afterSave($created) {
-
-    }
-
+/**
+ * Caches Term in Node.terms field
+ *
+ * @return void
+ */
     function __cache_terms() {
         if (isset($this->data['Term']['Term']) && count($this->data['Term']['Term']) > 0) {
             $termIds = $this->data['Term']['Term'];

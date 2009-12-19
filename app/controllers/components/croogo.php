@@ -382,57 +382,6 @@ class CroogoComponent extends Object {
         return $path;
     }
 /**
- * Add admin menu
- *
- * Plugin's admin_menu element will be shown below core navigation in admin panel.
- *
- * @param string $plugin plugin name CamelCased
- * @return boolean
- */
-    function addAdminMenu($plugin) {
-        if (!Configure::read('Admin.menus')) {
-            $plugins = array();
-        } else {
-            $plugins = explode(',', Configure::read('Admin.menus'));
-        }
-        if (array_search($plugin, $plugins) !== false) {
-            // already exists
-            return true;
-        } else {
-            if (file_exists(APP.'plugins'.DS.Inflector::underscore($plugin).DS.'views'.DS.'elements'.DS.'admin_menu.ctp')) {
-                $plugins[] = $plugin;
-                $plugins = implode(',', $plugins);
-                if ($this->controller->Setting->write('Admin.menus', $plugins)) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-/**
- * Remove admin menu
- *
- * Plugin name will be removed from Admin.menus settings key.
- *
- * @param string $plugin plugin name CamelCased
- * @return boolean
- */
-    function removeAdminMenu($plugin) {
-        $plugins = explode(',', Configure::read('Admin.menus'));
-        if (array_search($plugin, $plugins) !== false) {
-            $k = array_search($plugin, $plugins);
-            unset($plugins[$k]);
-            $plugins = implode(',', $plugins);
-            if ($this->controller->Setting->write('Admin.menus', $plugins)) {
-                return true;
-            }
-        } else {
-            // does not exist
-            return true;
-        }
-        return false;
-    }
-/**
  * ACL: add ACO
  *
  * Creates ACOs with permissions for roles.
@@ -549,6 +498,62 @@ class CroogoComponent extends Object {
         if (isset($acoNode['0']['Aco']['id'])) {
             $this->controller->Acl->Aco->delete($acoNode['0']['Aco']['id']);
         }
+    }
+/**
+ * Loads plugin's routes.php file
+ *
+ * Plugin names stored in /app/config/plugin_routes.txt
+ *
+ * @param string $plugin Plugin name (underscored)
+ * @return void
+ */
+    function addPluginRoutes($plugin) {
+        App::import('Core', 'File');
+        $file = new File(APP.'config'.DS.'plugin_routes.txt', true);
+        $content = $file->read();
+
+        if ($content == null) {
+            $plugins = array();
+        } else {
+            $plugins = explode(',', $content);
+        }
+        if (array_search($plugin, $plugins) !== false) {
+            $plugins = $content;
+        } else {
+            $plugins[] = $plugin;
+            $plugins = implode(',', $plugins);
+        }
+
+        $file->write($plugins);
+    }
+/**
+ * Plugin name will be removed from /app/config/plugin_routes.txt file
+ *
+ * @param string $plugin Plugin name (underscored)
+ * @return void
+ */
+    function removePluginRoutes($plugin) {
+        App::import('Core', 'File');
+        $file = new File(APP.'config'.DS.'plugin_routes.txt', true);
+        $content = $file->read();
+
+        if ($content == null) {
+            return;
+        }
+
+        $plugins = explode(',', $content);
+        if (array_search($plugin, $plugins) !== false) {
+            $k = array_search($plugin, $plugins);
+            unset($plugins[$k]);
+        }
+
+        if (count($plugins) == 0) {
+            $plugins = '';
+        } else {
+            $plugins = implode(',', $plugins);
+        }
+
+        $file->write($plugins);
     }
 /**
  * Hook

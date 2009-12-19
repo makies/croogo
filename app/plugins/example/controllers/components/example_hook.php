@@ -23,15 +23,15 @@ class ExampleHookComponent extends Object {
         $controller->Croogo->addAco('Example'); // ExampleController
         $controller->Croogo->addAco('Example/index', array('registered', 'public')); // ExampleController::index()
 
-        // Admin menu: admin_menu element of Example plugin will be shown in admin panel's navigation
-        $controller->Croogo->addAdminMenu('Example');
+        // Routes: app/plugins/example/config/routes.php will be loaded in app/config/routes.php
+        $controller->Croogo->addPluginRoutes('example');
 
         // Main menu: add an Example link
         $mainMenu = $controller->Link->Menu->findByAlias('main');
         $controller->Link->save(array(
             'menu_id' => $mainMenu['Menu']['id'],
             'title' => 'Example',
-            'link' => 'controller:example/action:index',
+            'link' => 'plugin:example/controller:example/action:index',
             'status' => 1,
         ));
     }
@@ -45,14 +45,14 @@ class ExampleHookComponent extends Object {
         // ACL: remove ACOs with permissions
         $controller->Croogo->removeAco('Example'); // ExampleController ACO and it's actions will be removed
 
-        // Admin menu: remove
-        $controller->Croogo->removeAdminMenu('Example');
+        // Routes: remove
+        $controller->Croogo->removePluginRoutes('example');
 
         // Main menu: delete Example link
         $link = $controller->Link->find('first', array(
             'conditions' => array(
                 'Menu.alias' => 'main',
-                'Link.link' => 'controller:example/action:index',
+                'Link.link' => 'plugin:example/controller:example/action:index',
             ),
         ));
         if (isset($link['Link']['id'])) {
@@ -76,6 +76,9 @@ class ExampleHookComponent extends Object {
  * @return void
  */
     function beforeRender(&$controller) {
+        // Admin menu: admin_menu element of Example plugin will be shown in admin panel's navigation
+        Configure::write('Admin.menus.example', 1);
+
         $controller->set('exampleHookBeforeRender', 'ExampleHook beforeRender');
     }
 /**
