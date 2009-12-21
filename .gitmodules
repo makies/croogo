@@ -1,0 +1,3 @@
+[submodule "social_bookmarks"]
+	path = social_bookmarks
+	url = git://github.com/fahad19/social_bookmarks.git
