@@ -1804,7 +1804,7 @@ msgstr "webサイト"
 
 #: /views/elements/comments_form.ctp:48
 msgid "Post comment"
-msgstr "記事コメント"
+msgstr "コメントを送信する"
 
 #: /views/elements/node_info.ctp:6
 #, fuzzy

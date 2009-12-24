@@ -12,7 +12,7 @@
 			'jquery/jquery.min',
 		));
         echo $layout->js();
-        echo $html->css(array('reset', 'default', 'import'));
+        echo $html->css(array('reset', 'default', 'theme'));
         if (Configure::read('debug')) {
 	        echo $html->css(array('debug'));
         }
@@ -48,6 +48,9 @@
 				<?php echo $layout->blocks('right'); ?>
 			</div>
 			<div class="breaker"></div>
+		</div>
+		<div id="cork">
+			<?php echo $layout->blocks('footer'); ?>
 		</div>
 		<div id="footer">
 			<div class="left">Copyright &copy; <?=date('Y')?> <?=Configure::read('Site.title')?>, All Rights Reserved.</div>
