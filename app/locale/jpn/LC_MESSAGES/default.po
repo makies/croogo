@@ -1781,7 +1781,7 @@ msgstr "返信"
 
 #: /views/elements/comments_form.ctp:2
 msgid "Add new comment"
-msgstr "コメントを新規登録"
+msgstr "コメントを書く"
 
 #: /views/elements/comments_form.ctp:7
 msgid "Go back to original post"
@@ -1825,7 +1825,11 @@ msgstr "%s"
 
 #: /views/elements/node_more_info.ctp:29
 msgid "Leave a comment"
-msgstr "コメントを取り除く"
+msgstr "コメントする"
+
+#: /views/elements/node_more_info.ctp:29
+msgid "No comments yet"
+msgstr "コメントはまだありません"
 
 #: /views/elements/admin/logo.ctp:2
 msgid "Admin Panel"
