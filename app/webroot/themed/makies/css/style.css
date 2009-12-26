@@ -219,10 +219,18 @@ body{
 }
 #content .node .node-info span.date{
 	margin-right: 1em;
+	background-image: url("../img/icons/16x16_0180/calendar.png");
+	background-position: left;
+	background-repeat: no-repeat;
+	padding-left: 20px;
 }
 
 #content .node .node-info a{
-	
+	background-image: url("../img/icons/16x16_0880/tag_pink.png");
+	background-position: left;
+	background-repeat: no-repeat;
+	padding: 20px 0px 20px 18px;
+	margin-left: 5px;	
 }
 
 
@@ -281,6 +289,14 @@ body{
 	text-decoration: none;
 }
 
+#content .node .node-more-info a.comment_count{
+	background-image: url("../img/icons/16x16_0260/comment.png");
+	background-position: left;
+	background-repeat: no-repeat;
+	padding: 20px 0px 20px 20px;
+	margin-left: 5px;	
+}
+
 /**
  *	7.	コメント
 **********************************************************************/
@@ -289,7 +305,10 @@ body{
 
 #content #comments h3{
 	margin: 0 5px 10px;
-	border-bottom: 1px solid #FFC6D5;
+	background-image: url("../img/line_brokenline01s_06.gif");
+	background-repeat: repeat-x;
+	background-position: bottom;
+	padding-bottom: 5px;
 }
 
 #content #comments .comment{
@@ -364,7 +383,7 @@ body{
 }
 #content #comments .comment-form form div.input{
 	padding: 15px 0;
-	border-top: 1px dashed #FFC6D5;
+	border-bottom: 1px dashed #FFC6D5;
 	margin: 0 5px;
 }
 #content #comments .comment-form form div.input label{
@@ -384,6 +403,7 @@ body{
 	font-size: 110%;
 }
 #content #comments .comment-form form div.submit input{
+	margin-top: 20px;
 	margin-left: 20px;
 }
 

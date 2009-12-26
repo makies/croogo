@@ -2,6 +2,12 @@
 <?php
     $type = $types_for_layout[$layout->node('type')];
 
+    // はてブ件数表示画像
+	$url = $html->url($layout->node('path'), true);
+	$hatebu_img_url = "http://b.hatena.ne.jp/entry/image/" . $url;
+    echo $html->image($hatebu_img_url, array());
+    // はてブ件数表示画像　終了
+
     // 日付
     if ($type['Type']['format_show_date']) {
         echo $html->tag('span', $time->format(Configure::read('Reading.date_time_format'), $layout->node('created')), array('class' => 'date'));
