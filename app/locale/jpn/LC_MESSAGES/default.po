@@ -2317,3 +2317,7 @@ msgstr "項目を表示する"
 msgid "Debug setting does not allow access to this url."
 msgstr "デバッグ設定のときは、このURLへのアクセスは許可されていません"
 
+#: 
+msgid "%s could not be saved. Please, try again."
+msgstr "%s が保存出来ませんでした。もう一度実行してください。"
+
