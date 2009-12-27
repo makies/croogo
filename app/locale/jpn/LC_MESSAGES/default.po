@@ -1781,7 +1781,7 @@ msgstr "返信"
 
 #: /views/elements/comments_form.ctp:2
 msgid "Add new comment"
-msgstr "コメントを書く"
+msgstr "コメントを新規登録"
 
 #: /views/elements/comments_form.ctp:7
 msgid "Go back to original post"
@@ -1804,7 +1804,7 @@ msgstr "webサイト"
 
 #: /views/elements/comments_form.ctp:48
 msgid "Post comment"
-msgstr "コメントを送信する"
+msgstr "記事コメント"
 
 #: /views/elements/node_info.ctp:6
 #, fuzzy
@@ -1825,11 +1825,7 @@ msgstr "%s"
 
 #: /views/elements/node_more_info.ctp:29
 msgid "Leave a comment"
-msgstr "コメントする"
-
-#: /views/elements/node_more_info.ctp:29
-msgid "No comments yet"
-msgstr "コメントはまだありません"
+msgstr "コメントを取り除く"
 
 #: /views/elements/admin/logo.ctp:2
 msgid "Admin Panel"
@@ -2316,8 +2312,4 @@ msgstr "項目を表示する"
 #: /webroot/test.php:99
 msgid "Debug setting does not allow access to this url."
 msgstr "デバッグ設定のときは、このURLへのアクセスは許可されていません"
-
-#: 
-msgid "%s could not be saved. Please, try again."
-msgstr "%s が保存出来ませんでした。もう一度実行してください。"
 

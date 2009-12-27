@@ -108,7 +108,7 @@ class NodesController extends AppController {
                 $this->Session->setFlash(vprintf(__('%s has been saved.', true),$type['Type']['title']));
                 $this->redirect(array('action'=>'index'));
             } else {
-                $this->Session->setFlash(sprintf(__('%s could not be saved. Please, try again.',true), $type['Type']['title']));
+                $this->Session->setFlash(vprintf__('%s could not be saved. Please, try again.', true),$type['Type']['title']);
             }
         }
 
