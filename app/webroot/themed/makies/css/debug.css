@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+
+.cake-sql-log{
+	clear:both;
+	margin-top: 30px;
+	color:#000;
+	background-color: #FFF;
+	border-top: medium solid #666;
+}
+
+.cake-sql-log tr{
+}
+
+.cake-sql-log tr th{
+	border-bottom: medium double #666;
+	font-size: 13px;
+	padding: 2px 5px;
+}
+
+.cake-sql-log tr td{
+	border-bottom: 1px dashed #666;
+	font-size: 11px;
+	line-height:1.5;
+	padding: 2px 5px;
+}
+
