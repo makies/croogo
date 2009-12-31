@@ -1,0 +1,605 @@
+@CHARSET "UTF-8";
+/**
+ *	このファイルについて
+ *	@auther makies <makies@gmail.com>
+ *	@since 2009-12-20
+ **********************************************************************/
+
+/**
+ *	目次
+ **********************************************************************
+ 1.	全体レイアウト
+ 2.	ヘッダ
+ 3.	フッタ
+ 4.	メイン
+ 5.	グローバルメニュー
+ 6.	コンテンツ
+ 7.	サイドバー
+ 8. コルクボード
+ 
+ 
+ */
+ 
+/**
+ *	1.	全体レイアウト
+ **********************************************************************/
+html{
+
+}
+ 
+body{
+	background-image: url("../img/bg/bg1.jpg");
+		line-height: 1.5;
+}
+ 
+#container{
+	width:1000px;
+	margin: 0px auto;
+}
+
+	#header{
+		background-color: #FFF;
+		margin-bottom: 0;
+	}
+	
+		#header #tagline{
+			margin-bottom: 0;
+			padding-bottom: 20px;
+		}
+		
+
+	#main{
+	    color: #000000;
+	    padding-bottom: 20px;
+	    overflow: hidden;
+	    background-color: #FFF;
+    }
+	
+	#main:after {
+	    content: "";
+	    display: block;
+	    clear: both;
+	    height: 1px;
+	    overflow: hidden;
+	}
+
+		#content{
+			clear: both;
+		}
+		
+		#main #content #comments .comment {
+		    overflow: hidden;
+		}
+		
+		#main #content #comments .comment:after {
+		    content: "";
+		    display: block;
+		    clear: both;
+		    height: 1px;
+		    overflow: hidden;
+		}
+
+		#sidebar{
+		}
+/*\*/
+* html #main {
+    height: 1em;
+    overflow: visible;
+}
+/**/
+
+#footer{
+	clear: both;
+}
+
+ 
+ 
+ 
+ 
+ 
+ /**
+*	2.	ヘッダ
+**********************************************************************/
+#header{
+	background-image: url("../img/bg/bg2.jpg");
+}
+
+#header #top{
+	padding: 3px 0px;
+	float: right;
+	width: 400px;
+	text-align: right;
+}
+#header #top a{
+	font-size: 13px;
+}
+#header #top #search{
+	display: inline;
+	border-left: 1px solid #333;
+	padding-left: 10px;
+	margin-right: 5px;
+}
+#header #top #search form{
+	display: inline;
+	
+}
+#header #top #search form#SearchAddForm{
+	top: 120px;
+	text-align: right;	
+}
+  
+#header #search form#SearchAddForm #search_field{
+	margin-right: 6px;
+}
+ 
+
+#header h1{
+	font-size: 24px;
+	margin: 0 20px;
+	padding-top: 20px;
+}
+
+#header #tagline{
+	margin: 10px 20px 0;
+}
+
+#header #search{
+	text-align: right;
+}
+/**
+ *	3.	フッタ
+**********************************************************************/
+ #footer{
+ 	font-size: 11px;
+ 	text-align: center;
+ 	padding: 20px;
+ 	margin-top: 100px;
+ }
+ 
+/**
+ *	4.	メイン
+**********************************************************************/
+#main{
+}	
+ 
+ 
+/**
+ *	5.	グローバルメニュー
+**********************************************************************/
+#nav{
+	
+}
+
+#nav .menu{
+}
+
+#nav .menu ul{
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	background-color: #666;
+	padding: 10px;
+	background-image: url("../img/bg/gnavi.gif");
+	background-repeat: repeat-x;
+}
+
+
+#nav .menu ul li{
+	display:inline;
+	border-left: 1px solid #999;
+	margin-bottom: 10px;
+}
+#nav .menu ul li a{
+	padding: 5px 10px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+
+/**
+ *	6.	コンテンツ
+**********************************************************************/
+#content{
+	width: 700px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+#content .nodes{
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+#content .node{
+/*	border: 1px dashed #FFA205;*/
+	margin-bottom: 50px;
+}
+#content .node h2{
+/*	background-image: url("../img/heart12-007.gif");
+	background-position: 5px ;
+	background-repeat: no-repeat;*/
+	border-bottom: 4px double #FFA205;
+	padding: 5px 1em 5px 10px;
+	background-color: #FFF;
+}
+#content .node h2 a{
+	text-decoration: none;
+	color: #333;
+	font-size: 18px;
+}
+
+#content .node h2 a:hove{
+}
+
+#content .node .node-info{
+	text-align: right;
+	font-size: 12px;
+	margin: 0 13px 10px;
+}
+#content .node .node-info span.date{
+	margin-right: 1em;
+	float: left;
+}
+#content .node .node-info span.tags{
+	background-image: url("../img/bg/tag.gif");
+	background-repeat: no-repeat;
+	background-position: left 1px;
+	margin-top: 3px;
+	padding-left: 20px;
+	padding-bottom: 5px;
+}	
+
+#content .node .node-info span.tags a{
+	color: #000;
+}
+content .node .node-info span.tags a:hover{
+	text-decoration: underline;
+}
+
+#content .node .node-body{
+	margin: 0 13px;
+	line-height: 1.5;
+}
+
+#content .node .node-body p{
+	margin: 15px 0;
+}
+
+/* 引用 */
+#content .node .node-body blockquote{
+	font: 14px/20px italic Times, serif;
+	padding: 8px;
+	background-color: #faebbc;
+	border-top: 1px solid #e1cc89;
+	border-bottom: 1px solid #e1cc89;
+	margin: 5px;
+	background-image: url(images/openquote1.gif);
+	background-position: top left;
+	background-repeat: no-repeat;
+	text-indent: 23px;
+}
+#content .node .node-body blockquote span {
+	display: block;
+	background-image: url(images/closequote1.gif);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+  }
+
+
+/* コード */
+#content .node .node-body code{
+	font: 14px/20px italic Times, serif;
+	padding: 8px;
+	background-color: #faebbc;
+	border-top: 1px solid #e1cc89;
+	border-bottom: 1px solid #e1cc89;
+	margin: 5px;
+	background-image: url(images/openquote1.gif);
+	background-position: top left;
+	background-repeat: no-repeat;
+	text-indent: 23px;
+}
+
+
+/* ノードフッタ */
+#content .node .node-more-info{
+	text-align: right;
+	font-size: 12px;
+	margin:25px 13px 3px 13px;
+	/*
+	background-color: #FFF29E;
+	margin: 10px 0;
+*/
+	padding: 2px 5px;
+}
+#content .node .node-more-info a{
+	text-decoration: none;
+}
+
+#content .node .node-more-info a.twitter{
+	background-image: url("../img/social/twitter_16.png");
+	background-repeat: no-repeat;
+	padding-left: 18px;
+	padding-bottom: 5px;
+	color: #000;
+}
+
+#content .node .node-more-info a.comment{
+	background-image: url("../img/bg/download3_r1_c9.gif");
+	background-repeat: no-repeat;
+	padding-left: 18px;
+	padding-bottom: 5px;
+	color: #000;
+	margin-left: 15px;
+}
+#content .node .node-more-info a:hover{
+	text-decoration: underline;
+}
+
+/**
+ *	7.	コメント
+**********************************************************************/
+#content #comments {
+}
+
+#content #comments h3{
+	margin: 0 5px 10px;
+	border-bottom: 4px double #FFA205;
+}
+
+#content #comments .comment{
+	clear: both;
+	border-bottom: 1px dashed #FFA205;
+	margin: 0 5px 15px;
+}
+
+#content #comments .comments .comment-info{
+	float: left;
+	width:200px;
+	padding-right: 20px;
+}
+#content #comments .comments .comment-info span{
+	display: block;
+}
+#content #comments .comments .comment-info .date{
+	font-size:11px;	
+}
+
+#content #comments .comments .comment-info .name{
+}
+#content #comments .comments .comment-info .name a{
+	text-decoration: none;
+	color:#333;
+	font-weight: bold;
+}
+#content #comments .comments .comment-info .name a:hover{
+	color: #FFA205;
+}
+
+#content #comments .comments .comment-info .avatar{
+}
+
+#content #comments .comments .comment-info .avatar img{
+	border:1px solid #CCC;
+}
+
+#content #comments .comments .comment-body{
+	float: left;
+	font-size: 13px;
+	display: block;
+}
+
+#content #comments .comments .comment-reply{
+	display: block;
+	clear: both;
+	padding-left: 220px;
+	font-size:12px;
+	margin-bottom: 10px;
+}
+#content #comments .comments .comment-reply a{
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+}
+
+#content #comments .comments .comment-reply a:hover{
+	color: #FC82C4;
+}
+
+#content #comments .comment-form{
+	clear: both;
+	float: none;
+	padding-top: 20px;
+}
+#content #comments .comment-form h3{
+}
+
+#content #comments .comment-form form{
+	margin-top: -11px;
+}
+#content #comments .comment-form form div.input{
+	padding: 15px 0;
+	border-top: 1px dashed #FFA205;
+	margin: 0 5px;
+}
+#content #comments .comment-form form div.input label{
+	display: block;
+	float: left;
+	clear: both;
+	width: 220px;
+	margin-left: 10px;
+}
+#content #comments .comment-form form div.input.text input{
+	width:450px;
+	font-size: 110%;
+}
+#content #comments .comment-form form div.input textarea{
+	width:672px;
+	margin-left: 10px;
+	font-size: 110%;
+}
+#content #comments .comment-form form div.submit input{
+	margin-left: 20px;
+}
+
+/**
+ *	8.	コンタクトフォーム
+**********************************************************************/
+#content .contact{
+}
+
+#content .contact h2{
+	margin: 0 5px 10px;
+	border-bottom: 1px solid #FFC6D5;
+}
+
+#content .contact .contact-body{
+	margin: 0 10px;
+}
+
+#content .contact .contact-form{
+	margin: 0px;
+}
+
+
+#content .contact .contact-form form{
+}
+#content .contact .contact-form form div.input{
+	padding: 15px 0;
+	border-top: 1px dashed #FFC6D5;
+	margin: 0 5px;
+}
+#content .contact .contact-form form div.input label{
+	display: block;
+	float: left;
+	clear: both;
+	width: 220px;
+	margin-left: 10px;
+}
+#content .contact .contact-form form div.input.text input{
+	width:420px;
+	font-size: 110%;
+}
+#content .contact .contact-form form div.input textarea{
+	width:647px;
+	margin-left: 10px;
+	font-size: 110%;
+}
+#content .contact .contact-form form div.submit input{
+	margin-left: 20px;
+}
+
+
+
+
+/**
+ *	7.	サイドバー
+**********************************************************************/
+#sidebar{
+	float:right;
+	width:240px;
+	margin: 0px 20px 50px 0;
+	font-size: 14px;
+}
+
+#sidebar .block{
+	margin-top: 20px;
+}
+
+#sidebar .block h3{
+		margin-bottom: 5px;
+		margin-top:10px;
+	padding: 40px 10px 5px;
+	font-size: 16px;
+	border-top: 0px double #FFA205;	
+	border-left: 2px solid #FFA205;
+	border-bottom: 4px double #FFA205;
+}	
+ 
+ 
+#sidebar .block .block-body {
+	margin: 0 5px;
+}
+
+#sidebar .block .block-body ul li{
+	list-style-position: inside;
+	list-style-image: url("../img/bg/list_icon.gif");
+	margin-bottom: 4px;
+}
+#sidebar .block .block-body ul li a{
+	color: #000;
+	text-decoration: none;
+}
+#sidebar .block .block-body ul li a:hover{
+	text-decoration: underline;
+}
+#sidebar .block.block-feed .block-body ul li {
+	list-style-image: url("../img/bg/rss.gif");
+}	
+
+#sidebar .block.block-bunner .block-body ul li{
+}
+#sidebar .block.block-bunner .block-body ul li a#link-22{
+	background-image: url("../img/sns/google_code_tiny.png");
+	background-position: left 0px;
+	padding-top: 30px;
+	background-repeat: no-repeat;
+	width:200px;
+	display: block;
+	margin-left: 18px;
+	margin-bottom: 30px;
+}
+#sidebar .block.block-bunner .block-body ul li a#link-24{
+	background-image: url("../img/sns/logov3.png");
+	background-position: left 0px;
+	padding-top: 50px;
+	background-repeat: no-repeat;
+	width:200px;
+	display: block;
+	margin-left: 18px;
+}
+#sidebar .block.block-bunner .block-body ul li a{
+}
+#sidebar .block.block-bunner .block-body ul li a{
+}
+
+
+
+/**
+ *	8.	コルクボード
+**********************************************************************/
+#cork{
+}
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
