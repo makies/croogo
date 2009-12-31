@@ -12,7 +12,7 @@
 			'jquery/jquery.min',
 		));
         echo $layout->js();
-        echo $html->css(array('reset', 'default', 'import'));
+        echo $html->css(array('reset', 'default', 'theme'));
         if (Configure::read('debug')) {
 	        echo $html->css(array('debug'));
         }
@@ -25,14 +25,20 @@
 	</div>
 	<div id="container">
 		<div id="header">
-			<h1 id="logo" class="left"><?php echo $html->link(Configure::read('Site.title'), '/'); ?></h1>
+			<div id="top">
+				<?php echo $html->link(__('Site Admin', true), array('admin' => true)); ?>
+				<div id="search">
+					<?php 
+					echo $form->create('Search', array('type' => 'get', 'url' => array('controller' => 'nodes', 'action' => 'search')));
+					echo $form->input('q', array('label' => false, 'div' => false, 'id' => 'search_field', 'value' => (isset($this->params['url']['q']) ? $this->params['url']['q'] : '')));
+					echo $form->submit(__('Search',true), array('div' => false));
+					echo $form->end();
+					?>
+				</div>
+			</div>
+			<h1 id="logo" class="left"><?php echo $html->link($html->image('logo/croogo.jp.gif', array('alt'=>Configure::read('Site.title'))), array(), null, false, false); ?></h1>
 			<div id="tagline" class="left"><?=Configure::read('Site.tagline')?></div>
 			<div class="breaker"></div>
-			<div id="search">
-				<?=$form->create('Search', array('type' => 'get', 'url' => array('controller' => 'nodes', 'action' => 'search')))?>
-				<?=$form->input('q', array('label' => false, 'div' => false, 'id' => 'search_field', 'value' => (isset($this->params['url']['q']) ? $this->params['url']['q'] : '')))?>
-				<?=$form->end()?>
-			</div>
 		</div>
 		<div id="main">
 			<div id="nav">
@@ -49,9 +55,12 @@
 			</div>
 			<div class="breaker"></div>
 		</div>
+		<div id="cork">
+			<?php echo $layout->blocks('footer'); ?>
+		</div>
 		<div id="footer">
 			<div class="left">Copyright &copy; <?=date('Y')?> <?=Configure::read('Site.title')?>, All Rights Reserved.</div>
-			<div class="right">Powered by <a href="http://croogo.org/">Croogo</a>, Built with <a href="http://cakephp.org/">CakePHP</a>, Theme by <a href="http://andrw.net/">andrw.net</a>.</div>
+			<div class="right">Powered by <a href="http://croogo.org/">Croogo</a>, Built with <a href="http://cakephp.org/">CakePHP</a></div>
 			<div class="breaker"></div>
 		</div>
 	</div>

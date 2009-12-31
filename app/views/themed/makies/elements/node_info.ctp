@@ -7,8 +7,10 @@
         echo $html->tag('span', $time->format(Configure::read('Reading.date_time_format'), $layout->node('created')), array('class' => 'date'));
     }
     
+    
 	// タグ
     if (is_array($layout->node['Term']) && count($layout->node['Term']) > 0) {
+    	echo '<span class="tags">';
         $nodeTerms = Set::combine($layout->node, 'Term.{n}.slug', 'Term.{n}.title');
         $nodeTermLinks = array();
         if (count($nodeTerms) > 0) {
@@ -22,6 +24,8 @@
             }
             echo vsprintf(__('Posted in %s',true),implode(', ', $nodeTermLinks));
         }
+        echo '<span>';
     }
     ?>
+
 </div>
