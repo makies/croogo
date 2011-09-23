@@ -1,12 +1,14 @@
-# IDE
-nbproject/
-
 # App
-app/config/database.php
-app/plugins/debug_kit/
-app/vendors/simpletest/
+config/database.php
+config/settings.yml
+plugins/debug_kit/
+plugins/migrations/
+vendors/simpletest/
+views/themed/
+webroot/uploads/
 
 # Cake cache
+<<<<<<< HEAD
 app/tmp/cache/cake_*
 app/tmp/cache/models/cake_*
 app/tmp/cache/persistent/cake_*
@@ -22,3 +24,6 @@ app/locale/core.pot
 
 # uploads
 app/webroot/uploads/*
+=======
+tmp/
+>>>>>>> a34b2e8f6fcbfc89761b31611f7bc019f2635996
